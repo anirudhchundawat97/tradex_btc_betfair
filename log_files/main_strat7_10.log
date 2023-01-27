@@ -1,0 +1,51 @@
+ERROR:__main__:2022-11-18 19:37:00,583:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 440, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 404, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 183, in __scalp_side
+    self.order.cancel_all_pending_buy("N", "NewBuyParams")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 112, in cancel_all_pending_buy
+    df = get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 33, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 30, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-18 20:52:31,946:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 440, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 399, in _keep_a_check
+    self.__scalp_side("Y", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 173, in __scalp_side
+    self.order.cancel_all_pending_buy("N", "CancelOppSideOrders")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 112, in cancel_all_pending_buy
+    df = get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 33, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 30, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-18 21:15:58,691:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 440, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 404, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 187, in __scalp_side
+    if not self.order.is_same_order("N", sell_price, sell_qty, "sell"):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 126, in is_same_order
+    df = get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 33, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 30, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

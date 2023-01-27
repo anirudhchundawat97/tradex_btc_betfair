@@ -1,0 +1,35 @@
+ERROR:__main__:2023-01-10 15:18:01,942:object of type 'NoneType' has no len()
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 125, in <module>
+    if len(eid_input_list) >= 8:
+TypeError: object of type 'NoneType' has no len()
+ERROR:__main__:2023-01-10 15:52:05,129:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 630, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 317, in __scalp_side
+    self.order.cancel_all_pending_sell("N", f"{trigger},NewSellParams")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 142, in cancel_all_pending_sell
+    df = self.mybet.get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-10 19:25:19,154:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 787, in update
+    self._print_details("updating")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 215, in _print_details
+    print(self.mybet.get_event_holdings(self.event_id))
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

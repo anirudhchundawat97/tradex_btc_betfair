@@ -1,0 +1,78 @@
+ERROR:__main__:2022-12-07 17:09:02,579:name 'None0' is not defined
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 110, in <module>
+    strat_obj_dict[strobj] = Strategy7(event_id=eid, min_buy_qty=5, avg_qty_multiplier=5, getOutSellPriceDiff="dynamic")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 65, in __init__
+    self.time_2_expiry_cat = None0
+NameError: name 'None0' is not defined
+ERROR:__main__:2022-12-07 17:17:53,099:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 586, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 307, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no, self.falseavgbuyyes, self.falseavgbuyno = self.trans.get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 171, in get_avg_buysell_price
+    remove_yes_qty, remove_yes_amount = self._get_unfilled_qty_n_amount(event_id, "Y")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 256, in _get_unfilled_qty_n_amount
+    bets_df = self.mybet.get_event_holdings(eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-12-07 22:48:07,294:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 586, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 311, in _set_qty
+    self.my_lastbuy_price_yes, self.my_lastbuy_price_no = self.mybet.get_buy_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 120, in get_buy_price
+    df = self.get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-12-07 23:00:51,860:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 589, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 499, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 242, in __scalp_side
+    self.order.cancel_all_pending_buy("N", f"{trigger},CancelOppSideOrders")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 137, in cancel_all_pending_buy
+    self._cancel_buy(message=message,
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 88, in _cancel_buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0

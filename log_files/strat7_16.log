@@ -1,0 +1,208 @@
+INFO:strat7:2022-11-24 15:20:06,197:12578: Initialising event
+INFO:strat7:2022-11-24 15:20:20,419:12579: Initialising event
+INFO:strat7:2022-11-24 15:20:24,089:12580: Initialising event
+INFO:strat7:2022-11-24 15:20:28,055:12581: Initialising event
+INFO:strat7:2022-11-24 15:27:45,712:12578: Initialising event
+INFO:strat7:2022-11-24 15:28:24,840:12579: Initialising event
+INFO:strat7:2022-11-24 15:29:03,661:12580: Initialising event
+INFO:strat7:2022-11-24 15:29:42,469:12581: Initialising event
+CRITICAL:strat7:2022-11-24 15:35:13,408:12579: No my_buy_price unavailable
+WARNING:strat7:2022-11-24 15:35:30,056:12579: last_values_dict empty
+CRITICAL:strat7:2022-11-24 15:36:53,566:12580: No my_buy_price unavailable
+WARNING:strat7:2022-11-24 15:37:10,347:12580: last_values_dict empty
+CRITICAL:strat7:2022-11-24 15:39:43,463:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:40:11,349:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:41:38,767:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:42:06,621:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:45:15,007:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:45:37,135:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:47:17,134:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 15:47:45,777:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 15:49:24,903:12581: No my_buy_price unavailable
+WARNING:strat7:2022-11-24 15:49:41,675:12581: last_values_dict empty
+CRITICAL:strat7:2022-11-24 15:52:04,195:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:52:32,078:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:53:59,258:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 15:54:27,240:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 15:58:45,699:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 15:59:13,765:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:00:40,761:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:01:08,505:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:05:46,252:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:06:14,152:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:07:41,150:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:08:08,991:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:12:26,955:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:12:54,884:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:14:22,621:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:14:50,518:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:19:09,552:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:19:37,400:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:21:18,170:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:21:46,981:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:26:24,826:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:26:52,641:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:28:33,482:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:29:02,229:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:33:27,665:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:34:15,120:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:35:50,416:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:36:18,745:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:41:33,545:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:42:19,759:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:44:11,243:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:44:33,521:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:46:12,146:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:46:34,222:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:49:29,896:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:50:15,945:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 16:52:00,030:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:52:28,601:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:53:55,337:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:54:23,109:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:58:55,692:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 16:59:42,149:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:01:28,266:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:01:50,484:12581: No my_buy_price unavailable
+INFO:strat7:2022-11-24 17:04:34,211:12579: Initialising event
+CRITICAL:strat7:2022-11-24 17:06:23,454:12579: Yes my_avgbuy_price unavailable
+WARNING:strat7:2022-11-24 17:06:57,448:12579: last_values_dict empty
+INFO:strat7:2022-11-24 17:07:08,062:12580: Initialising event
+WARNING:strat7:2022-11-24 17:08:32,711:12580: last_values_dict empty
+INFO:strat7:2022-11-24 17:08:43,247:12581: Initialising event
+WARNING:strat7:2022-11-24 17:10:06,518:12581: last_values_dict empty
+CRITICAL:strat7:2022-11-24 17:13:30,417:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:14:10,090:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:29:20,922:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:30:13,360:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:32:04,251:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:32:50,456:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:34:42,495:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:35:04,733:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:37:51,340:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:38:37,388:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:40:28,340:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:41:14,676:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:42:43,449:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:43:05,644:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:47:50,549:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:48:36,863:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 17:50:03,521:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 17:50:25,722:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:00:10,580:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:00:56,759:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:10:02,669:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:10:55,410:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:40:57,655:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:41:20,027:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:45:57,619:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:46:43,826:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:48:17,025:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:48:44,889:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:53:11,463:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:53:57,741:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 18:55:44,024:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:56:12,130:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:58:40,979:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 18:59:09,128:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:00:55,604:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:01:17,986:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:03:04,831:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:03:27,207:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:06:13,319:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:06:35,684:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:08:03,160:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:08:30,845:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:10:16,868:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:10:39,247:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:14:47,091:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:15:14,864:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:16:37,254:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:21:05,200:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:21:27,552:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:28:00,071:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:28:22,254:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:34:12,142:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:34:39,844:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:36:25,532:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:36:47,713:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:39:27,500:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:40:13,786:12579: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:41:42,509:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:42:10,229:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:43:26,189:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:47:39,314:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:48:07,163:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 19:49:23,839:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:54:34,273:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:55:02,925:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:56:19,293:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 19:56:35,966:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 20:01:40,866:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 20:02:08,747:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 20:03:26,037:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 20:03:42,650:12581: No my_buy_price unavailable
+INFO:strat7:2022-11-24 21:31:49,464:12579: Initialising event
+WARNING:strat7:2022-11-24 21:33:42,418:12579: last_values_dict empty
+INFO:strat7:2022-11-24 21:33:53,525:12580: Initialising event
+CRITICAL:strat7:2022-11-24 21:35:17,537:12580: Yes my_avgbuy_price unavailable
+WARNING:strat7:2022-11-24 21:35:34,261:12580: last_values_dict empty
+INFO:strat7:2022-11-24 21:35:45,189:12581: Initialising event
+CRITICAL:strat7:2022-11-24 21:37:09,126:12581: No my_buy_price unavailable
+WARNING:strat7:2022-11-24 21:37:25,805:12581: last_values_dict empty
+CRITICAL:strat7:2022-11-24 21:40:34,815:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 21:40:51,563:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 21:42:07,417:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 21:42:24,078:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 21:47:11,339:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 21:47:33,777:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 21:48:53,118:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 21:49:09,729:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 21:53:30,359:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 21:54:10,059:12580: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 21:55:27,610:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 21:55:44,211:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:01:39,620:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:01:56,212:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:07:18,897:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:08:04,948:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:09:25,895:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:09:42,432:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:12:27,776:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:12:49,949:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:14:40,214:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:17:28,026:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:17:55,731:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:21:37,968:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:22:06,413:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:24:25,253:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:24:41,828:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:27:53,396:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:28:10,001:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:30:26,992:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:30:43,567:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:34:13,587:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:34:31,085:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:36:57,721:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:37:14,462:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:40:07,680:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:40:24,517:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:42:43,539:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:43:00,402:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:45:50,620:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:46:07,501:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:48:25,877:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:49:43,533:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:50:00,182:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:51:19,204:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:51:35,780:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:53:52,056:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:54:08,669:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:55:26,186:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:56:44,601:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:57:01,246:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 22:59:18,205:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 22:59:34,891:12579: Yes my_avgbuy_price unavailable
+CRITICAL:strat7:2022-11-24 23:00:55,045:12580: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 23:02:12,374:12581: No my_buy_price unavailable
+CRITICAL:strat7:2022-11-24 23:02:29,099:12581: No my_buy_price unavailable

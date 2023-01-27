@@ -1,0 +1,54 @@
+ERROR:__main__:2023-01-04 22:28:36,633:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 763, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 394, in _set_qty
+    self.my_lastbuy_price_yes, self.my_lastbuy_price_no = self.mybet.get_buy_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 120, in get_buy_price
+    df = self.get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-04 23:01:08,280:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 766, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 652, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 351, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 580, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 71, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0

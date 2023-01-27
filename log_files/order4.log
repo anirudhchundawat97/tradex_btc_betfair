@@ -1,0 +1,1336 @@
+INFO:order:2022-11-04 16:59:48,443:11627: Sent: Buying  Y @Rs75 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 16:59:48,444:11627: buy response: dummy
+INFO:order:2022-11-04 16:59:52,257:11626: Sent: Buying  N @Rs46 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 16:59:52,257:11626: buy response: dummy
+INFO:order:2022-11-04 16:59:55,424:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 16:59:55,425:11578: buy response: dummy
+INFO:order:2022-11-04 16:59:58,610:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 16:59:58,610:11577: buy response: dummy
+INFO:order:2022-11-04 16:59:58,620:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 16:59:58,621:11577: buy response: dummy
+INFO:order:2022-11-04 16:59:59,008:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 16:59:59,008:11577: buy response: dummy
+INFO:order:2022-11-04 17:00:04,398:11627: Sent: Buying  N @Rs12 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:00:04,399:11627: buy response: dummy
+INFO:order:2022-11-04 17:00:05,707:11627: Sent: Buying  N @Rs12 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:00:05,708:11627: buy response: dummy
+INFO:order:2022-11-04 17:00:08,660:11626: Sent: Buying  N @Rs46 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 17:00:08,661:11626: buy response: dummy
+INFO:order:2022-11-04 17:00:09,954:11626: Sent: Buying  N @Rs46 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 17:00:09,962:11626: buy response: dummy
+INFO:order:2022-11-04 17:00:14,230:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:00:14,231:11578: buy response: dummy
+INFO:order:2022-11-04 17:00:15,311:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:00:15,312:11578: buy response: dummy
+INFO:order:2022-11-04 17:00:18,110:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:00:18,110:11577: buy response: dummy
+INFO:order:2022-11-04 17:00:18,114:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:00:18,114:11577: buy response: dummy
+INFO:order:2022-11-04 17:00:18,538:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:00:18,539:11577: buy response: dummy
+INFO:order:2022-11-04 17:01:02,132:11627: Sent: Buying  N @Rs12 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:01:02,132:11627: buy response: dummy
+INFO:order:2022-11-04 17:01:03,140:11627: Sent: Buying  N @Rs12 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:01:03,141:11627: buy response: dummy
+INFO:order:2022-11-04 17:01:06,262:11626: Sent: Buying  N @Rs46 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 17:01:06,262:11626: buy response: dummy
+INFO:order:2022-11-04 17:01:07,239:11626: Sent: Buying  N @Rs46 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 17:01:07,240:11626: buy response: dummy
+INFO:order:2022-11-04 17:01:10,166:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:01:10,167:11578: buy response: dummy
+INFO:order:2022-11-04 17:01:11,286:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:01:11,287:11578: buy response: dummy
+INFO:order:2022-11-04 17:01:14,126:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:01:14,127:11577: buy response: dummy
+INFO:order:2022-11-04 17:01:14,131:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:01:14,132:11577: buy response: dummy
+INFO:order:2022-11-04 17:01:14,552:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:01:14,553:11577: buy response: dummy
+INFO:order:2022-11-04 17:01:58,819:11627: Sent: Buying  N @Rs12 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:01:58,819:11627: buy response: dummy
+INFO:order:2022-11-04 17:02:54,724:11627: Sent: Buying  N @Rs12 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:02:54,724:11627: buy response: dummy
+INFO:order:2022-11-04 17:03:58,078:11626: Sent: Buying  N @Rs46 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 17:03:58,078:11626: buy response: dummy
+INFO:order:2022-11-04 17:05:01,892:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:05:01,893:11578: buy response: dummy
+INFO:order:2022-11-04 17:06:05,715:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:06:05,716:11577: buy response: dummy
+INFO:order:2022-11-04 17:06:05,720:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:06:05,721:11577: buy response: dummy
+INFO:order:2022-11-04 17:06:06,078:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:06:06,079:11577: buy response: dummy
+INFO:order:2022-11-04 17:07:09,759:11627: Sent: Buying  Y @Rs75 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:07:09,760:11627: buy response: dummy
+INFO:order:2022-11-04 17:07:10,736:11627: Sent: Buying  Y @Rs75 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:07:10,737:11627: buy response: dummy
+INFO:order:2022-11-04 17:08:13,633:11626: Sent: Buying  Y @Rs46 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 17:08:13,634:11626: buy response: dummy
+INFO:order:2022-11-04 17:08:14,038:11626: Sent: Buying  Y @Rs42 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:08:14,038:11626: buy response: dummy
+INFO:order:2022-11-04 17:08:14,606:11626: Sent: Buying  Y @Rs46 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 17:08:14,606:11626: buy response: dummy
+INFO:order:2022-11-04 17:08:15,020:11626: Sent: Buying  Y @Rs42 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:08:15,021:11626: buy response: dummy
+INFO:order:2022-11-04 17:09:17,881:11578: Sent: Buying  N @Rs78 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:09:17,882:11578: buy response: dummy
+INFO:order:2022-11-04 17:09:18,890:11578: Sent: Buying  N @Rs78 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:09:18,890:11578: buy response: dummy
+INFO:order:2022-11-04 17:10:21,477:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:10:21,478:11577: buy response: dummy
+INFO:order:2022-11-04 17:10:21,486:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:10:21,487:11577: buy response: dummy
+INFO:order:2022-11-04 17:10:21,896:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:10:21,896:11577: buy response: dummy
+INFO:order:2022-11-04 17:13:25,224:11627: Sent: Buying  Y @Rs79 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:13:25,225:11627: buy response: dummy
+INFO:order:2022-11-04 17:13:26,252:11627: Sent: Buying  Y @Rs79 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:13:26,253:11627: buy response: dummy
+INFO:order:2022-11-04 17:15:55,281:11626: Sent: Buying  Y @Rs46 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 17:15:55,281:11626: buy response: dummy
+INFO:order:2022-11-04 17:15:55,679:11626: Sent: Buying  Y @Rs45 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:15:55,679:11626: buy response: dummy
+INFO:order:2022-11-04 17:15:57,253:11626: Sent: Buying  Y @Rs46 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 17:15:57,253:11626: buy response: dummy
+INFO:order:2022-11-04 17:15:57,643:11626: Sent: Buying  Y @Rs45 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:15:57,643:11626: buy response: dummy
+INFO:order:2022-11-04 17:17:01,718:11578: Sent: Buying  N @Rs76 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:17:01,720:11578: buy response: dummy
+INFO:order:2022-11-04 17:17:03,169:11578: Sent: Buying  N @Rs76 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:17:03,170:11578: buy response: dummy
+INFO:order:2022-11-04 17:18:06,468:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:18:06,468:11577: buy response: dummy
+INFO:order:2022-11-04 17:18:06,472:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:18:06,473:11577: buy response: dummy
+INFO:order:2022-11-04 17:18:06,934:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:18:06,935:11577: buy response: dummy
+INFO:order:2022-11-04 17:21:10,087:11627: Sent: Buying  Y @Rs80 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:21:10,088:11627: buy response: dummy
+INFO:order:2022-11-04 17:21:11,033:11627: Sent: Buying  Y @Rs80 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:21:11,034:11627: buy response: dummy
+INFO:order:2022-11-04 17:22:14,973:11626: Sent: Buying  Y @Rs48 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:22:14,974:11626: buy response: dummy
+INFO:order:2022-11-04 17:22:16,013:11626: Sent: Buying  Y @Rs48 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:22:16,013:11626: buy response: dummy
+INFO:order:2022-11-04 17:23:18,859:11578: Sent: Buying  N @Rs73 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:23:18,860:11578: buy response: dummy
+INFO:order:2022-11-04 17:23:19,829:11578: Sent: Buying  N @Rs73 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:23:19,830:11578: buy response: dummy
+INFO:order:2022-11-04 17:24:22,346:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:24:22,346:11577: buy response: dummy
+INFO:order:2022-11-04 17:24:22,350:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:24:22,350:11577: buy response: dummy
+INFO:order:2022-11-04 17:24:22,728:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:24:22,729:11577: buy response: dummy
+INFO:order:2022-11-04 17:27:26,734:11627: Sent: Buying  Y @Rs80 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:27:26,734:11627: buy response: dummy
+INFO:order:2022-11-04 17:27:27,851:11627: Sent: Buying  Y @Rs80 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 17:27:27,853:11627: buy response: dummy
+INFO:order:2022-11-04 17:28:30,864:11626: Sent: Buying  Y @Rs47 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:28:30,864:11626: buy response: dummy
+INFO:order:2022-11-04 17:28:31,841:11626: Sent: Buying  Y @Rs47 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:28:31,841:11626: buy response: dummy
+INFO:order:2022-11-04 17:29:34,781:11578: Sent: Buying  N @Rs73 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:29:34,782:11578: buy response: dummy
+INFO:order:2022-11-04 17:30:37,594:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:30:37,594:11577: buy response: dummy
+INFO:order:2022-11-04 17:30:37,608:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:30:37,608:11577: buy response: dummy
+INFO:order:2022-11-04 17:30:38,053:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:30:38,054:11577: buy response: dummy
+INFO:order:2022-11-04 17:33:41,216:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:33:41,218:11627: buy response: dummy
+INFO:order:2022-11-04 17:33:41,221:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:33:41,222:11627: buy response: dummy
+INFO:order:2022-11-04 17:33:41,651:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:33:41,652:11627: buy response: dummy
+INFO:order:2022-11-04 17:33:42,249:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:33:42,249:11627: buy response: dummy
+INFO:order:2022-11-04 17:33:42,253:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:33:42,254:11627: buy response: dummy
+INFO:order:2022-11-04 17:33:42,659:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:33:42,659:11627: buy response: dummy
+INFO:order:2022-11-04 17:34:45,187:11626: Sent: Buying  Y @Rs62 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 17:34:45,188:11626: buy response: dummy
+INFO:order:2022-11-04 17:34:45,568:11626: Sent: Buying  Y @Rs59 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:34:45,568:11626: buy response: dummy
+INFO:order:2022-11-04 17:34:46,212:11626: Sent: Buying  Y @Rs62 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 17:34:46,213:11626: buy response: dummy
+INFO:order:2022-11-04 17:34:46,616:11626: Sent: Buying  Y @Rs59 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:34:46,617:11626: buy response: dummy
+INFO:order:2022-11-04 17:35:49,210:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 17:35:49,210:11578: buy response: dummy
+INFO:order:2022-11-04 17:35:49,219:11578: Sent: Buying  Y @Rs98 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 17:35:49,219:11578: buy response: dummy
+INFO:order:2022-11-04 17:35:49,631:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 17:35:49,631:11578: buy response: dummy
+INFO:order:2022-11-04 17:35:50,235:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 17:35:50,236:11578: buy response: dummy
+INFO:order:2022-11-04 17:35:50,239:11578: Sent: Buying  Y @Rs98 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 17:35:50,240:11578: buy response: dummy
+INFO:order:2022-11-04 17:35:50,643:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 17:35:50,644:11578: buy response: dummy
+INFO:order:2022-11-04 17:36:53,209:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:36:53,210:11577: buy response: dummy
+INFO:order:2022-11-04 17:36:53,213:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:36:53,214:11577: buy response: dummy
+INFO:order:2022-11-04 17:36:53,586:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:36:53,587:11577: buy response: dummy
+INFO:order:2022-11-04 17:39:56,194:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:39:56,195:11627: buy response: dummy
+INFO:order:2022-11-04 17:39:56,199:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:39:56,199:11627: buy response: dummy
+INFO:order:2022-11-04 17:39:56,613:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:39:56,613:11627: buy response: dummy
+INFO:order:2022-11-04 17:41:00,283:11626: Sent: Buying  Y @Rs79 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:41:00,284:11626: buy response: dummy
+INFO:order:2022-11-04 17:41:01,513:11626: Sent: Buying  Y @Rs79 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:41:01,513:11626: buy response: dummy
+INFO:order:2022-11-04 17:42:05,815:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:42:05,815:11578: buy response: dummy
+INFO:order:2022-11-04 17:42:07,012:11578: Sent: Buying  N @Rs80 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:42:07,013:11578: buy response: dummy
+INFO:order:2022-11-04 17:43:10,365:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:43:10,365:11577: buy response: dummy
+INFO:order:2022-11-04 17:43:10,371:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:43:10,371:11577: buy response: dummy
+INFO:order:2022-11-04 17:43:10,937:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:43:10,937:11577: buy response: dummy
+INFO:order:2022-11-04 17:46:13,906:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:46:13,906:11627: buy response: dummy
+INFO:order:2022-11-04 17:46:13,915:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:46:13,915:11627: buy response: dummy
+INFO:order:2022-11-04 17:46:14,360:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:46:14,360:11627: buy response: dummy
+INFO:order:2022-11-04 17:47:17,697:11626: Sent: Buying  Y @Rs76 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:47:17,698:11626: buy response: dummy
+INFO:order:2022-11-04 17:47:18,962:11626: Sent: Buying  Y @Rs76 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:47:18,963:11626: buy response: dummy
+INFO:order:2022-11-04 17:48:22,257:11578: Sent: Buying  N @Rs83 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:48:22,257:11578: buy response: dummy
+INFO:order:2022-11-04 17:48:23,289:11578: Sent: Buying  N @Rs83 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:48:23,290:11578: buy response: dummy
+INFO:order:2022-11-04 17:49:26,735:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:49:26,735:11577: buy response: dummy
+INFO:order:2022-11-04 17:49:26,751:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:49:26,753:11577: buy response: dummy
+INFO:order:2022-11-04 17:49:27,180:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:49:27,181:11577: buy response: dummy
+INFO:order:2022-11-04 17:52:30,143:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:52:30,144:11627: buy response: dummy
+INFO:order:2022-11-04 17:52:30,148:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:52:30,149:11627: buy response: dummy
+INFO:order:2022-11-04 17:52:30,617:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:52:30,617:11627: buy response: dummy
+INFO:order:2022-11-04 17:53:35,070:11626: Sent: Buying  Y @Rs71 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:53:35,070:11626: buy response: dummy
+INFO:order:2022-11-04 17:53:36,129:11626: Sent: Buying  Y @Rs71 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:53:36,130:11626: buy response: dummy
+INFO:order:2022-11-04 17:54:39,119:11578: Sent: Buying  N @Rs90 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 17:54:39,120:11578: buy response: dummy
+INFO:order:2022-11-04 17:54:39,584:11578: Sent: Buying  N @Rs87 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:54:39,585:11578: buy response: dummy
+INFO:order:2022-11-04 17:54:40,325:11578: Sent: Buying  N @Rs90 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 17:54:40,325:11578: buy response: dummy
+INFO:order:2022-11-04 17:54:40,903:11578: Sent: Buying  N @Rs87 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 17:54:40,903:11578: buy response: dummy
+INFO:order:2022-11-04 17:55:43,634:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:55:43,635:11577: buy response: dummy
+INFO:order:2022-11-04 17:55:43,639:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 17:55:43,640:11577: buy response: dummy
+INFO:order:2022-11-04 17:55:44,084:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 17:55:44,085:11577: buy response: dummy
+INFO:order:2022-11-04 17:58:47,065:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:58:47,065:11627: buy response: dummy
+INFO:order:2022-11-04 17:58:47,069:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 17:58:47,069:11627: buy response: dummy
+INFO:order:2022-11-04 17:58:47,535:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 17:58:47,536:11627: buy response: dummy
+INFO:order:2022-11-04 17:59:51,089:11626: Sent: Buying  Y @Rs79 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:59:51,089:11626: buy response: dummy
+INFO:order:2022-11-04 17:59:52,357:11626: Sent: Buying  Y @Rs79 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 17:59:52,359:11626: buy response: dummy
+INFO:order:2022-11-04 18:00:55,392:11578: Sent: Buying  N @Rs70 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:00:55,394:11578: buy response: dummy
+INFO:order:2022-11-04 18:00:55,912:11578: Sent: Buying  N @Rs66 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 18:00:55,912:11578: buy response: dummy
+INFO:order:2022-11-04 18:00:56,597:11578: Sent: Buying  N @Rs70 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:00:56,598:11578: buy response: dummy
+INFO:order:2022-11-04 18:00:57,086:11578: Sent: Buying  N @Rs66 qty15 in event 11578, message:Scalping no
+INFO:order:2022-11-04 18:00:57,086:11578: buy response: dummy
+INFO:order:2022-11-04 18:02:00,423:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:02:00,425:11577: buy response: dummy
+INFO:order:2022-11-04 18:02:00,429:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:02:00,430:11577: buy response: dummy
+INFO:order:2022-11-04 18:02:00,918:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:02:00,919:11577: buy response: dummy
+INFO:order:2022-11-04 18:05:04,238:11627: Sent: Buying  N @Rs95 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:05:04,239:11627: buy response: dummy
+INFO:order:2022-11-04 18:05:04,241:11627: Sent: Buying  N @Rs98 qty4 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:05:04,243:11627: buy response: dummy
+INFO:order:2022-11-04 18:05:04,656:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 18:05:04,656:11627: buy response: dummy
+INFO:order:2022-11-04 18:06:08,828:11626: Sent: Buying  Y @Rs64 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:06:08,828:11626: buy response: dummy
+INFO:order:2022-11-04 18:06:10,021:11626: Sent: Buying  Y @Rs64 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:06:10,022:11626: buy response: dummy
+INFO:order:2022-11-04 18:07:13,182:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:07:13,183:11578: buy response: dummy
+INFO:order:2022-11-04 18:07:13,609:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:07:13,609:11578: buy response: dummy
+INFO:order:2022-11-04 18:07:14,266:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:07:14,267:11578: buy response: dummy
+INFO:order:2022-11-04 18:07:14,724:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:07:14,725:11578: buy response: dummy
+INFO:order:2022-11-04 18:08:17,769:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:08:17,770:11577: buy response: dummy
+INFO:order:2022-11-04 18:08:17,773:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:08:17,773:11577: buy response: dummy
+INFO:order:2022-11-04 18:08:18,204:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:08:18,204:11577: buy response: dummy
+INFO:order:2022-11-04 18:11:21,723:11627: Sent: Buying  Y @Rs85 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:11:21,723:11627: buy response: dummy
+INFO:order:2022-11-04 18:11:22,991:11627: Sent: Buying  Y @Rs85 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:11:22,991:11627: buy response: dummy
+INFO:order:2022-11-04 18:12:25,943:11626: Sent: Buying  N @Rs69 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:12:25,943:11626: buy response: dummy
+INFO:order:2022-11-04 18:12:26,381:11626: Sent: Buying  N @Rs67 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:12:26,381:11626: buy response: dummy
+INFO:order:2022-11-04 18:12:27,042:11626: Sent: Buying  N @Rs69 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:12:27,042:11626: buy response: dummy
+INFO:order:2022-11-04 18:12:27,469:11626: Sent: Buying  N @Rs67 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:12:27,469:11626: buy response: dummy
+INFO:order:2022-11-04 18:13:31,227:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:13:31,228:11578: buy response: dummy
+INFO:order:2022-11-04 18:13:31,675:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:13:31,676:11578: buy response: dummy
+INFO:order:2022-11-04 18:14:34,736:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:14:34,736:11577: buy response: dummy
+INFO:order:2022-11-04 18:14:34,737:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:14:34,737:11577: buy response: dummy
+INFO:order:2022-11-04 18:14:35,143:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:14:35,144:11577: buy response: dummy
+INFO:order:2022-11-04 18:17:38,471:11627: Sent: Buying  Y @Rs85 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:17:38,471:11627: buy response: dummy
+INFO:order:2022-11-04 18:17:39,610:11627: Sent: Buying  Y @Rs85 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:17:39,611:11627: buy response: dummy
+INFO:order:2022-11-04 18:18:43,111:11626: Sent: Buying  N @Rs68 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:18:43,112:11626: buy response: dummy
+INFO:order:2022-11-04 18:18:44,293:11626: Sent: Buying  N @Rs68 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:18:44,293:11626: buy response: dummy
+INFO:order:2022-11-04 18:19:47,293:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:19:47,294:11578: buy response: dummy
+INFO:order:2022-11-04 18:19:47,714:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:19:47,714:11578: buy response: dummy
+INFO:order:2022-11-04 18:20:50,508:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:20:50,508:11577: buy response: dummy
+INFO:order:2022-11-04 18:20:50,509:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:20:50,509:11577: buy response: dummy
+INFO:order:2022-11-04 18:20:50,955:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:20:50,955:11577: buy response: dummy
+INFO:order:2022-11-04 18:23:54,321:11627: Sent: Buying  Y @Rs81 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:23:54,322:11627: buy response: dummy
+INFO:order:2022-11-04 18:23:55,484:11627: Sent: Buying  Y @Rs81 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:23:55,484:11627: buy response: dummy
+INFO:order:2022-11-04 18:24:58,928:11626: Sent: Buying  N @Rs67 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:24:58,928:11626: buy response: dummy
+INFO:order:2022-11-04 18:25:00,100:11626: Sent: Buying  N @Rs67 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:25:00,100:11626: buy response: dummy
+INFO:order:2022-11-04 18:26:02,942:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:26:02,943:11578: buy response: dummy
+INFO:order:2022-11-04 18:26:03,363:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:26:03,363:11578: buy response: dummy
+INFO:order:2022-11-04 18:27:06,219:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:27:06,220:11577: buy response: dummy
+INFO:order:2022-11-04 18:27:06,222:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:27:06,222:11577: buy response: dummy
+INFO:order:2022-11-04 18:27:06,673:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:27:06,673:11577: buy response: dummy
+INFO:order:2022-11-04 18:30:09,940:11627: Sent: Buying  Y @Rs74 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:30:09,942:11627: buy response: dummy
+INFO:order:2022-11-04 18:30:10,365:11627: Sent: Buying  Y @Rs70 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:30:10,365:11627: buy response: dummy
+INFO:order:2022-11-04 18:30:11,090:11627: Sent: Buying  Y @Rs74 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:30:11,090:11627: buy response: dummy
+INFO:order:2022-11-04 18:30:11,543:11627: Sent: Buying  Y @Rs70 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:30:11,544:11627: buy response: dummy
+INFO:order:2022-11-04 18:31:15,414:11626: Sent: Buying  N @Rs82 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:31:15,414:11626: buy response: dummy
+INFO:order:2022-11-04 18:31:16,621:11626: Sent: Buying  N @Rs82 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:31:16,622:11626: buy response: dummy
+INFO:order:2022-11-04 18:32:19,224:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:32:19,225:11578: buy response: dummy
+INFO:order:2022-11-04 18:32:19,603:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:32:19,604:11578: buy response: dummy
+INFO:order:2022-11-04 18:33:22,163:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:33:22,164:11577: buy response: dummy
+INFO:order:2022-11-04 18:33:22,172:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:33:22,173:11577: buy response: dummy
+INFO:order:2022-11-04 18:33:22,560:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:33:22,560:11577: buy response: dummy
+INFO:order:2022-11-04 18:36:25,517:11627: Sent: Buying  Y @Rs50 qty5 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:36:25,517:11627: buy response: dummy
+INFO:order:2022-11-04 18:36:25,903:11627: Sent: Buying  Y @Rs48 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:36:25,903:11627: buy response: dummy
+INFO:order:2022-11-04 18:36:26,541:11627: Sent: Buying  Y @Rs50 qty5 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:36:26,541:11627: buy response: dummy
+INFO:order:2022-11-04 18:36:26,983:11627: Sent: Buying  Y @Rs48 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:36:26,984:11627: buy response: dummy
+INFO:order:2022-11-04 18:37:30,220:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:37:30,220:11626: buy response: dummy
+INFO:order:2022-11-04 18:37:30,619:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:37:30,619:11626: buy response: dummy
+INFO:order:2022-11-04 18:37:31,175:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:37:31,175:11626: buy response: dummy
+INFO:order:2022-11-04 18:37:31,560:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:37:31,561:11626: buy response: dummy
+INFO:order:2022-11-04 18:38:33,936:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:38:33,936:11578: buy response: dummy
+INFO:order:2022-11-04 18:38:34,323:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:38:34,324:11578: buy response: dummy
+INFO:order:2022-11-04 18:39:36,811:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:39:36,811:11577: buy response: dummy
+INFO:order:2022-11-04 18:39:36,813:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:39:36,813:11577: buy response: dummy
+INFO:order:2022-11-04 18:39:37,197:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:39:37,198:11577: buy response: dummy
+INFO:order:2022-11-04 18:42:39,996:11627: Sent: Buying  Y @Rs61 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:42:39,997:11627: buy response: dummy
+INFO:order:2022-11-04 18:42:40,392:11627: Sent: Buying  Y @Rs57 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:42:40,392:11627: buy response: dummy
+INFO:order:2022-11-04 18:42:40,955:11627: Sent: Buying  Y @Rs61 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:42:40,955:11627: buy response: dummy
+INFO:order:2022-11-04 18:42:41,318:11627: Sent: Buying  Y @Rs57 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 18:42:41,318:11627: buy response: dummy
+INFO:order:2022-11-04 18:43:43,884:11626: Sent: Buying  N @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:43:43,885:11626: buy response: dummy
+INFO:order:2022-11-04 18:43:44,268:11626: Sent: Buying  N @Rs91 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:43:44,268:11626: buy response: dummy
+INFO:order:2022-11-04 18:43:44,860:11626: Sent: Buying  N @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:43:44,860:11626: buy response: dummy
+INFO:order:2022-11-04 18:43:45,251:11626: Sent: Buying  N @Rs91 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 18:43:45,251:11626: buy response: dummy
+INFO:order:2022-11-04 18:44:47,837:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:44:47,838:11578: buy response: dummy
+INFO:order:2022-11-04 18:44:48,287:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:44:48,288:11578: buy response: dummy
+INFO:order:2022-11-04 18:45:50,871:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:45:50,872:11577: buy response: dummy
+INFO:order:2022-11-04 18:45:50,872:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:45:50,873:11577: buy response: dummy
+INFO:order:2022-11-04 18:45:51,273:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:45:51,274:11577: buy response: dummy
+INFO:order:2022-11-04 18:48:53,800:11627: Sent: Buying  N @Rs53 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:53,800:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:53,802:11627: Sent: Buying  N @Rs55 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:53,802:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:53,803:11627: Sent: Buying  N @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:53,803:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:53,804:11627: Sent: Buying  N @Rs57 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:53,804:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:54,191:11627: Sent: Buying  N @Rs52 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 18:48:54,192:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:54,759:11627: Sent: Buying  N @Rs53 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:54,759:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:54,760:11627: Sent: Buying  N @Rs55 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:54,760:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:54,761:11627: Sent: Buying  N @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:54,761:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:54,763:11627: Sent: Buying  N @Rs57 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:48:54,763:11627: buy response: dummy
+INFO:order:2022-11-04 18:48:55,156:11627: Sent: Buying  N @Rs52 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 18:48:55,157:11627: buy response: dummy
+INFO:order:2022-11-04 18:49:57,674:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:49:57,674:11626: buy response: dummy
+INFO:order:2022-11-04 18:49:58,060:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:49:58,060:11626: buy response: dummy
+INFO:order:2022-11-04 18:49:58,649:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:49:58,649:11626: buy response: dummy
+INFO:order:2022-11-04 18:49:59,028:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:49:59,029:11626: buy response: dummy
+INFO:order:2022-11-04 18:51:02,409:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:51:02,410:11578: buy response: dummy
+INFO:order:2022-11-04 18:51:02,794:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:51:02,794:11578: buy response: dummy
+INFO:order:2022-11-04 18:52:05,250:11577: Sent: Buying  Y @Rs95 qty13 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:52:05,250:11577: buy response: dummy
+INFO:order:2022-11-04 18:52:05,252:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:52:05,252:11577: buy response: dummy
+INFO:order:2022-11-04 18:52:05,618:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:52:05,618:11577: buy response: dummy
+INFO:order:2022-11-04 18:55:08,138:11627: Sent: Buying  N @Rs54 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:55:08,138:11627: buy response: dummy
+INFO:order:2022-11-04 18:55:08,505:11627: Sent: Buying  N @Rs48 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 18:55:08,505:11627: buy response: dummy
+INFO:order:2022-11-04 18:55:09,097:11627: Sent: Buying  N @Rs54 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 18:55:09,097:11627: buy response: dummy
+INFO:order:2022-11-04 18:55:09,499:11627: Sent: Buying  N @Rs48 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 18:55:09,500:11627: buy response: dummy
+INFO:order:2022-11-04 18:56:12,016:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 18:56:12,016:11626: buy response: dummy
+INFO:order:2022-11-04 18:56:12,397:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 18:56:12,397:11626: buy response: dummy
+INFO:order:2022-11-04 18:57:14,833:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 18:57:14,834:11578: buy response: dummy
+INFO:order:2022-11-04 18:57:15,228:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 18:57:15,228:11578: buy response: dummy
+INFO:order:2022-11-04 18:58:17,695:11577: Sent: Buying  Y @Rs95 qty12 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:58:17,696:11577: buy response: dummy
+INFO:order:2022-11-04 18:58:17,697:11577: Sent: Buying  Y @Rs98 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 18:58:17,697:11577: buy response: dummy
+INFO:order:2022-11-04 18:58:18,112:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 18:58:18,112:11577: buy response: dummy
+INFO:order:2022-11-04 19:01:21,065:11627: Sent: Buying  N @Rs63 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:01:21,066:11627: buy response: dummy
+INFO:order:2022-11-04 19:01:22,033:11627: Sent: Buying  N @Rs63 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:01:22,033:11627: buy response: dummy
+INFO:order:2022-11-04 19:02:24,523:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:02:24,523:11626: buy response: dummy
+INFO:order:2022-11-04 19:02:24,928:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:02:24,928:11626: buy response: dummy
+INFO:order:2022-11-04 19:03:27,436:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:03:27,436:11578: buy response: dummy
+INFO:order:2022-11-04 19:03:27,859:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:03:27,860:11578: buy response: dummy
+INFO:order:2022-11-04 19:04:30,312:11577: Sent: Buying  Y @Rs95 qty10 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:04:30,314:11577: buy response: dummy
+INFO:order:2022-11-04 19:04:30,706:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:04:30,707:11577: buy response: dummy
+INFO:order:2022-11-04 19:07:33,966:11627: Sent: Buying  Y @Rs43 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:07:33,966:11627: buy response: dummy
+INFO:order:2022-11-04 19:07:34,384:11627: Sent: Buying  Y @Rs40 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:07:34,384:11627: buy response: dummy
+INFO:order:2022-11-04 19:07:34,958:11627: Sent: Buying  Y @Rs43 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:07:34,958:11627: buy response: dummy
+INFO:order:2022-11-04 19:07:35,363:11627: Sent: Buying  Y @Rs40 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:07:35,363:11627: buy response: dummy
+INFO:order:2022-11-04 19:08:37,882:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:08:37,883:11626: buy response: dummy
+INFO:order:2022-11-04 19:08:38,262:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:08:38,263:11626: buy response: dummy
+INFO:order:2022-11-04 19:09:40,847:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:09:40,847:11578: buy response: dummy
+INFO:order:2022-11-04 19:09:41,249:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:09:41,249:11578: buy response: dummy
+INFO:order:2022-11-04 19:10:43,724:11577: Sent: Buying  Y @Rs95 qty10 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:10:43,724:11577: buy response: dummy
+INFO:order:2022-11-04 19:10:44,108:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:10:44,108:11577: buy response: dummy
+INFO:order:2022-11-04 19:13:47,065:11627: Sent: Buying  N @Rs42 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:13:47,066:11627: buy response: dummy
+INFO:order:2022-11-04 19:13:48,051:11627: Sent: Buying  N @Rs42 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:13:48,051:11627: buy response: dummy
+INFO:order:2022-11-04 19:14:50,488:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:14:50,488:11626: buy response: dummy
+INFO:order:2022-11-04 19:14:50,916:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:14:50,916:11626: buy response: dummy
+INFO:order:2022-11-04 19:15:53,590:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:15:53,591:11578: buy response: dummy
+INFO:order:2022-11-04 19:15:54,017:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:15:54,018:11578: buy response: dummy
+INFO:order:2022-11-04 19:16:56,558:11577: Sent: Buying  Y @Rs95 qty10 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:16:56,558:11577: buy response: dummy
+INFO:order:2022-11-04 19:16:56,973:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:16:56,974:11577: buy response: dummy
+INFO:order:2022-11-04 19:19:59,802:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:19:59,803:11627: buy response: dummy
+INFO:order:2022-11-04 19:20:00,787:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:20:00,787:11627: buy response: dummy
+INFO:order:2022-11-04 19:21:04,166:11626: Sent: Buying  N @Rs83 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 19:21:04,166:11626: buy response: dummy
+INFO:order:2022-11-04 19:21:05,615:11626: Sent: Buying  N @Rs83 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 19:21:05,616:11626: buy response: dummy
+INFO:order:2022-11-04 19:22:08,110:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:22:08,110:11578: buy response: dummy
+INFO:order:2022-11-04 19:22:08,549:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:22:08,549:11578: buy response: dummy
+INFO:order:2022-11-04 19:23:11,056:11577: Sent: Buying  Y @Rs95 qty10 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:23:11,056:11577: buy response: dummy
+INFO:order:2022-11-04 19:23:11,422:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:23:11,422:11577: buy response: dummy
+INFO:order:2022-11-04 19:26:14,284:11627: Sent: Buying  Y @Rs66 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:26:14,284:11627: buy response: dummy
+INFO:order:2022-11-04 19:26:15,314:11627: Sent: Buying  Y @Rs66 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:26:15,314:11627: buy response: dummy
+INFO:order:2022-11-04 19:27:18,236:11626: Sent: Buying  N @Rs82 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 19:27:18,237:11626: buy response: dummy
+INFO:order:2022-11-04 19:27:19,185:11626: Sent: Buying  N @Rs82 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 19:27:19,185:11626: buy response: dummy
+INFO:order:2022-11-04 19:28:21,718:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:28:21,718:11578: buy response: dummy
+INFO:order:2022-11-04 19:28:22,127:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:28:22,127:11578: buy response: dummy
+INFO:order:2022-11-04 19:29:25,470:11577: Sent: Buying  Y @Rs94 qty11 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:29:25,471:11577: buy response: dummy
+INFO:order:2022-11-04 19:29:25,472:11577: Sent: Buying  Y @Rs95 qty10 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:29:25,472:11577: buy response: dummy
+INFO:order:2022-11-04 19:29:25,848:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:29:25,848:11577: buy response: dummy
+INFO:order:2022-11-04 19:32:28,360:11627: Sent: Buying  Y @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:32:28,361:11627: buy response: dummy
+INFO:order:2022-11-04 19:32:28,744:11627: Sent: Buying  Y @Rs55 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:32:28,745:11627: buy response: dummy
+INFO:order:2022-11-04 19:32:29,316:11627: Sent: Buying  Y @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:32:29,316:11627: buy response: dummy
+INFO:order:2022-11-04 19:32:29,714:11627: Sent: Buying  Y @Rs55 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:32:29,714:11627: buy response: dummy
+INFO:order:2022-11-04 19:33:32,198:11626: Sent: Buying  N @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:33:32,198:11626: buy response: dummy
+INFO:order:2022-11-04 19:33:32,573:11626: Sent: Buying  N @Rs92 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 19:33:32,573:11626: buy response: dummy
+INFO:order:2022-11-04 19:33:33,235:11626: Sent: Buying  N @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:33:33,235:11626: buy response: dummy
+INFO:order:2022-11-04 19:33:33,704:11626: Sent: Buying  N @Rs92 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 19:33:33,704:11626: buy response: dummy
+INFO:order:2022-11-04 19:34:36,181:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:34:36,181:11578: buy response: dummy
+INFO:order:2022-11-04 19:34:36,554:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:34:36,554:11578: buy response: dummy
+INFO:order:2022-11-04 19:35:39,004:11577: Sent: Buying  Y @Rs94 qty11 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:35:39,004:11577: buy response: dummy
+INFO:order:2022-11-04 19:35:39,005:11577: Sent: Buying  Y @Rs95 qty9 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:35:39,006:11577: buy response: dummy
+INFO:order:2022-11-04 19:35:39,412:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:35:39,412:11577: buy response: dummy
+INFO:order:2022-11-04 19:38:41,965:11627: Sent: Buying  Y @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:38:41,965:11627: buy response: dummy
+INFO:order:2022-11-04 19:38:42,359:11627: Sent: Buying  Y @Rs50 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:38:42,359:11627: buy response: dummy
+INFO:order:2022-11-04 19:38:42,942:11627: Sent: Buying  Y @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:38:42,942:11627: buy response: dummy
+INFO:order:2022-11-04 19:38:43,321:11627: Sent: Buying  Y @Rs50 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:38:43,321:11627: buy response: dummy
+INFO:order:2022-11-04 19:39:45,759:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:39:45,760:11626: buy response: dummy
+INFO:order:2022-11-04 19:39:46,174:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:39:46,174:11626: buy response: dummy
+INFO:order:2022-11-04 19:39:46,783:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:39:46,784:11626: buy response: dummy
+INFO:order:2022-11-04 19:39:47,204:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:39:47,204:11626: buy response: dummy
+INFO:order:2022-11-04 19:40:49,683:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:40:49,683:11578: buy response: dummy
+INFO:order:2022-11-04 19:40:50,072:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:40:50,072:11578: buy response: dummy
+INFO:order:2022-11-04 19:41:52,535:11577: Sent: Buying  Y @Rs94 qty11 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:41:52,535:11577: buy response: dummy
+INFO:order:2022-11-04 19:41:52,536:11577: Sent: Buying  Y @Rs95 qty9 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:41:52,536:11577: buy response: dummy
+INFO:order:2022-11-04 19:41:52,932:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:41:52,933:11577: buy response: dummy
+INFO:order:2022-11-04 19:44:55,748:11627: Sent: Buying  N @Rs60 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:44:55,748:11627: buy response: dummy
+INFO:order:2022-11-04 19:44:56,703:11627: Sent: Buying  N @Rs60 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:44:56,704:11627: buy response: dummy
+INFO:order:2022-11-04 19:45:59,187:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:45:59,187:11626: buy response: dummy
+INFO:order:2022-11-04 19:45:59,566:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:45:59,567:11626: buy response: dummy
+INFO:order:2022-11-04 19:47:02,401:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:47:02,402:11578: buy response: dummy
+INFO:order:2022-11-04 19:47:02,818:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:47:02,818:11578: buy response: dummy
+INFO:order:2022-11-04 19:48:05,659:11577: Sent: Buying  Y @Rs95 qty9 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:48:05,659:11577: buy response: dummy
+INFO:order:2022-11-04 19:48:06,049:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:48:06,049:11577: buy response: dummy
+INFO:order:2022-11-04 19:51:08,590:11627: Sent: Buying  N @Rs90 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:51:08,590:11627: buy response: dummy
+INFO:order:2022-11-04 19:51:08,599:11627: Sent: Buying  N @Rs94 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:51:08,600:11627: buy response: dummy
+INFO:order:2022-11-04 19:51:08,969:11627: Sent: Buying  N @Rs88 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:51:08,970:11627: buy response: dummy
+INFO:order:2022-11-04 19:51:09,552:11627: Sent: Buying  N @Rs90 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:51:09,552:11627: buy response: dummy
+INFO:order:2022-11-04 19:51:09,554:11627: Sent: Buying  N @Rs94 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:51:09,554:11627: buy response: dummy
+INFO:order:2022-11-04 19:51:09,910:11627: Sent: Buying  N @Rs88 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 19:51:09,910:11627: buy response: dummy
+INFO:order:2022-11-04 19:52:12,376:11626: Sent: Buying  Y @Rs95 qty5 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:52:12,377:11626: buy response: dummy
+INFO:order:2022-11-04 19:52:12,746:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:52:12,747:11626: buy response: dummy
+INFO:order:2022-11-04 19:53:15,229:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:53:15,229:11578: buy response: dummy
+INFO:order:2022-11-04 19:53:15,231:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:53:15,231:11578: buy response: dummy
+INFO:order:2022-11-04 19:53:15,630:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:53:15,631:11578: buy response: dummy
+INFO:order:2022-11-04 19:54:18,498:11577: Sent: Buying  Y @Rs98 qty9 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 19:54:18,498:11577: buy response: dummy
+INFO:order:2022-11-04 19:54:18,907:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 19:54:18,907:11577: buy response: dummy
+INFO:order:2022-11-04 19:57:21,433:11627: Sent: Buying  Y @Rs95 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:57:21,433:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:21,435:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:57:21,435:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:21,436:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:57:21,436:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:21,813:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:57:21,814:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:22,384:11627: Sent: Buying  Y @Rs95 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:57:22,384:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:22,385:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:57:22,385:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:22,387:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 19:57:22,387:11627: buy response: dummy
+INFO:order:2022-11-04 19:57:22,740:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 19:57:22,740:11627: buy response: dummy
+INFO:order:2022-11-04 19:58:25,200:11626: Sent: Buying  Y @Rs95 qty4 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 19:58:25,200:11626: buy response: dummy
+INFO:order:2022-11-04 19:58:25,612:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 19:58:25,613:11626: buy response: dummy
+INFO:order:2022-11-04 19:59:28,078:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:59:28,079:11578: buy response: dummy
+INFO:order:2022-11-04 19:59:28,080:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 19:59:28,080:11578: buy response: dummy
+INFO:order:2022-11-04 19:59:28,467:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 19:59:28,467:11578: buy response: dummy
+INFO:order:2022-11-04 20:00:31,012:11577: Sent: Buying  Y @Rs98 qty9 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:00:31,012:11577: buy response: dummy
+INFO:order:2022-11-04 20:00:31,419:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:00:31,420:11577: buy response: dummy
+INFO:order:2022-11-04 20:03:33,935:11627: Sent: Buying  Y @Rs95 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:03:33,935:11627: buy response: dummy
+INFO:order:2022-11-04 20:03:33,936:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:03:33,936:11627: buy response: dummy
+INFO:order:2022-11-04 20:03:33,938:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:03:33,938:11627: buy response: dummy
+INFO:order:2022-11-04 20:03:34,304:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:03:34,304:11627: buy response: dummy
+INFO:order:2022-11-04 20:04:36,773:11626: Sent: Buying  Y @Rs95 qty4 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 20:04:36,774:11626: buy response: dummy
+INFO:order:2022-11-04 20:04:37,152:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:04:37,152:11626: buy response: dummy
+INFO:order:2022-11-04 20:05:40,070:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:05:40,070:11578: buy response: dummy
+INFO:order:2022-11-04 20:05:40,072:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:05:40,072:11578: buy response: dummy
+INFO:order:2022-11-04 20:05:40,502:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:05:40,502:11578: buy response: dummy
+INFO:order:2022-11-04 20:06:43,018:11577: Sent: Buying  Y @Rs98 qty8 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:06:43,019:11577: buy response: dummy
+INFO:order:2022-11-04 20:06:43,409:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:06:43,409:11577: buy response: dummy
+INFO:order:2022-11-04 20:09:45,976:11627: Sent: Buying  Y @Rs95 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:09:45,976:11627: buy response: dummy
+INFO:order:2022-11-04 20:09:45,978:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:09:45,978:11627: buy response: dummy
+INFO:order:2022-11-04 20:09:45,979:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:09:45,979:11627: buy response: dummy
+INFO:order:2022-11-04 20:09:46,367:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:09:46,367:11627: buy response: dummy
+INFO:order:2022-11-04 20:10:49,260:11626: Sent: Buying  Y @Rs95 qty4 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 20:10:49,261:11626: buy response: dummy
+INFO:order:2022-11-04 20:10:49,669:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:10:49,669:11626: buy response: dummy
+INFO:order:2022-11-04 20:11:53,059:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:11:53,059:11578: buy response: dummy
+INFO:order:2022-11-04 20:11:53,060:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:11:53,060:11578: buy response: dummy
+INFO:order:2022-11-04 20:11:53,434:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:11:53,435:11578: buy response: dummy
+INFO:order:2022-11-04 20:12:56,352:11577: Sent: Buying  Y @Rs98 qty8 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:12:56,352:11577: buy response: dummy
+INFO:order:2022-11-04 20:12:56,744:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:12:56,744:11577: buy response: dummy
+INFO:order:2022-11-04 20:15:59,157:11627: Sent: Buying  Y @Rs95 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:15:59,157:11627: buy response: dummy
+INFO:order:2022-11-04 20:15:59,158:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:15:59,158:11627: buy response: dummy
+INFO:order:2022-11-04 20:15:59,159:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:15:59,159:11627: buy response: dummy
+INFO:order:2022-11-04 20:15:59,552:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:15:59,552:11627: buy response: dummy
+INFO:order:2022-11-04 20:17:02,748:11626: Sent: Buying  Y @Rs95 qty4 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 20:17:02,748:11626: buy response: dummy
+INFO:order:2022-11-04 20:17:03,116:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:17:03,116:11626: buy response: dummy
+INFO:order:2022-11-04 20:18:05,689:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:18:05,689:11578: buy response: dummy
+INFO:order:2022-11-04 20:18:05,690:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:18:05,691:11578: buy response: dummy
+INFO:order:2022-11-04 20:18:06,138:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:18:06,138:11578: buy response: dummy
+INFO:order:2022-11-04 20:19:08,570:11577: Sent: Buying  Y @Rs98 qty8 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:19:08,571:11577: buy response: dummy
+INFO:order:2022-11-04 20:19:08,991:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:19:08,992:11577: buy response: dummy
+INFO:order:2022-11-04 20:22:11,509:11627: Sent: Buying  Y @Rs95 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:22:11,510:11627: buy response: dummy
+INFO:order:2022-11-04 20:22:11,518:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:22:11,518:11627: buy response: dummy
+INFO:order:2022-11-04 20:22:11,520:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:22:11,520:11627: buy response: dummy
+INFO:order:2022-11-04 20:22:11,908:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:22:11,908:11627: buy response: dummy
+INFO:order:2022-11-04 20:23:14,752:11626: Sent: Buying  Y @Rs95 qty4 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 20:23:14,752:11626: buy response: dummy
+INFO:order:2022-11-04 20:23:15,145:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:23:15,145:11626: buy response: dummy
+INFO:order:2022-11-04 20:24:18,026:11578: Sent: Buying  Y @Rs95 qty10 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:24:18,026:11578: buy response: dummy
+INFO:order:2022-11-04 20:24:18,027:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:24:18,027:11578: buy response: dummy
+INFO:order:2022-11-04 20:24:18,446:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:24:18,446:11578: buy response: dummy
+INFO:order:2022-11-04 20:25:20,915:11577: Sent: Buying  Y @Rs94 qty10 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:25:20,916:11577: buy response: dummy
+INFO:order:2022-11-04 20:25:20,916:11577: Sent: Buying  Y @Rs98 qty8 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:25:20,916:11577: buy response: dummy
+INFO:order:2022-11-04 20:25:21,305:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:25:21,305:11577: buy response: dummy
+INFO:order:2022-11-04 20:28:23,753:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:28:23,753:11627: buy response: dummy
+INFO:order:2022-11-04 20:28:23,755:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:28:23,755:11627: buy response: dummy
+INFO:order:2022-11-04 20:28:23,756:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:28:23,756:11627: buy response: dummy
+INFO:order:2022-11-04 20:28:24,149:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:28:24,149:11627: buy response: dummy
+INFO:order:2022-11-04 20:29:27,089:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:29:27,089:11626: buy response: dummy
+INFO:order:2022-11-04 20:30:29,618:11578: Sent: Buying  Y @Rs95 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:30:29,618:11578: buy response: dummy
+INFO:order:2022-11-04 20:30:29,627:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:30:29,628:11578: buy response: dummy
+INFO:order:2022-11-04 20:30:30,013:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:30:30,013:11578: buy response: dummy
+INFO:order:2022-11-04 20:31:32,929:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:31:32,930:11577: buy response: dummy
+INFO:order:2022-11-04 20:31:33,390:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:31:33,391:11577: buy response: dummy
+INFO:order:2022-11-04 20:34:35,839:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:34:35,839:11627: buy response: dummy
+INFO:order:2022-11-04 20:34:35,847:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:34:35,847:11627: buy response: dummy
+INFO:order:2022-11-04 20:34:35,849:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:34:35,849:11627: buy response: dummy
+INFO:order:2022-11-04 20:34:36,233:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:34:36,233:11627: buy response: dummy
+INFO:order:2022-11-04 20:35:38,978:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:35:38,978:11626: buy response: dummy
+INFO:order:2022-11-04 20:36:41,587:11578: Sent: Buying  Y @Rs95 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:36:41,587:11578: buy response: dummy
+INFO:order:2022-11-04 20:36:41,588:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:36:41,588:11578: buy response: dummy
+INFO:order:2022-11-04 20:36:41,974:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:36:41,974:11578: buy response: dummy
+INFO:order:2022-11-04 20:37:44,405:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:37:44,406:11577: buy response: dummy
+INFO:order:2022-11-04 20:37:44,826:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:37:44,826:11577: buy response: dummy
+INFO:order:2022-11-04 20:40:47,348:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:40:47,348:11627: buy response: dummy
+INFO:order:2022-11-04 20:40:47,350:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:40:47,350:11627: buy response: dummy
+INFO:order:2022-11-04 20:40:47,351:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:40:47,351:11627: buy response: dummy
+INFO:order:2022-11-04 20:40:47,717:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:40:47,717:11627: buy response: dummy
+INFO:order:2022-11-04 20:41:51,353:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:41:51,354:11626: buy response: dummy
+INFO:order:2022-11-04 20:42:53,834:11578: Sent: Buying  Y @Rs95 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:42:53,834:11578: buy response: dummy
+INFO:order:2022-11-04 20:42:53,835:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:42:53,835:11578: buy response: dummy
+INFO:order:2022-11-04 20:42:54,215:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:42:54,215:11578: buy response: dummy
+INFO:order:2022-11-04 20:43:56,687:11577: Sent: Buying  Y @Rs98 qty19 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:43:56,688:11577: buy response: dummy
+INFO:order:2022-11-04 20:43:57,070:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:43:57,071:11577: buy response: dummy
+INFO:order:2022-11-04 20:46:59,990:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:46:59,990:11627: buy response: dummy
+INFO:order:2022-11-04 20:47:00,001:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:47:00,002:11627: buy response: dummy
+INFO:order:2022-11-04 20:47:00,003:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:47:00,004:11627: buy response: dummy
+INFO:order:2022-11-04 20:47:00,387:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:47:00,387:11627: buy response: dummy
+INFO:order:2022-11-04 20:48:03,339:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:48:03,339:11626: buy response: dummy
+INFO:order:2022-11-04 20:49:05,892:11578: Sent: Buying  Y @Rs95 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:49:05,893:11578: buy response: dummy
+INFO:order:2022-11-04 20:49:05,894:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:49:05,895:11578: buy response: dummy
+INFO:order:2022-11-04 20:49:06,275:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:49:06,275:11578: buy response: dummy
+INFO:order:2022-11-04 20:50:08,751:11577: Sent: Buying  Y @Rs96 qty1 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:50:08,751:11577: buy response: dummy
+INFO:order:2022-11-04 20:50:08,753:11577: Sent: Buying  Y @Rs98 qty19 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:50:08,753:11577: buy response: dummy
+INFO:order:2022-11-04 20:50:09,141:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:50:09,142:11577: buy response: dummy
+INFO:order:2022-11-04 20:53:11,649:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:53:11,649:11627: buy response: dummy
+INFO:order:2022-11-04 20:53:11,650:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:53:11,650:11627: buy response: dummy
+INFO:order:2022-11-04 20:53:11,652:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:53:11,652:11627: buy response: dummy
+INFO:order:2022-11-04 20:53:12,034:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:53:12,034:11627: buy response: dummy
+INFO:order:2022-11-04 20:54:14,912:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 20:54:14,912:11626: buy response: dummy
+INFO:order:2022-11-04 20:55:18,091:11578: Sent: Buying  Y @Rs94 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:55:18,091:11578: buy response: dummy
+INFO:order:2022-11-04 20:55:18,099:11578: Sent: Buying  Y @Rs95 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:55:18,099:11578: buy response: dummy
+INFO:order:2022-11-04 20:55:18,100:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 20:55:18,101:11578: buy response: dummy
+INFO:order:2022-11-04 20:55:18,488:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 20:55:18,488:11578: buy response: dummy
+INFO:order:2022-11-04 20:56:21,075:11577: Sent: Buying  Y @Rs98 qty19 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 20:56:21,075:11577: buy response: dummy
+INFO:order:2022-11-04 20:56:21,487:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 20:56:21,487:11577: buy response: dummy
+INFO:order:2022-11-04 20:59:23,926:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:59:23,926:11627: buy response: dummy
+INFO:order:2022-11-04 20:59:23,927:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:59:23,927:11627: buy response: dummy
+INFO:order:2022-11-04 20:59:23,929:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 20:59:23,929:11627: buy response: dummy
+INFO:order:2022-11-04 20:59:24,302:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 20:59:24,303:11627: buy response: dummy
+INFO:order:2022-11-04 21:00:27,198:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:00:27,198:11626: buy response: dummy
+INFO:order:2022-11-04 21:01:29,705:11578: Sent: Buying  Y @Rs95 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:01:29,705:11578: buy response: dummy
+INFO:order:2022-11-04 21:01:29,706:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:01:29,706:11578: buy response: dummy
+INFO:order:2022-11-04 21:01:30,086:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:01:30,086:11578: buy response: dummy
+INFO:order:2022-11-04 21:02:32,631:11577: Sent: Buying  Y @Rs98 qty19 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:02:32,632:11577: buy response: dummy
+INFO:order:2022-11-04 21:02:33,042:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:02:33,042:11577: buy response: dummy
+INFO:order:2022-11-04 21:05:35,545:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:05:35,545:11627: buy response: dummy
+INFO:order:2022-11-04 21:05:35,546:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:05:35,546:11627: buy response: dummy
+INFO:order:2022-11-04 21:05:35,547:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:05:35,547:11627: buy response: dummy
+INFO:order:2022-11-04 21:05:35,947:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:05:35,947:11627: buy response: dummy
+INFO:order:2022-11-04 21:06:38,837:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:06:38,838:11626: buy response: dummy
+INFO:order:2022-11-04 21:07:41,357:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:07:41,357:11578: buy response: dummy
+INFO:order:2022-11-04 21:07:41,358:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:07:41,358:11578: buy response: dummy
+INFO:order:2022-11-04 21:07:41,777:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:07:41,777:11578: buy response: dummy
+INFO:order:2022-11-04 21:08:45,444:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:08:45,444:11577: buy response: dummy
+INFO:order:2022-11-04 21:08:45,846:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:08:45,846:11577: buy response: dummy
+INFO:order:2022-11-04 21:11:48,811:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:11:48,812:11627: buy response: dummy
+INFO:order:2022-11-04 21:11:48,813:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:11:48,813:11627: buy response: dummy
+INFO:order:2022-11-04 21:11:48,815:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:11:48,815:11627: buy response: dummy
+INFO:order:2022-11-04 21:11:49,217:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:11:49,217:11627: buy response: dummy
+INFO:order:2022-11-04 21:12:52,340:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:12:52,340:11626: buy response: dummy
+INFO:order:2022-11-04 21:13:54,878:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:13:54,878:11578: buy response: dummy
+INFO:order:2022-11-04 21:13:54,879:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:13:54,879:11578: buy response: dummy
+INFO:order:2022-11-04 21:13:55,267:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:13:55,267:11578: buy response: dummy
+INFO:order:2022-11-04 21:14:57,818:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:14:57,819:11577: buy response: dummy
+INFO:order:2022-11-04 21:14:58,215:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:14:58,215:11577: buy response: dummy
+INFO:order:2022-11-04 21:18:00,734:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:18:00,735:11627: buy response: dummy
+INFO:order:2022-11-04 21:18:00,737:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:18:00,737:11627: buy response: dummy
+INFO:order:2022-11-04 21:18:00,740:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:18:00,740:11627: buy response: dummy
+INFO:order:2022-11-04 21:18:01,215:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:18:01,215:11627: buy response: dummy
+INFO:order:2022-11-04 21:19:04,691:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:19:04,691:11626: buy response: dummy
+INFO:order:2022-11-04 21:20:07,658:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:20:07,658:11578: buy response: dummy
+INFO:order:2022-11-04 21:20:07,659:11578: Sent: Buying  Y @Rs98 qty2 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:20:07,659:11578: buy response: dummy
+INFO:order:2022-11-04 21:20:08,033:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:20:08,034:11578: buy response: dummy
+INFO:order:2022-11-04 21:21:10,537:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:21:10,537:11577: buy response: dummy
+INFO:order:2022-11-04 21:21:10,931:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:21:10,931:11577: buy response: dummy
+INFO:order:2022-11-04 21:24:13,434:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:24:13,434:11627: buy response: dummy
+INFO:order:2022-11-04 21:24:13,435:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:24:13,435:11627: buy response: dummy
+INFO:order:2022-11-04 21:24:13,436:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:24:13,436:11627: buy response: dummy
+INFO:order:2022-11-04 21:24:13,824:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:24:13,824:11627: buy response: dummy
+INFO:order:2022-11-04 21:25:16,683:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:25:16,683:11626: buy response: dummy
+INFO:order:2022-11-04 21:26:19,217:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:26:19,217:11578: buy response: dummy
+INFO:order:2022-11-04 21:26:19,603:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:26:19,603:11578: buy response: dummy
+INFO:order:2022-11-04 21:27:22,933:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:27:22,933:11577: buy response: dummy
+INFO:order:2022-11-04 21:27:23,336:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:27:23,337:11577: buy response: dummy
+INFO:order:2022-11-04 21:30:26,339:11627: Sent: Buying  N @Rs73 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:30:26,340:11627: buy response: dummy
+INFO:order:2022-11-04 21:30:26,721:11627: Sent: Buying  N @Rs68 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 21:30:26,721:11627: buy response: dummy
+INFO:order:2022-11-04 21:30:27,306:11627: Sent: Buying  N @Rs73 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:30:27,307:11627: buy response: dummy
+INFO:order:2022-11-04 21:30:27,698:11627: Sent: Buying  N @Rs68 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 21:30:27,698:11627: buy response: dummy
+INFO:order:2022-11-04 21:31:30,536:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:31:30,536:11626: buy response: dummy
+INFO:order:2022-11-04 21:32:33,119:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:32:33,119:11578: buy response: dummy
+INFO:order:2022-11-04 21:32:33,508:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:32:33,508:11578: buy response: dummy
+INFO:order:2022-11-04 21:33:35,999:11577: Sent: Buying  Y @Rs96 qty3 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:33:35,999:11577: buy response: dummy
+INFO:order:2022-11-04 21:33:36,000:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:33:36,000:11577: buy response: dummy
+INFO:order:2022-11-04 21:33:36,409:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:33:36,409:11577: buy response: dummy
+INFO:order:2022-11-04 21:36:39,322:11627: Sent: Buying  Y @Rs49 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:36:39,322:11627: buy response: dummy
+INFO:order:2022-11-04 21:36:40,298:11627: Sent: Buying  Y @Rs49 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:36:40,299:11627: buy response: dummy
+INFO:order:2022-11-04 21:37:42,792:11626: Sent: Buying  N @Rs90 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 21:37:42,793:11626: buy response: dummy
+INFO:order:2022-11-04 21:37:42,795:11626: Sent: Buying  N @Rs91 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 21:37:42,795:11626: buy response: dummy
+INFO:order:2022-11-04 21:37:43,177:11626: Sent: Buying  N @Rs86 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 21:37:43,177:11626: buy response: dummy
+INFO:order:2022-11-04 21:37:43,762:11626: Sent: Buying  N @Rs90 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 21:37:43,762:11626: buy response: dummy
+INFO:order:2022-11-04 21:37:43,763:11626: Sent: Buying  N @Rs91 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 21:37:43,763:11626: buy response: dummy
+INFO:order:2022-11-04 21:37:44,140:11626: Sent: Buying  N @Rs86 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 21:37:44,140:11626: buy response: dummy
+INFO:order:2022-11-04 21:38:46,606:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:38:46,607:11578: buy response: dummy
+INFO:order:2022-11-04 21:38:47,010:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:38:47,010:11578: buy response: dummy
+INFO:order:2022-11-04 21:39:49,465:11577: Sent: Buying  Y @Rs96 qty2 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:39:49,465:11577: buy response: dummy
+INFO:order:2022-11-04 21:39:49,467:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:39:49,467:11577: buy response: dummy
+INFO:order:2022-11-04 21:39:49,838:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:39:49,838:11577: buy response: dummy
+INFO:order:2022-11-04 21:42:53,108:11627: Sent: Buying  Y @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:42:53,108:11627: buy response: dummy
+INFO:order:2022-11-04 21:42:53,481:11627: Sent: Buying  Y @Rs50 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:42:53,481:11627: buy response: dummy
+INFO:order:2022-11-04 21:42:54,069:11627: Sent: Buying  Y @Rs56 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:42:54,070:11627: buy response: dummy
+INFO:order:2022-11-04 21:42:54,431:11627: Sent: Buying  Y @Rs50 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:42:54,431:11627: buy response: dummy
+INFO:order:2022-11-04 21:43:57,333:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:43:57,333:11626: buy response: dummy
+INFO:order:2022-11-04 21:43:58,315:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:43:58,315:11626: buy response: dummy
+INFO:order:2022-11-04 21:45:00,843:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:45:00,844:11578: buy response: dummy
+INFO:order:2022-11-04 21:45:01,243:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:45:01,244:11578: buy response: dummy
+INFO:order:2022-11-04 21:46:03,695:11577: Sent: Buying  Y @Rs96 qty2 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:46:03,695:11577: buy response: dummy
+INFO:order:2022-11-04 21:46:03,696:11577: Sent: Buying  Y @Rs98 qty18 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:46:03,697:11577: buy response: dummy
+INFO:order:2022-11-04 21:46:04,115:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:46:04,116:11577: buy response: dummy
+INFO:order:2022-11-04 21:49:06,635:11627: Sent: Buying  N @Rs61 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:49:06,635:11627: buy response: dummy
+INFO:order:2022-11-04 21:49:07,016:11627: Sent: Buying  N @Rs55 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 21:49:07,017:11627: buy response: dummy
+INFO:order:2022-11-04 21:49:07,610:11627: Sent: Buying  N @Rs61 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:49:07,611:11627: buy response: dummy
+INFO:order:2022-11-04 21:49:08,010:11627: Sent: Buying  N @Rs55 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 21:49:08,011:11627: buy response: dummy
+INFO:order:2022-11-04 21:50:10,844:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:50:10,845:11626: buy response: dummy
+INFO:order:2022-11-04 21:51:13,668:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:51:13,668:11578: buy response: dummy
+INFO:order:2022-11-04 21:51:14,059:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:51:14,060:11578: buy response: dummy
+INFO:order:2022-11-04 21:52:16,629:11577: Sent: Buying  Y @Rs96 qty2 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:52:16,630:11577: buy response: dummy
+INFO:order:2022-11-04 21:52:16,631:11577: Sent: Buying  Y @Rs98 qty17 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:52:16,631:11577: buy response: dummy
+INFO:order:2022-11-04 21:52:17,012:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:52:17,012:11577: buy response: dummy
+INFO:order:2022-11-04 21:55:19,898:11627: Sent: Buying  Y @Rs45 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:55:19,898:11627: buy response: dummy
+INFO:order:2022-11-04 21:55:19,899:11627: Sent: Buying  Y @Rs48 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:55:19,899:11627: buy response: dummy
+INFO:order:2022-11-04 21:55:20,327:11627: Sent: Buying  Y @Rs42 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:55:20,327:11627: buy response: dummy
+INFO:order:2022-11-04 21:55:20,924:11627: Sent: Buying  Y @Rs45 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:55:20,924:11627: buy response: dummy
+INFO:order:2022-11-04 21:55:20,925:11627: Sent: Buying  Y @Rs48 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 21:55:20,925:11627: buy response: dummy
+INFO:order:2022-11-04 21:55:21,354:11627: Sent: Buying  Y @Rs42 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 21:55:21,354:11627: buy response: dummy
+INFO:order:2022-11-04 21:56:26,043:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 21:56:26,044:11626: buy response: dummy
+INFO:order:2022-11-04 21:57:28,551:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 21:57:28,551:11578: buy response: dummy
+INFO:order:2022-11-04 21:57:28,921:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 21:57:28,921:11578: buy response: dummy
+INFO:order:2022-11-04 21:58:31,473:11577: Sent: Buying  Y @Rs96 qty3 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:58:31,473:11577: buy response: dummy
+INFO:order:2022-11-04 21:58:31,474:11577: Sent: Buying  Y @Rs98 qty17 in event 11577, message:Absorbing spread
+INFO:order:2022-11-04 21:58:31,474:11577: buy response: dummy
+INFO:order:2022-11-04 21:58:31,867:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 21:58:31,867:11577: buy response: dummy
+INFO:order:2022-11-04 22:01:34,630:11627: Sent: Buying  N @Rs49 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 22:01:34,631:11627: buy response: dummy
+INFO:order:2022-11-04 22:01:35,603:11627: Sent: Buying  N @Rs49 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 22:01:35,603:11627: buy response: dummy
+INFO:order:2022-11-04 22:02:38,597:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:02:38,597:11626: buy response: dummy
+INFO:order:2022-11-04 22:03:41,180:11578: Sent: Buying  Y @Rs95 qty1 in event 11578, message:Absorbing spread
+INFO:order:2022-11-04 22:03:41,181:11578: buy response: dummy
+INFO:order:2022-11-04 22:03:41,618:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:03:41,618:11578: buy response: dummy
+INFO:order:2022-11-04 22:04:44,411:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:04:44,411:11577: buy response: dummy
+INFO:order:2022-11-04 22:07:47,181:11627: Sent: Buying  N @Rs50 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 22:07:47,181:11627: buy response: dummy
+INFO:order:2022-11-04 22:07:48,250:11627: Sent: Buying  N @Rs50 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 22:07:48,250:11627: buy response: dummy
+INFO:order:2022-11-04 22:08:51,100:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:08:51,100:11626: buy response: dummy
+INFO:order:2022-11-04 22:09:54,185:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:09:54,186:11578: buy response: dummy
+INFO:order:2022-11-04 22:10:57,408:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:10:57,408:11577: buy response: dummy
+INFO:order:2022-11-04 22:14:00,727:11627: Sent: Buying  N @Rs36 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 22:14:00,728:11627: buy response: dummy
+INFO:order:2022-11-04 22:14:01,715:11627: Sent: Buying  N @Rs36 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 22:14:01,715:11627: buy response: dummy
+INFO:order:2022-11-04 22:15:04,213:11626: Sent: Buying  N @Rs95 qty3 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 22:15:04,213:11626: buy response: dummy
+INFO:order:2022-11-04 22:15:04,594:11626: Sent: Buying  N @Rs91 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 22:15:04,595:11626: buy response: dummy
+INFO:order:2022-11-04 22:15:05,196:11626: Sent: Buying  N @Rs95 qty3 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 22:15:05,196:11626: buy response: dummy
+INFO:order:2022-11-04 22:15:05,573:11626: Sent: Buying  N @Rs91 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 22:15:05,574:11626: buy response: dummy
+INFO:order:2022-11-04 22:16:08,394:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:16:08,395:11578: buy response: dummy
+INFO:order:2022-11-04 22:17:13,266:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:17:13,266:11577: buy response: dummy
+INFO:order:2022-11-04 22:20:15,764:11627: Sent: Buying  Y @Rs59 qty2 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 22:20:15,764:11627: buy response: dummy
+INFO:order:2022-11-04 22:20:16,233:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:20:16,233:11627: buy response: dummy
+INFO:order:2022-11-04 22:20:16,806:11627: Sent: Buying  Y @Rs59 qty2 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 22:20:16,806:11627: buy response: dummy
+INFO:order:2022-11-04 22:20:17,189:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:20:17,189:11627: buy response: dummy
+INFO:order:2022-11-04 22:21:19,613:11626: Sent: Buying  N @Rs90 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 22:21:19,613:11626: buy response: dummy
+INFO:order:2022-11-04 22:21:19,997:11626: Sent: Buying  N @Rs84 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 22:21:19,997:11626: buy response: dummy
+INFO:order:2022-11-04 22:21:20,644:11626: Sent: Buying  N @Rs90 qty1 in event 11626, message:Absorbing spread
+INFO:order:2022-11-04 22:21:20,644:11626: buy response: dummy
+INFO:order:2022-11-04 22:21:21,036:11626: Sent: Buying  N @Rs84 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 22:21:21,036:11626: buy response: dummy
+INFO:order:2022-11-04 22:22:23,830:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:22:23,830:11578: buy response: dummy
+INFO:order:2022-11-04 22:23:26,990:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:23:26,990:11577: buy response: dummy
+INFO:order:2022-11-04 22:26:29,873:11627: Sent: Buying  Y @Rs50 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:26:29,873:11627: buy response: dummy
+INFO:order:2022-11-04 22:26:30,852:11627: Sent: Buying  Y @Rs50 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:26:30,852:11627: buy response: dummy
+INFO:order:2022-11-04 22:27:33,674:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:27:33,674:11626: buy response: dummy
+INFO:order:2022-11-04 22:27:34,625:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:27:34,625:11626: buy response: dummy
+INFO:order:2022-11-04 22:28:37,483:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:28:37,483:11578: buy response: dummy
+INFO:order:2022-11-04 22:29:40,300:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:29:40,301:11577: buy response: dummy
+INFO:order:2022-11-04 22:32:43,125:11627: Sent: Buying  Y @Rs49 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:32:43,126:11627: buy response: dummy
+INFO:order:2022-11-04 22:32:44,054:11627: Sent: Buying  Y @Rs49 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:32:44,055:11627: buy response: dummy
+INFO:order:2022-11-04 22:33:47,271:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:33:47,271:11626: buy response: dummy
+INFO:order:2022-11-04 22:34:50,082:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:34:50,083:11578: buy response: dummy
+INFO:order:2022-11-04 22:35:53,296:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:35:53,296:11577: buy response: dummy
+INFO:order:2022-11-04 22:38:56,130:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:38:56,131:11627: buy response: dummy
+INFO:order:2022-11-04 22:38:57,147:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:38:57,147:11627: buy response: dummy
+INFO:order:2022-11-04 22:40:00,079:11626: Sent: Buying  N @Rs81 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 22:40:00,080:11626: buy response: dummy
+INFO:order:2022-11-04 22:40:01,031:11626: Sent: Buying  N @Rs81 qty15 in event 11626, message:Scalping no
+INFO:order:2022-11-04 22:40:01,032:11626: buy response: dummy
+INFO:order:2022-11-04 22:41:03,823:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:41:03,823:11578: buy response: dummy
+INFO:order:2022-11-04 22:42:07,154:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:42:07,155:11577: buy response: dummy
+INFO:order:2022-11-04 22:45:09,965:11627: Sent: Buying  Y @Rs64 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:45:09,965:11627: buy response: dummy
+INFO:order:2022-11-04 22:45:10,959:11627: Sent: Buying  Y @Rs64 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:45:10,960:11627: buy response: dummy
+INFO:order:2022-11-04 22:46:14,171:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:46:14,171:11578: buy response: dummy
+INFO:order:2022-11-04 22:47:17,092:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:47:17,092:11577: buy response: dummy
+INFO:order:2022-11-04 22:50:19,922:11627: Sent: Buying  Y @Rs60 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:50:19,922:11627: buy response: dummy
+INFO:order:2022-11-04 22:50:20,887:11627: Sent: Buying  Y @Rs60 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:50:20,888:11627: buy response: dummy
+INFO:order:2022-11-04 22:51:23,652:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:51:23,652:11626: buy response: dummy
+INFO:order:2022-11-04 22:51:24,630:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:51:24,630:11626: buy response: dummy
+INFO:order:2022-11-04 22:52:27,464:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:52:27,464:11578: buy response: dummy
+INFO:order:2022-11-04 22:53:30,292:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:53:30,293:11577: buy response: dummy
+INFO:order:2022-11-04 22:56:32,818:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 22:56:32,819:11627: buy response: dummy
+INFO:order:2022-11-04 22:56:32,820:11627: Sent: Buying  Y @Rs62 qty13 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 22:56:32,820:11627: buy response: dummy
+INFO:order:2022-11-04 22:56:33,209:11627: Sent: Buying  Y @Rs57 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:56:33,209:11627: buy response: dummy
+INFO:order:2022-11-04 22:56:33,843:11627: Sent: Buying  Y @Rs58 qty15 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 22:56:33,844:11627: buy response: dummy
+INFO:order:2022-11-04 22:56:33,845:11627: Sent: Buying  Y @Rs62 qty13 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 22:56:33,845:11627: buy response: dummy
+INFO:order:2022-11-04 22:56:34,223:11627: Sent: Buying  Y @Rs57 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 22:56:34,223:11627: buy response: dummy
+INFO:order:2022-11-04 22:57:37,142:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 22:57:37,143:11626: buy response: dummy
+INFO:order:2022-11-04 22:58:39,938:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 22:58:39,938:11578: buy response: dummy
+INFO:order:2022-11-04 22:59:42,955:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 22:59:42,955:11577: buy response: dummy
+INFO:order:2022-11-04 23:02:46,024:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:02:46,024:11627: buy response: dummy
+INFO:order:2022-11-04 23:02:47,066:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:02:47,066:11627: buy response: dummy
+INFO:order:2022-11-04 23:03:50,392:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:03:50,392:11626: buy response: dummy
+INFO:order:2022-11-04 23:04:53,521:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:04:53,521:11578: buy response: dummy
+INFO:order:2022-11-04 23:05:56,517:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:05:56,517:11577: buy response: dummy
+INFO:order:2022-11-04 23:08:59,621:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:08:59,621:11627: buy response: dummy
+INFO:order:2022-11-04 23:10:03,868:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:10:03,868:11626: buy response: dummy
+INFO:order:2022-11-04 23:11:07,478:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:11:07,479:11578: buy response: dummy
+INFO:order:2022-11-04 23:12:11,639:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:12:11,640:11577: buy response: dummy
+INFO:order:2022-11-04 23:15:14,760:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:15:14,761:11627: buy response: dummy
+INFO:order:2022-11-04 23:16:18,159:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:16:18,159:11626: buy response: dummy
+INFO:order:2022-11-04 23:17:21,350:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:17:21,350:11578: buy response: dummy
+INFO:order:2022-11-04 23:18:24,782:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:18:24,783:11577: buy response: dummy
+INFO:order:2022-11-04 23:21:27,434:11627: Sent: Buying  Y @Rs75 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:21:27,434:11627: buy response: dummy
+INFO:order:2022-11-04 23:21:27,880:11627: Sent: Buying  Y @Rs70 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 23:21:27,880:11627: buy response: dummy
+INFO:order:2022-11-04 23:21:28,466:11627: Sent: Buying  Y @Rs75 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:21:28,466:11627: buy response: dummy
+INFO:order:2022-11-04 23:21:28,858:11627: Sent: Buying  Y @Rs70 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 23:21:28,858:11627: buy response: dummy
+INFO:order:2022-11-04 23:22:31,870:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:22:31,871:11626: buy response: dummy
+INFO:order:2022-11-04 23:23:35,340:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:23:35,340:11578: buy response: dummy
+INFO:order:2022-11-04 23:24:38,781:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:24:38,781:11577: buy response: dummy
+INFO:order:2022-11-04 23:27:41,399:11627: Sent: Buying  Y @Rs24 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:27:41,399:11627: buy response: dummy
+INFO:order:2022-11-04 23:27:41,400:11627: Sent: Buying  Y @Rs27 qty5 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:27:41,400:11627: buy response: dummy
+INFO:order:2022-11-04 23:27:41,791:11627: Sent: Buying  Y @Rs23 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 23:27:41,792:11627: buy response: dummy
+INFO:order:2022-11-04 23:27:42,439:11627: Sent: Buying  Y @Rs24 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:27:42,439:11627: buy response: dummy
+INFO:order:2022-11-04 23:27:42,441:11627: Sent: Buying  Y @Rs27 qty5 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:27:42,441:11627: buy response: dummy
+INFO:order:2022-11-04 23:27:42,847:11627: Sent: Buying  Y @Rs23 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 23:27:42,847:11627: buy response: dummy
+INFO:order:2022-11-04 23:28:45,898:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:28:45,899:11626: buy response: dummy
+INFO:order:2022-11-04 23:29:49,113:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:29:49,113:11578: buy response: dummy
+INFO:order:2022-11-04 23:30:53,740:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:30:53,740:11577: buy response: dummy
+INFO:order:2022-11-04 23:33:56,879:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:33:56,880:11627: buy response: dummy
+INFO:order:2022-11-04 23:33:57,884:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:33:57,884:11627: buy response: dummy
+INFO:order:2022-11-04 23:35:01,251:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:35:01,251:11626: buy response: dummy
+INFO:order:2022-11-04 23:36:04,455:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:36:04,455:11578: buy response: dummy
+INFO:order:2022-11-04 23:37:07,960:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:37:07,960:11577: buy response: dummy
+INFO:order:2022-11-04 23:40:11,057:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:40:11,057:11627: buy response: dummy
+INFO:order:2022-11-04 23:41:15,582:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:41:15,583:11626: buy response: dummy
+INFO:order:2022-11-04 23:42:18,836:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:42:18,837:11578: buy response: dummy
+INFO:order:2022-11-04 23:43:21,871:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:43:21,872:11577: buy response: dummy
+INFO:order:2022-11-04 23:46:25,410:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:46:25,410:11627: buy response: dummy
+INFO:order:2022-11-04 23:47:28,544:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:47:28,544:11626: buy response: dummy
+INFO:order:2022-11-04 23:48:32,014:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:48:32,015:11578: buy response: dummy
+INFO:order:2022-11-04 23:49:35,108:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:49:35,108:11577: buy response: dummy
+INFO:order:2022-11-04 23:52:38,327:11627: Sent: Buying  N @Rs93 qty15 in event 11627, message:Scalping no
+INFO:order:2022-11-04 23:52:38,327:11627: buy response: dummy
+INFO:order:2022-11-04 23:53:41,814:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:53:41,815:11626: buy response: dummy
+INFO:order:2022-11-04 23:54:46,031:11578: Sent: Buying  Y @Rs93 qty15 in event 11578, message:Scalping yes
+INFO:order:2022-11-04 23:54:46,031:11578: buy response: dummy
+INFO:order:2022-11-04 23:55:49,115:11577: Sent: Buying  Y @Rs93 qty15 in event 11577, message:Scalping yes
+INFO:order:2022-11-04 23:55:49,116:11577: buy response: dummy
+INFO:order:2022-11-04 23:58:52,012:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:58:52,012:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:52,013:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:58:52,013:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:52,014:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:58:52,014:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:52,433:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 23:58:52,433:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:53,047:11627: Sent: Buying  Y @Rs95 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:58:53,047:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:53,048:11627: Sent: Buying  Y @Rs97 qty1 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:58:53,048:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:53,049:11627: Sent: Buying  Y @Rs98 qty3 in event 11627, message:Absorbing spread
+INFO:order:2022-11-04 23:58:53,049:11627: buy response: dummy
+INFO:order:2022-11-04 23:58:53,508:11627: Sent: Buying  Y @Rs93 qty15 in event 11627, message:Scalping yes
+INFO:order:2022-11-04 23:58:53,508:11627: buy response: dummy
+INFO:order:2022-11-04 23:59:57,296:11626: Sent: Buying  Y @Rs93 qty15 in event 11626, message:Scalping yes
+INFO:order:2022-11-04 23:59:57,296:11626: buy response: dummy

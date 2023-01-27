@@ -1,0 +1,137 @@
+INFO:2022-10-04 18:00:36,366:Initialising
+INFO:2022-10-04 18:33:17,852:Initialising
+INFO:2022-10-04 18:38:58,810:Initialising
+INFO:2022-10-04 18:48:50,520:Initialising
+INFO:2022-10-04 18:52:21,078:Initialising
+INFO:2022-10-04 18:55:39,864:Initialising
+ERROR:2022-10-04 18:55:42,306:last_values_dict empty
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strategy4_0.py", line 180, in _keep_a_check
+    hold_y_qty_changed = (self.last_values_dict["y_h_qty"] != self.holding_yes_qty)
+KeyError: 'y_h_qty'
+INFO:2022-10-05 12:57:12,436:Initialising
+ERROR:2022-10-05 12:58:25,054:last_values_dict empty
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strategy4_0.py", line 180, in _keep_a_check
+    hold_y_qty_changed = (self.last_values_dict["y_h_qty"] != self.holding_yes_qty)
+KeyError: 'y_h_qty'
+INFO:2022-10-05 23:46:16,178:Initialising
+ERROR:2022-10-05 23:46:40,139:last_values_dict empty
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strategy4_0.py", line 180, in _keep_a_check
+    hold_y_qty_changed = (self.last_values_dict["y_h_qty"] != self.holding_yes_qty)
+KeyError: 'y_h_qty'
+INFO:2022-10-05 23:49:04,412:Initialising event 10398
+ERROR:2022-10-05 23:49:06,199:last_values_dict empty
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strategy4_0.py", line 180, in _keep_a_check
+    hold_y_qty_changed = (self.last_values_dict["y_h_qty"] != self.holding_yes_qty)
+KeyError: 'y_h_qty'
+INFO:strategy4_0:2022-10-10 06:45:30,334:10256: Initialising event
+INFO:strategy4_0:2022-10-10 06:53:55,751:10256: Initialising event
+INFO:strategy4_0:2022-10-10 06:57:34,318:10256: Initialising event
+INFO:strategy4_0:2022-10-10 06:59:02,922:10256: Initialising event
+WARNING:strategy4_0:2022-10-10 06:59:05,536:10256: last_values_dict empty
+INFO:strategy4_0:2022-10-10 07:06:01,743:10256: Initialising event
+WARNING:strategy4_0:2022-10-10 07:06:04,059:10256: last_values_dict empty
+INFO:strategy4_0:2022-10-10 07:12:42,925:10256: Initialising event
+INFO:strategy4_0:2022-10-10 07:15:31,406:10256: Initialising event
+INFO:strategy4_0:2022-10-10 07:16:06,932:10256: Initialising event
+INFO:strategy4_0:2022-10-10 07:16:55,335:10256: Initialising event
+INFO:strategy4_0:2022-10-10 07:20:08,663:10256: Initialising event
+INFO:strategy4_0:2022-10-10 07:22:05,486:10256: Initialising event
+WARNING:strategy4_0:2022-10-10 07:22:08,433:10256: last_values_dict empty
+INFO:strategy4_0:2022-10-10 07:26:26,976:10256: Initialising event
+WARNING:strategy4_0:2022-10-10 07:26:48,938:10256: last_values_dict empty
+INFO:strategy4_0:2022-10-11 15:27:14,589:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 15:27:35,542:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 17:02:51,200:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 17:02:56,259:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 17:27:57,268:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 17:27:59,322:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 17:31:47,102:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 17:31:50,057:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 17:48:26,102:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 17:48:30,877:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 17:58:27,497:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 17:58:30,105:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 18:27:06,704:10618: Initialising event
+WARNING:strategy4_0:2022-10-11 18:27:09,640:10618: last_values_dict empty
+INFO:strategy4_0:2022-10-11 18:27:42,390:10617: Initialising event
+WARNING:strategy4_0:2022-10-11 18:27:47,252:10617: last_values_dict empty
+INFO:strat5:2022-10-17 11:10:40,454:10856: Initialising event
+WARNING:strat5:2022-10-17 11:10:54,855:10856: last_values_dict empty
+INFO:strat5:2022-10-17 11:11:49,166:10839: Initialising event
+WARNING:strat5:2022-10-17 11:11:54,213:10839: last_values_dict empty
+INFO:strat5:2022-10-17 12:43:10,079:10856: Initialising event
+WARNING:strat5:2022-10-17 12:43:12,490:10856: last_values_dict empty
+INFO:strat5:2022-10-17 12:43:14,495:10839: Initialising event
+WARNING:strat5:2022-10-17 12:43:16,803:10839: last_values_dict empty
+INFO:strat5:2022-10-17 17:36:40,017:10856: Initialising event
+WARNING:strat5:2022-10-17 17:36:47,656:10856: last_values_dict empty
+INFO:strat5:2022-10-18 14:07:03,140:10873: Initialising event
+WARNING:strat5:2022-10-18 14:07:08,599:10873: last_values_dict empty
+INFO:strat5:2022-10-18 14:07:10,158:10918: Initialising event
+WARNING:strat5:2022-10-18 14:07:15,654:10918: last_values_dict empty
+INFO:strat5:2022-10-18 14:19:47,752:10885: Initialising event
+INFO:strat5:2022-10-18 14:20:08,403:10885: Initialising event
+INFO:strat5:2022-10-18 14:20:16,715:10919: Initialising event
+INFO:strat5:2022-10-18 14:55:26,465:10873: Initialising event
+WARNING:strat5:2022-10-18 14:55:34,410:10873: last_values_dict empty
+INFO:strat5:2022-10-19 13:03:45,183:10938: Initialising event
+WARNING:strat5:2022-10-19 13:03:58,355:10938: last_values_dict empty
+INFO:strat5:2022-10-19 13:04:08,926:10885: Initialising event
+WARNING:strat5:2022-10-19 13:05:59,625:10885: last_values_dict empty
+INFO:strat5:2022-10-19 22:07:10,552:10938: Initialising event
+WARNING:strat5:2022-10-19 22:07:23,677:10938: last_values_dict empty
+INFO:strat5:2022-10-20 10:22:47,835:10971: Initialising event
+WARNING:strat5:2022-10-20 10:23:06,833:10971: last_values_dict empty
+INFO:strat5:2022-10-20 10:23:20,003:10984: Initialising event
+INFO:strat5:2022-10-20 10:29:30,845:10984: Initialising event
+WARNING:strat5:2022-10-20 10:29:35,340:10984: last_values_dict empty
+INFO:strat5:2022-10-20 21:27:56,966:10885: Initialising event
+INFO:strat5:2022-10-20 21:28:01,940:10984: Initialising event
+INFO:strat5:2022-10-20 21:28:12,118:10971: Initialising event
+WARNING:strat5:2022-10-20 21:28:27,759:10984: last_values_dict empty
+INFO:strat5:2022-10-20 21:30:13,158:10971: Initialising event
+INFO:strat5:2022-10-20 21:30:17,318:10984: Initialising event
+WARNING:strat5:2022-10-20 21:30:19,552:10984: last_values_dict empty
+INFO:strat5:2022-10-20 21:31:53,192:10984: Initialising event
+WARNING:strat5:2022-10-20 21:31:55,366:10984: last_values_dict empty
+INFO:strat5:2022-10-20 21:31:55,608:10971: Initialising event
+INFO:strat5:2022-10-20 21:33:14,008:10984: Initialising event
+WARNING:strat5:2022-10-20 21:33:16,432:10984: last_values_dict empty
+INFO:strat5:2022-10-22 18:10:47,894:11064: Initialising event
+INFO:strat5:2022-10-22 18:10:48,961:11057: Initialising event
+WARNING:strat5:2022-10-22 18:11:19,429:11064: last_values_dict empty
+WARNING:strat5:2022-10-22 18:11:19,458:11057: last_values_dict empty
+INFO:strat5:2022-10-22 18:18:47,604:11064: Initialising event
+WARNING:strat5:2022-10-22 18:18:50,025:11064: last_values_dict empty
+INFO:strat5:2022-10-22 18:18:51,687:11057: Initialising event
+WARNING:strat5:2022-10-22 18:18:53,792:11057: last_values_dict empty
+INFO:strat5:2022-10-22 18:21:20,049:11064: Initialising event
+WARNING:strat5:2022-10-22 18:21:22,179:11064: last_values_dict empty
+INFO:strat5:2022-10-22 18:21:23,009:11057: Initialising event
+WARNING:strat5:2022-10-22 18:21:25,188:11057: last_values_dict empty
+INFO:strat5:2022-10-22 19:55:36,012:11064: Initialising event
+WARNING:strat5:2022-10-22 19:55:39,598:11064: last_values_dict empty
+INFO:strat5:2022-10-22 21:54:09,229:11064: Initialising event
+WARNING:strat5:2022-10-22 21:54:13,963:11064: last_values_dict empty
+INFO:strat5:2022-10-23 01:18:23,779:11064: Initialising event
+INFO:strat5:2022-10-23 12:53:34,444:1111: Initialising event
+INFO:strat5:2022-10-23 12:53:34,528:11092: Initialising event
+WARNING:strat5:2022-10-23 12:54:08,232:11092: last_values_dict empty
+INFO:strat5:2022-10-23 12:54:25,426:11111: Initialising event
+WARNING:strat5:2022-10-23 12:54:29,911:11111: last_values_dict empty
+INFO:strat5:2022-10-23 21:11:24,307:11092: Initialising event
+WARNING:strat5:2022-10-23 21:12:32,670:11092: last_values_dict empty
+INFO:strat5:2022-10-28 13:02:48,191:11301: Initialising event
+WARNING:strat5:2022-10-28 13:03:04,470:11301: last_values_dict empty
+INFO:strat5:2022-10-28 13:03:09,351:11289: Initialising event
+WARNING:strat5:2022-10-28 13:03:14,472:11289: last_values_dict empty
+INFO:strat5:2022-10-28 17:26:42,934:11301: Initialising event
+WARNING:strat5:2022-10-28 17:27:49,372:11301: last_values_dict empty
+INFO:strat5:2022-10-30 14:53:50,198:11367: Initialising event
+INFO:strat5:2022-10-30 14:53:56,829:11347: Initialising event
+WARNING:strat5:2022-10-30 14:54:01,141:11367: last_values_dict empty
+WARNING:strat5:2022-10-30 14:54:01,553:11347: last_values_dict empty

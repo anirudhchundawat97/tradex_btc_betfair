@@ -1,0 +1,1659 @@
+ERROR:__main__:2023-01-18 23:00:34,918:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 630, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 308, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingNo,{set_priceqty_message}", "N", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 578, in __send_buy_orders
+    self.order._buy(message, "N", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 46, in _buy
+    "trade_initiated_price": cmp}
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-18 23:01:30,096:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 630, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 308, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingNo,{set_priceqty_message}", "N", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 578, in __send_buy_orders
+    self.order._buy(message, "N", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 46, in _buy
+    "trade_initiated_price": cmp}
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-18 23:02:35,279:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 790, in update
+    self.absorb_high_probable_orderbook()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 714, in absorb_high_probable_orderbook
+    self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 578, in __send_buy_orders
+    self.order._buy(message, "N", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 46, in _buy
+    "trade_initiated_price": cmp}
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-18 23:05:06,570:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 656, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 584, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 87, in _sell
+    "preventSlippage": False,
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-18 23:06:04,888:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 656, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 584, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 87, in _sell
+    "preventSlippage": False,
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-19 18:21:37,281:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 787, in update
+    self._print_details("updating")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 215, in _print_details
+    print(self.mybet.get_event_holdings(self.event_id))
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-19 19:07:20,209:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 787, in update
+    self._print_details("updating")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 215, in _print_details
+    print(self.mybet.get_event_holdings(self.event_id))
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-19 20:17:55,079:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 630, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 317, in __scalp_side
+    self.order.cancel_all_pending_sell("N", f"{trigger},NewSellParams")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 167, in cancel_all_pending_sell
+    df = self.mybet.get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-19 22:43:35,411:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 786, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 394, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no, self.falseavgbuyyes, self.falseavgbuyno = self.trans.get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 177, in get_avg_buysell_price
+    remove_no_qty, remove_no_amount = self._get_unfilled_qty_n_amount(event_id, "N")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 256, in _get_unfilled_qty_n_amount
+    bets_df = self.mybet.get_event_holdings(eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-20 20:52:19,487:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 789, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 680, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 292, in __scalp_side
+    self.order.cancel_all_pending_buy("N", f"{trigger},CancelOppSideOrders")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 181, in cancel_all_pending_buy
+    df = self.mybet.get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-21 18:02:15,880:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:02:23,198:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:02:30,143:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:02:38,473:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:02:45,581:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:02:51,792:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:02:57,986:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:03,716:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:09,295:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:13,980:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:19,410:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:24,937:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:30,071:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:36,586:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:42,068:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:47,220:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:52,665:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:03:58,593:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:04,374:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:10,383:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:16,255:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:22,172:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:27,289:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:32,552:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:37,848:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:44,283:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:49,781:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:04:54,940:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:02,448:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:09,957:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:17,079:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:23,887:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:30,605:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:37,451:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:43,669:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:50,363:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:05:56,723:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:02,315:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:07,836:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:13,086:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:18,421:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:23,687:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:29,098:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:35,482:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:41,272:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:47,550:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:51,911:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:06:58,219:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:05,103:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:11,689:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:18,263:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:24,841:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:32,365:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:39,459:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:46,353:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:52,452:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:07:57,943:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:04,067:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:09,534:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:15,158:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:19,766:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:24,985:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:31,018:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:36,664:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:42,009:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:47,472:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:52,946:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:08:58,345:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:03,623:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:09,774:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:14,838:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:19,220:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:24,968:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:29,541:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:35,491:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:41,492:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:46,801:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:52,172:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:09:58,328:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:04,704:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:09,598:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:14,332:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:19,387:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:24,627:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:29,997:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:36,402:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:41,974:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:48,089:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:53,021:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:10:59,607:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:07,318:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:14,149:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:20,334:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:27,577:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:33,753:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:39,642:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:46,162:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:52,343:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:11:57,661:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:04,362:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:09,772:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:14,597:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:19,819:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:24,859:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:30,723:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:35,878:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:42,010:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:42,014:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:47,575:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:47,579:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:53,072:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:53,076:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:59,945:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:12:59,951:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:07,620:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:07,624:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:13,854:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:13,858:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:21,668:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:21,672:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:28,362:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:28,367:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:34,926:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:34,930:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:41,664:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:41,669:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:48,554:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:48,559:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:56,313:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:13:56,317:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:02,980:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:02,985:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:10,173:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:10,178:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:18,532:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:18,537:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:25,267:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:25,271:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:32,856:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:32,862:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:39,423:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:39,428:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:49,421:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:49,424:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:55,830:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:14:55,834:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:01,352:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:01,356:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:06,815:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:06,819:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:12,644:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:12,648:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:18,533:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:18,537:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:24,339:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:24,343:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:29,257:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:15:29,261:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at)):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:39:49,476:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:39:49,479:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:39:54,013:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:39:54,015:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:39:59,040:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:39:59,042:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:40:06,377:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:40:06,379:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:40:10,645:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:40:10,646:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:40:15,889:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:40:15,890:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 196, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:45:57,625:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:45:57,627:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:02,721:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:02,723:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:07,939:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:07,940:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:16,444:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:16,445:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:21,018:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:21,019:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:25,456:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:25,457:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:30,286:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:46:30,288:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 197, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:47:58,296:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:47:58,299:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:48:03,377:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:48:03,379:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:48:08,086:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:48:08,088:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:48:12,760:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 18:48:12,762:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 199, in <module>
+    elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2023-01-21 19:00:52,689:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 358, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 587, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 96, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-22 18:40:32,930:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 346, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingYesNewQty,{set_priceqty_message}", "Y", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 585, in __send_all_sell
+    self.order._sell(message, "Y", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 96, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-23 18:50:39,112:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in __hold_qty_change_process
+    self.order.cancel_all_pending_sell("N",f"{trigger},HoldQtyChange")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 175, in cancel_all_pending_sell
+    self._cancel_sell(message=message,
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 153, in _cancel_sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-23 19:00:45,833:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 358, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 587, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 96, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-24 18:40:28,296:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 620, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 278, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingYes,{set_priceqty_message}", "Y", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 579, in __send_buy_orders
+    self.order._buy(message, "Y", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 52, in _buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-24 19:00:34,140:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 693, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 308, in __scalp_side
+    self.order.cancel_all_pending_buy("N", f"{trigger},NewBuyParams")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 189, in cancel_all_pending_buy
+    self._cancel_buy(message=message,
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 128, in _cancel_buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-25 18:30:52,148:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 631, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 311, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingNo,{set_priceqty_message}", "N", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 581, in __send_buy_orders
+    self.order._buy(message, "N", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 52, in _buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-25 18:40:46,805:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 346, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingYesNewQty,{set_priceqty_message}", "Y", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 585, in __send_all_sell
+    self.order._sell(message, "Y", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 96, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-26 18:25:46,852:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 620, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 278, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingYes,{set_priceqty_message}", "Y", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 579, in __send_buy_orders
+    self.order._buy(message, "Y", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 52, in _buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-26 18:55:30,086:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 358, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 587, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 96, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-26 19:00:28,897:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 116, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 202, in <module>
+    strat_obj_dict[i].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 793, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 631, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 311, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingNo,{set_priceqty_message}", "N", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 581, in __send_buy_orders
+    self.order._buy(message, "N", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 52, in _buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0

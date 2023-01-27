@@ -1,0 +1,90 @@
+ERROR:__main__:2022-11-25 15:14:59,552:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 493, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-25 15:16:12,811:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 509, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-25 15:18:17,173:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 509, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-25 15:20:24,667:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 509, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-25 15:22:30,625:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 509, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-25 15:24:33,699:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 509, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-25 15:27:31,673:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 513, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 429, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 227, in __scalp_side
+    if not self.order.is_same_order("N", sell_price, sell_qty, "sell"):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 126, in is_same_order
+    df = get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 34, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 31, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-25 16:58:19,602:single positional indexer is out-of-bounds
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 513, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 475, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 222, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= 90) and (not self.order.is_same_order("N", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("N")):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 295, in _is_myorder_best
+    best_price = self.priceatri.no_pending_orders["price"].iloc[0]
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexing.py", line 967, in __getitem__
+    return self._getitem_axis(maybe_callable, axis=axis)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexing.py", line 1523, in _getitem_axis
+    self._validate_integer(key, axis)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexing.py", line 1455, in _validate_integer
+    raise IndexError("single positional indexer is out-of-bounds")
+IndexError: single positional indexer is out-of-bounds

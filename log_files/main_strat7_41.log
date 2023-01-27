@@ -1,0 +1,93 @@
+ERROR:__main__:2023-01-02 15:01:43,158:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:43,776:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:44,243:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:44,647:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:45,053:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:45,451:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:45,887:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:46,336:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 734, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 107, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 22, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2023-01-02 15:01:46,340:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 124, in <module>
+    while dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at):
+TypeError: fromisoformat: argument must be str

@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "tradexdash001",
+  "private_key_id": "5be8a33857e1b956b0f74f04d5b2375fc2c5ecbd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCk19eGj17aUDFU\n5l9GneXNoZ91GfXYOBaW1d0K6brkCa2w18RcwMd7dUdvlUOFi4QNLo/Qlf6is3HR\nlMGHuHVf/PXY9Qc5EAYWT0+0inQDC9yQpOvXlNzqKtL3uJGx09Tg5Z9FYvJtvvjq\nYhRqs6x1Aho3WRN9g72q2lb69G6L057t62q4JE8bkp1G/YRC6Xwjm8sFxRK9srLf\nHAd6KImUmrYo4jqk4t3m/x3/4ajO843Ck9eDFeuYLPuqruSWjOj8FJclTowmaE0H\nWLwAKRSXr6w5RnHrzs+vOVGkV9tl+k500YcfQ0vsTMjF2veGpNoMpp1IGlUssv6i\nk95NfZ/TAgMBAAECggEAANs3EoPftAuDC2z4txDAP/du+C2l5p/c2p9KrOLy1LOJ\n8o6P8FmhzBibbJ1o/w0LX+YnzKdeX7SpmOw6PEB58PMLAh9K16V8xinIpKhXBX7O\nuS4T6483va3kKON/OrN6j56+MJ75L94X4HxDuY26uIDiSt5septTs5ItA0YOOy18\n/ytJHlJOF/2oNBrwM5k2Wih4xh9Vnm95oco4Nw+lYs9A0FN45mVsFAPWOkcE0cqU\nZE2fnBgK2dW+tcQVOXUw/EEMvoHoV+cQoFSBvaHokS6oiQ5XXh604wcqWaRgYmwP\nQwB7rDvRIjRwN2HEPQyVV3ukrg563+fxAYbulDRAQQKBgQDeCyZkPTmXzTRBKG7X\n9tCZT/UAdOWdOJbobhGK7hOVUXUogw5pklIPlXEqbgDdaXPeWbYf3duiMhaK24od\nzVE/3R7Mb/jrY2waO3UpVY/QWKN146ohs4YxhiMPdMHkxZIEJRZ01jTONFwYEpNc\nVukZbIotSOJhs/C9WrX12wcPZwKBgQC+DVXafluy5/Sa9hh37MniTC5HR0Q/uBZk\nj5CqX2cqj937lTyAy6Oqew9F3Xkzuit+yZtGuuDYXPNGEI15GEszuyyE28dz9DlL\nUGJZlHiIGt4jKlcmGPrTqmJsW1JEZZZ7JHnlTB0rp7gPakTiQn/NnAdCmpYqKHAG\nBmjbZPjktQKBgBuB+Byc9SCYPGwCDVFV81u66xhGYxfKJe/fiu7SNbze3YvKSKPN\ni7sAgYeHHzZO1RrrtENYYdhDKkXDkuXERNeLlkAvcv/+TislyIr5XZqrEH0PWklY\nizxhaMCGb2rfCwrWaWTKELqnA+27h2P+JFyQ9MFNcTY3a5CZx0cQ/lvrAoGBAJK2\neLBTGzbhGVMG55ysjqzDYnZj7avC0IaQzXy4aUvSA+tTKYHDsnTIyuGENyxXa3xU\n5imT2j8sgiB0ZsI0ntkwhQ2LHE3HGvOo+kNs+h8XnqRG6z/dyMPdpF1BoiBqy+AE\nKJV6TIqGzvAXeVWxQDfZW0FvVLz2uoPsLsYvDHSBAoGAYrARyxYj8nsLMiJKA6kb\n6tJxF6TvWWnjIRPJFiKO1WBCdM1I3oTTyVoJdELmYL1EH4d5olUdpTbE7OWOQpOi\niMqaO8Sh6JEKewN95hcaSIvuVrKHMqZw0LtfuQ713SBRBeZVvD26YJwnCS6UCGKN\n7P08zhJtAacDV3yhSvHGco0=\n-----END PRIVATE KEY-----\n",
+  "client_email": "tradexdash001@tradexdash001.iam.gserviceaccount.com",
+  "client_id": "109074032968100875561",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tradexdash001%40tradexdash001.iam.gserviceaccount.com"
+}

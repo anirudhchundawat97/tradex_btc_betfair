@@ -1,0 +1,138 @@
+ERROR:__main__:2022-11-13 15:13:21,998:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:20,368:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:24,139:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:28,715:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:33,902:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:37,981:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:41,288:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 15:14:44,760:mean requires at least one data point
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 140, in get_avg_buysell_price
+    avgbuyyes = mean(prices["yesbuy"])
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\statistics.py", line 328, in mean
+    raise StatisticsError('mean requires at least one data point')
+statistics.StatisticsError: mean requires at least one data point
+ERROR:__main__:2022-11-13 17:09:57,264:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 371, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 200, in _set_qty
+    write_exec_buy_order(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 134, in write_exec_buy_order
+    yes_buy, no_buy = get_buy_price(eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 109, in get_buy_price
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 33, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 30, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-13 20:52:22,010:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 373, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 315, in _keep_a_check
+    self.__scalp_side("Y", pausebuy=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 135, in __scalp_side
+    self.order.cancel_all_pending_sell("Y", "New sell order params")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 99, in cancel_all_pending_sell
+    df = get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 33, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 30, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

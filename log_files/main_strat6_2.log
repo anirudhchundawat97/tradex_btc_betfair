@@ -1,0 +1,901 @@
+ERROR:__main__:2022-11-03 15:59:29,379:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 292, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 15:59:31,137:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 292, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 15:59:33,261:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 293, in initialise
+    self._print_details("initialising")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 89, in _print_details
+    "Spread": [100-self.priceatri.yes_best_price-self.priceatri.no_best_price, 100-self.priceatri.yes_best_price-self.priceatri.no_best_price],
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-03 15:59:33,850:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 284, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 81, in initialise_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 15:59:39,112:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 284, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 81, in initialise_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 15:59:39,834:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 284, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 81, in initialise_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 15:59:45,713:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 50, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 292, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:00:00,928:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:00:02,343:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:00:03,772:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 307, in update
+    self._print_details("updating")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 89, in _print_details
+    "Spread": [100-self.priceatri.yes_best_price-self.priceatri.no_best_price, 100-self.priceatri.yes_best_price-self.priceatri.no_best_price],
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-03 16:00:04,065:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:00:12,882:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:00:13,190:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:00:18,755:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:01:08,199:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:01:09,482:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:01:10,880:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 307, in update
+    self._print_details("updating")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 89, in _print_details
+    "Spread": [100-self.priceatri.yes_best_price-self.priceatri.no_best_price, 100-self.priceatri.yes_best_price-self.priceatri.no_best_price],
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
+ERROR:__main__:2022-11-03 16:01:11,179:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:01:19,273:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:01:19,645:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:01:29,887:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:02:25,061:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:02:26,448:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:02:26,812:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:02:27,106:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:02:35,555:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:02:35,867:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:02:38,994:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:03:31,395:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:03:32,707:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:03:32,990:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:03:33,242:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:03:42,936:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:03:43,256:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:03:50,114:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:04:41,188:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:04:42,565:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:04:42,838:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:04:43,116:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:04:52,046:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:04:52,498:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:04:57,222:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:05:51,524:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:05:52,796:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:05:53,089:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:05:53,387:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:05:58,319:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:05:58,586:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:06:02,636:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:06:51,211:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:06:52,520:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:06:52,792:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:06:53,059:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:07:02,731:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:07:03,018:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:07:08,727:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:08:01,955:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:08:03,366:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:08:03,682:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:08:03,972:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:08:12,291:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:08:12,598:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+    self.set_executed_wap_avgpri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:08:15,813:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:09:04,527:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:09:05,841:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:09:06,137:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:09:06,501:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:09:11,924:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:09:12,198:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:09:18,345:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:10:07,931:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:10:09,207:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:10:09,480:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:10:09,766:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:10:15,366:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:10:15,658:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:10:38,592:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:11:29,357:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:11:30,691:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:11:30,966:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:11:31,252:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:11:33,187:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:11:33,472:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:11:36,373:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:12:23,453:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:12:24,702:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+ERROR:__main__:2022-11-03 16:12:24,970:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 43, in set_executed_wap_avgpri
+    self.yes_executed_wap, self.yes_executed_avgpri = self._calc_wap_avgpri("Y")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:12:25,258:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:12:27,271:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:12:27,542:cannot unpack non-iterable NoneType object
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 298, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 89, in update_priceatri
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 44, in set_executed_wap_avgpri
+    self.no_executed_wap, self.no_executed_avgpri = self._calc_wap_avgpri("N")
+TypeError: cannot unpack non-iterable NoneType object
+ERROR:__main__:2022-11-03 16:12:30,431:int() argument must be a string, a bytes-like object or a real number, not 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 62, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 306, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat6.py", line 192, in _set_qty
+    self.max_buy_qty = int(self.priceatri.avg_traded_qty) * self.avg_qty_multiplier
+TypeError: int() argument must be a string, a bytes-like object or a real number, not 'NoneType'

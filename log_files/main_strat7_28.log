@@ -1,0 +1,201 @@
+ERROR:__main__:2022-12-19 15:05:18,788:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 686, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 587, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("Y", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("Y")):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 404, in _is_myorder_best
+    if not np.isnan(self.priceatri.yes_2ndbest_price) and (self.priceatri.yes_best_price >= self.priceatri.yes_2ndbest_price+2):
+TypeError: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+ERROR:__main__:2022-12-19 15:06:44,399:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 686, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 598, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 300, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("N", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("N")):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 415, in _is_myorder_best
+    if not np.isnan(self.priceatri.no_2ndbest_price) and (self.priceatri.no_best_price >= self.priceatri.no_2ndbest_price+2):
+TypeError: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+ERROR:__main__:2022-12-19 15:07:10,735:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 686, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 598, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 300, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("N", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("N")):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 415, in _is_myorder_best
+    if not np.isnan(self.priceatri.no_2ndbest_price) and (self.priceatri.no_best_price >= self.priceatri.no_2ndbest_price+2):
+TypeError: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+ERROR:__main__:2022-12-19 15:09:20,867:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 703, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 587, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("Y", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("Y")):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 404, in _is_myorder_best
+    if not np.isnan(self.priceatri.yes_2ndbest_price) and (self.priceatri.yes_best_price >= self.priceatri.yes_2ndbest_price+2):
+TypeError: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+ERROR:__main__:2022-12-19 15:10:46,800:ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 703, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 587, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("Y", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("Y")):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 404, in _is_myorder_best
+    if not np.isnan(self.priceatri.yes_2ndbest_price) and (self.priceatri.yes_best_price >= self.priceatri.yes_2ndbest_price+2):
+TypeError: ufunc 'isnan' not supported for the input types, and the inputs could not be safely coerced to any supported types according to the casting rule ''safe''
+ERROR:__main__:2022-12-19 18:33:49,298:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 703, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 659, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 322, in __scalp_side
+    self.order.cancel_all_pending_buy("Y", f"{trigger},CancelOppSideOrders")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 156, in cancel_all_pending_buy
+    df = self.mybet.get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-12-19 20:29:03,054:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 700, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 384, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no, self.falseavgbuyyes, self.falseavgbuyno = self.trans.get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 171, in get_avg_buysell_price
+    remove_yes_qty, remove_yes_amount = self._get_unfilled_qty_n_amount(event_id, "Y")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 256, in _get_unfilled_qty_n_amount
+    bets_df = self.mybet.get_event_holdings(eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 28, in _get_portfolio_dict
+    resp = self.api_obj.tradex_caller("mybetsv2", {"eventsStatus": "'A','F'"})
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2022-12-19 20:29:45,915:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 691, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 117, in update_priceatri
+    self.update_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 31, in update_event
+    self.last_executed_trades = self.lti.clean_lastTradesInfo_df(self.eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\lasttradesinfo.py", line 50, in clean_lastTradesInfo_df
+    df = self._get_lastTradesInfo_df(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\lasttradesinfo.py", line 19, in _get_lastTradesInfo_df
+    resp = self.api_obj.tradex_caller("lastTradesInfo", body={"probeid": id})
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2022-12-19 20:30:28,318:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 691, in update
+    self.priceatri.update_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 117, in update_priceatri
+    self.update_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 31, in update_event
+    self.last_executed_trades = self.lti.clean_lastTradesInfo_df(self.eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\lasttradesinfo.py", line 50, in clean_lastTradesInfo_df
+    df = self._get_lastTradesInfo_df(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\lasttradesinfo.py", line 19, in _get_lastTradesInfo_df
+    resp = self.api_obj.tradex_caller("lastTradesInfo", body={"probeid": id})
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0

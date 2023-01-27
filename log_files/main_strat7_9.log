@@ -1,0 +1,482 @@
+ERROR:__main__:2022-11-17 15:18:20,335:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 399, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 229, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-17 15:19:15,414:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 414, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 229, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-17 15:21:16,628:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 414, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 229, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-17 15:30:09,481:cannot encode object: 1, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 1, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:32:22,872:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:33:27,409:cannot encode object: 1, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 1, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:34:42,913:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:35:44,469:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:37:50,147:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:39:48,743:cannot encode object: 9, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 9, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:39:57,292:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:41:50,937:cannot encode object: 9, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 9, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:41:58,744:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:43:49,913:cannot encode object: 8, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 8, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:44:02,177:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>
+ERROR:__main__:2022-11-17 15:46:12,397:cannot encode object: 2, of type: <class 'numpy.int64'>
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 419, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 147, in _strat_status_record
+    self.stratRecorObj._add_one_doc(data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat_live_status_recorder.py", line 12, in _add_one_doc
+    database.insert_dict("tradex_strat_data", f"strat{self.strategy_num}_{self.event_id}", data_dict)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\MongoClient.py", line 15, in insert_dict
+    self.collection.insert_one(data_dictionary)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 621, in insert_one
+    self._insert_one(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 562, in _insert_one
+    self.__database.client._retryable_write(acknowledged, _insert_command, session)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1448, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1321, in _retry_with_session
+    return self._retry_internal(retryable, func, session, bulk)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\mongo_client.py", line 1362, in _retry_internal
+    return func(session, sock_info, retryable)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\collection.py", line 550, in _insert_command
+    result = sock_info.command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 794, in command
+    self._raise_connection_failure(error)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\pool.py", line 766, in command
+    return command(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\network.py", line 127, in command
+    request_id, msg, size, max_doc_size = message._op_msg(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pymongo\message.py", line 687, in _op_msg
+    return _op_msg_uncompressed(flags, command, identifier, docs, opts)
+bson.errors.InvalidDocument: cannot encode object: 2, of type: <class 'numpy.int64'>

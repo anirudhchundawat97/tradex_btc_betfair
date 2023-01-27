@@ -1,0 +1,3 @@
+direction to trade in -> side with higher cummulative order book value
+max qty to hold at any point -> average qty of last 10 buy orders
+when to sell at loss -> (when last 5 orders total qty > average qty of last 20 orders) @ price lower than your sell OG sell price

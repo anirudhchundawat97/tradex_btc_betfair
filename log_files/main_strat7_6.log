@@ -1,0 +1,68 @@
+ERROR:__main__:2022-11-14 21:17:35,816:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 375, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 202, in _set_qty
+    write_exec_buy_order(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 134, in write_exec_buy_order
+    yes_buy, no_buy = get_buy_price(eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 109, in get_buy_price
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 33, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 30, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-15 15:18:35,136:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 360, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 194, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-15 15:18:44,105:'numpy.bool_' object is not callable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 363, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 320, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 149, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= 90)(not self.order.is_same_order("N", temp_price, temp_qty, "buy")):
+TypeError: 'numpy.bool_' object is not callable
+ERROR:__main__:2022-11-15 15:18:51,839:'numpy.bool_' object is not callable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 377, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 347, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 149, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= 90)(not self.order.is_same_order("N", temp_price, temp_qty, "buy")):
+TypeError: 'numpy.bool_' object is not callable
+ERROR:__main__:2022-11-15 15:19:10,414:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 374, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 194, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-15 15:19:18,042:'numpy.bool_' object is not callable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 377, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 320, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 149, in __scalp_side
+    if (temp_qty > 0) and (temp_price <= 90)(not self.order.is_same_order("N", temp_price, temp_qty, "buy")):
+TypeError: 'numpy.bool_' object is not callable

@@ -1,0 +1,216 @@
+ERROR:__main__:2022-11-21 15:42:51,901:ufunc 'add' did not contain a loop with signature matching types (dtype('int64'), dtype('<U7')) -> None
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 480, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 408, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 192, in __scalp_side
+    sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 312, in __get_send_order_price_qty
+    self.my_avgbuy_price_yes > self.priceatri.yes_best_price + self.getOutSellPriceDiff):  # or (self.my_lastbuy_price_yes > self.priceatri.yes_best_price + 15):
+numpy.core._exceptions._UFuncNoLoopError: ufunc 'add' did not contain a loop with signature matching types (dtype('int64'), dtype('<U7')) -> None
+ERROR:__main__:2022-11-21 15:46:19,738:local variable 'yesfp_std' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 481, in initialise
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 119, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 113, in __set_getoutsellpricediff
+    self.getOutSellPriceDiff = max(5, yesfp_std)
+UnboundLocalError: local variable 'yesfp_std' referenced before assignment
+ERROR:__main__:2022-11-21 15:46:29,690:local variable 'yesfp_std' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 481, in initialise
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 119, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 113, in __set_getoutsellpricediff
+    self.getOutSellPriceDiff = max(5, yesfp_std)
+UnboundLocalError: local variable 'yesfp_std' referenced before assignment
+ERROR:__main__:2022-11-21 15:46:42,301:local variable 'yesfp_std' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 481, in initialise
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 119, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 113, in __set_getoutsellpricediff
+    self.getOutSellPriceDiff = max(5, yesfp_std)
+UnboundLocalError: local variable 'yesfp_std' referenced before assignment
+ERROR:__main__:2022-11-21 15:46:43,181:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 466, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 78, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 18, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2022-11-21 15:46:43,371:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 123, in <module>
+    while dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2022-11-21 15:49:34,949:'qty'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexes\base.py", line 3629, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 144, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index_class_helper.pxi", line 41, in pandas._libs.index.Int64Engine._check_type
+KeyError: 'qty'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 497, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 265, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 161, in get_avg_buysell_price
+    cleaner_df = remove_unfilled_txn_qty(clean_df, event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 192, in remove_unfilled_txn_qty
+    unfqty = unfill_df["qty"].sum()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\series.py", line 958, in __getitem__
+    return self._get_value(key)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\series.py", line 1069, in _get_value
+    loc = self.index.get_loc(label)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexes\base.py", line 3631, in get_loc
+    raise KeyError(key) from err
+KeyError: 'qty'
+ERROR:__main__:2022-11-21 15:50:04,390:'qty'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexes\base.py", line 3629, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 144, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index_class_helper.pxi", line 41, in pandas._libs.index.Int64Engine._check_type
+KeyError: 'qty'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 497, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 265, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no = get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 161, in get_avg_buysell_price
+    cleaner_df = remove_unfilled_txn_qty(clean_df, event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 192, in remove_unfilled_txn_qty
+    unfqty = unfill_df["qty"].sum()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\series.py", line 958, in __getitem__
+    return self._get_value(key)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\series.py", line 1069, in _get_value
+    loc = self.index.get_loc(label)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexes\base.py", line 3631, in get_loc
+    raise KeyError(key) from err
+KeyError: 'qty'
+ERROR:__main__:2022-11-21 16:00:07,844:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 480, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 16:01:12,224:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 496, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 16:18:11,982:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 480, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 16:19:11,475:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 496, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 16:21:14,245:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 496, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 16:23:18,576:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 496, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 16:25:16,645:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 496, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 253, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-21 19:12:50,453:invalid literal for int() with base 10: 'y'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 104, in <module>
+    eid_temp = int(input("Enter event id :"))
+ValueError: invalid literal for int() with base 10: 'y'
+ERROR:__main__:2022-11-21 21:17:19,649:'asset'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexes\base.py", line 3629, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas\_libs\index.pyx", line 136, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\index.pyx", line 163, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5198, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas\_libs\hashtable_class_helper.pxi", line 5206, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'asset'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 485, in initialise
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 269, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no, self.falseavgbuyyes, self.falseavgbuyno = get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 165, in get_avg_buysell_price
+    remove_yes_qty, remove_yes_amount = _get_unfilled_qty_n_amount(event_id, "Y")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 246, in _get_unfilled_qty_n_amount
+    asset_mask = bets_df["asset"] == asset
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\frame.py", line 3505, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\pandas\core\indexes\base.py", line 3631, in get_loc
+    raise KeyError(key) from err
+KeyError: 'asset'

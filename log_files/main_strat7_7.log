@@ -1,0 +1,9 @@
+ERROR:__main__:2022-11-16 15:16:29,262:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 361, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 195, in _get_situation
+    diff_fair_best_n = (99 - self.yes_fair_price) - self.priceatri.no_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'

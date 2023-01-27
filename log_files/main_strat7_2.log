@@ -1,0 +1,169 @@
+ERROR:__main__:2022-11-08 20:16:55,113:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 319, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 193, in _set_qty
+    self.my_buy_price_yes, self.my_buy_price_no = get_buy_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 87, in get_buy_price
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 32, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 29, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-08 22:31:53,667:HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connectionpool.py", line 386, in _make_request
+    self._validate_conn(conn)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connectionpool.py", line 1042, in _validate_conn
+    conn.connect()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connection.py", line 414, in connect
+    self.sock = ssl_wrap_socket(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\util\ssl_.py", line 449, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\util\ssl_.py", line 493, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+TimeoutError: _ssl.c:980: The handshake operation timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\util\retry.py", line 550, in increment
+    raise six.reraise(type(error), error, _stacktrace)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\packages\six.py", line 770, in reraise
+    raise value
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connectionpool.py", line 389, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\urllib3\connectionpool.py", line 340, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 315, in update
+    self.__set_atr_value()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 70, in __set_atr_value
+    self.atr_value = self.binance_obj.get_last_atr(symbol="BTCUSDT", interval=self.time_2_expiry_cat)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\binance_data.py", line 52, in get_last_atr
+    data = self.fetch_hist_data(symbol, interval)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\binance_data.py", line 23, in fetch_hist_data
+    data = self.client.get_historical_klines(symbol, interval_dict[interval], "1 day ago UTC")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 934, in get_historical_klines
+    return self._historical_klines(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 984, in _historical_klines
+    temp_data = self._klines(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 883, in _klines
+    return self.get_klines(**params)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 868, in get_klines
+    return self._get('klines', data=params, version=self.PRIVATE_API_VERSION)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 371, in _get
+    return self._request_api('get', path, signed, version, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 334, in _request_api
+    return self._request(method, uri, signed, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\binance\client.py", line 314, in _request
+    self.response = getattr(self.session, method)(uri, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\sessions.py", line 600, in get
+    return self.request("GET", url, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\adapters.py", line 578, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=10)
+ERROR:__main__:2022-11-09 15:07:23,768:'title'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 297, in initialise
+    self.priceatri.initialise_priceatri()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\price_attributes.py", line 78, in initialise_priceatri
+    self.initialise_event()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\event_params.py", line 18, in initialise_event
+    self.title = static_data["title"]
+KeyError: 'title'
+ERROR:__main__:2022-11-09 15:07:24,177:fromisoformat: argument must be str
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 123, in <module>
+    while dt.datetime.now() <= dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at):
+TypeError: fromisoformat: argument must be str
+ERROR:__main__:2022-11-09 15:30:18,245:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 319, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 193, in _set_qty
+    self.my_buy_price_yes, self.my_buy_price_no = get_buy_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 87, in get_buy_price
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 32, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 29, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-09 22:03:55,783:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 319, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 193, in _set_qty
+    self.my_buy_price_yes, self.my_buy_price_no = get_buy_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 87, in get_buy_price
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 32, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 29, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2022-11-10 15:16:41,430:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 304, in initialise
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 182, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-10 15:17:21,519:unsupported operand type(s) for -: 'float' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 318, in update
+    self._get_situation()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 182, in _get_situation
+    diff_fair_best_y = self.yes_fair_price - self.priceatri.yes_best_price
+TypeError: unsupported operand type(s) for -: 'float' and 'NoneType'
+ERROR:__main__:2022-11-10 15:56:58,284:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 319, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 193, in _set_qty
+    self.my_buy_price_yes, self.my_buy_price_no = get_buy_price(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 87, in get_buy_price
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 32, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 29, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

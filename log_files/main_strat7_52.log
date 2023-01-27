@@ -1,0 +1,13 @@
+ERROR:__main__:2023-01-12 20:58:38,329:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 792, in update
+    self._strat_status_record()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 251, in _strat_status_record
+    data_dict["orders"] = self.mybet.get_event_holdings(self.event_id).to_dict("records")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

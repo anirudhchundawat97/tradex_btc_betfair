@@ -1,0 +1,325 @@
+ERROR:__main__:2022-12-09 15:39:17,289:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:39:33,414:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:39:47,574:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:40:01,541:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:41:17,043:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:41:32,700:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:41:47,819:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:42:02,607:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:43:16,971:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:43:30,829:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:43:45,579:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:43:59,705:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:45:14,230:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:45:30,463:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:45:46,003:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:45:59,089:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:47:15,864:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:47:31,794:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:47:45,713:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:48:00,856:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:49:16,997:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:49:33,705:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:49:49,070:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:50:05,154:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:51:20,425:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:51:35,422:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:51:50,975:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 15:52:07,552:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 610, in update
+    self.__set_getoutsellpricediff()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 161, in __set_getoutsellpricediff
+    raise e
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 143, in __set_getoutsellpricediff
+    self.yesfp_std = int(df["yesfp"].std())
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-12-09 20:50:09,626:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 608, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 329, in _set_qty
+    self.my_avgbuy_price_yes, self.my_avgsell_price_yes, self.my_avgbuy_price_no, self.my_avgsell_price_no, self.falseavgbuyyes, self.falseavgbuyno = self.trans.get_avg_buysell_price(
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 177, in get_avg_buysell_price
+    remove_no_qty, remove_no_amount = self._get_unfilled_qty_n_amount(event_id, "N")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\transactions.py", line 256, in _get_unfilled_qty_n_amount
+    bets_df = self.mybet.get_event_holdings(eid)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

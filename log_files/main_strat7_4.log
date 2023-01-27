@@ -1,0 +1,184 @@
+ERROR:__main__:2022-11-12 15:49:13,440:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:49:18,407:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:49:23,605:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 114, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 355, in initialise
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:49:37,319:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:49:42,222:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:49:47,397:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:51:18,786:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:51:25,714:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:52:32,606:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 309, in _keep_a_check
+    self.__scalp_side("Y", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 133, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("Y", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 244, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_yes) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:52:50,247:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:52:58,016:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:54:37,406:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 15:54:41,855:cannot convert float NaN to integer
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 369, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 314, in _keep_a_check
+    self.__scalp_side("N", pausebuy=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 151, in __scalp_side
+    sell_price, sell_qty = self.__get_send_order_price_qty("N", "sell")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 267, in __get_send_order_price_qty
+    sell2 = int(self.my_lastbuy_price_no) + 1
+ValueError: cannot convert float NaN to integer
+ERROR:__main__:2022-11-12 21:53:05,712:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 127, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 367, in update
+    self._set_qty()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 200, in _set_qty
+    self.holding_yes_qty, self.holding_no_qty = get_holding_qty(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 58, in get_holding_qty
+    df = get_event_holdings(id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 32, in get_event_holdings
+    port_dict = _get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 29, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment

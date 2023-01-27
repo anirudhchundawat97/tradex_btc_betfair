@@ -1,0 +1,830 @@
+ERROR:__main__:2023-01-05 15:08:54,715:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 115, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 754, in initialise
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:14:49,570:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:21:47,131:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:28:32,211:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:35:18,126:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:42:03,504:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:48:50,989:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 15:55:22,718:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:02:02,846:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:08:52,212:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:15:26,092:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:22:11,009:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:28:43,092:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:35:27,485:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:42:05,775:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:49:03,818:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 16:55:45,909:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:03:56,188:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:10:22,979:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:17:12,656:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:23:48,024:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:30:27,793:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:37:05,292:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:43:30,106:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:50:03,347:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 17:56:32,076:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:02:58,242:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:09:19,104:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:16:00,307:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:22:24,241:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:29:03,855:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:35:41,273:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:42:34,784:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:49:14,882:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 18:55:54,869:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:02:34,966:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:09:16,120:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:15:52,081:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:22:17,007:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:28:37,254:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:35:07,650:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:41:29,885:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:47:56,147:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 19:54:16,372:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:00:43,418:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:07:23,086:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:13:59,568:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:20:22,358:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:26:48,433:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:33:13,826:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:39:33,491:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:45:54,501:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:52:12,161:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 20:58:37,412:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:05:16,141:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:11:54,344:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:18:21,587:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:24:57,883:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:31:32,233:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:37:50,968:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:44:06,150:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:50:24,188:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 21:56:35,852:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:03:06,424:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:09:38,619:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:16:06,772:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:22:43,445:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:27:01,686:local variable 'portfolio_dict' referenced before assignment
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 785, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 676, in _keep_a_check
+    self.__scalp_side("Y", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 288, in __scalp_side
+    self.order.cancel_all_pending_buy("N", f"{trigger},CancelOppSideOrders")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 156, in cancel_all_pending_buy
+    df = self.mybet.get_event_holdings(self.event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 44, in get_event_holdings
+    port_dict = self._get_portfolio_dict()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\mybets.py", line 41, in _get_portfolio_dict
+    return portfolio_dict
+UnboundLocalError: local variable 'portfolio_dict' referenced before assignment
+ERROR:__main__:2023-01-05 22:29:08,343:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:35:36,423:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:42:29,654:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:49:09,419:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 22:55:49,821:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 23:00:32,613:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 785, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 652, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 336, in __hold_qty_change_process
+    self.order.cancel_all_pending_sell("Y", f"{trigger},HoldQtyChange")
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 150, in cancel_all_pending_sell
+    self._cancel_sell(message=message,
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 128, in _cancel_sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-05 23:02:13,224:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 785, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 624, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=True)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 304, in __scalp_side
+    self.__send_buy_orders(f"{trigger},ScalpingNo,{set_priceqty_message}", "N", temp_price, temp_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 574, in __send_buy_orders
+    self.order._buy(message, "N", price, qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 38, in _buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-05 23:03:06,002:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 785, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 652, in _keep_a_check
+    self.__hold_qty_change_process(trigger)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 351, in __hold_qty_change_process
+    self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 580, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 71, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-05 23:03:06,330:invalid literal for int() with base 10: 'gainst'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 776, in update
+    self.__set_strike_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 108, in __set_strike_price
+    self.strike_price = int(self.priceatri.title[29:35])
+ValueError: invalid literal for int() with base 10: 'gainst'
+ERROR:__main__:2023-01-05 23:04:01,798:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run.py", line 128, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 785, in update
+    self._keep_a_check()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 688, in _keep_a_check
+    self.__scalp_side("N", trigger, pausebuy=False, pausesell=False)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 316, in __scalp_side
+    self.__send_all_sell(f"{trigger},SellingBoughtQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7.py", line 580, in __send_all_sell
+    self.order._sell(message, "N", sell_price, sell_qty)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 71, in _sell
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
