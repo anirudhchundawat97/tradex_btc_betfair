@@ -74,9 +74,16 @@ class BetFair:
             url = f"http://209.250.242.175:33332/odds/?ids={self.market_id}"
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
+            print("Runners:" ,temp2)
+            sleep(5)
             for team in temp2:
                 teamname = team["runnerName"]
+                print("teamA: ",teamA)
+                print("foundteam: ",teamname)
+                sleep(5)
                 s = SequenceMatcher(None, teamname, teamA)
+                print(s.ratio())
+                sleep(2)
                 if s.ratio() > 0.9:
                     self.odds_decimal = team["ExchangePrices"]["AvailableToBack"][2]["price"]
                     print()
