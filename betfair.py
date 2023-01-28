@@ -44,7 +44,7 @@ class BetFair:
                     phrase2 = teamB + "v" + teamA
                     s1 = SequenceMatcher(None, phrase1, name)
                     s2 = SequenceMatcher(None, phrase2, name)
-                    if (s1.ratio() > 0.9) or (s2.ratio() > 0.9):
+                    if (s1.ratio() > 0.85) or (s2.ratio() > 0.85):
                         print("Eventid: ", detail_dict["Id"])
                         self.event_id = detail_dict["Id"]
                     else:
@@ -84,7 +84,7 @@ class BetFair:
                 s = SequenceMatcher(None, teamname, teamA)
                 print(s.ratio())
                 sleep(2)
-                if s.ratio() > 0.9:
+                if s.ratio() >= 0.85:
                     self.odds_decimal = team["ExchangePrices"]["AvailableToBack"][2]["price"]
                     print()
                     print(self.odds_decimal)
