@@ -73,6 +73,13 @@ if __name__ == "__main__":
     import requests
     t1 = requests.post("http://209.250.242.175:33332/listEventsBySport/1")
     print(dir(t1))
+    print("---------_content",t1._content)
+    print("---------content",t1.content)
+    print("---------encoding",t1.encoding)
+    print("---------json",t1.json)
+    print("---------raw",t1.raw)
+    print("---------text",t1.text)
+    print("---------url",t1.url)
     # t2 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").json()
     # print(t2)
 
