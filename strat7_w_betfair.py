@@ -161,6 +161,8 @@ class Strategy:
             print(
                 f"Updating {self.priceatri.eid}: {self.priceatri.title} | started at {self.priceatri.started_at} ends at {self.priceatri.ends_at}")
         print(pd.DataFrame(print_dict, index=["Yes", "No"]))
+        print("winning odds decimal: ",self.betfair_obj.odds_decimal)
+        print("winning odds percent: ",self.betfair_obj.odds_percent)
         print("-" * 10, "PENDING BOOK:")
         print(self.priceatri.yes_pending_orders.head(3))
         print(self.priceatri.no_pending_orders.head(3))

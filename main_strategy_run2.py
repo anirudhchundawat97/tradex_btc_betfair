@@ -133,8 +133,8 @@ if __name__ == "__main__":
                                 try:
                                     strat_obj_dict[i].initialise()
                                     print(strat_obj_dict[i].priceatri.title)
-                                    print(dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.started_at))
-                                    print(dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at))
+                                    print(dt.datetime.strptime(strat_obj_dict[i].priceatri.started_at, "%Y-%m-%dT%H:%M:%S"))
+                                    print(dt.datetime.strptime(strat_obj_dict[i].priceatri.ends_at, "%Y-%m-%dT%H:%M:%S"))
                                     sleep(5)
                                 except Exception as e:
                                     logger.exception(e)

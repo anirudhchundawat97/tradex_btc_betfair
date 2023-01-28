@@ -75,22 +75,22 @@ class BetFair:
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
             print("Runners:" ,temp2)
-            sleep(5)
+            # sleep(5)
             for team in temp2:
                 teamname = team["runnerName"]
                 print("teamA: ",teamA)
                 print("foundteam: ",teamname)
-                sleep(5)
+                # sleep(5)
                 s = SequenceMatcher(None, teamname, teamA)
                 print(s.ratio())
-                sleep(2)
+                # sleep(2)
                 if s.ratio() >= 0.85:
                     self.odds_decimal = team["ExchangePrices"]["AvailableToBack"][2]["price"]
-                    print()
-                    print(self.odds_decimal)
+                    # print()
+                    # print(self.odds_decimal)
                     self.odds_percent = (1 / self.odds_decimal) * 100
-                    print()
-                    sleep(5)
+                    print(self.odds_percent)
+                    # sleep(5)
                     return self.odds_percent
 
             return 0
