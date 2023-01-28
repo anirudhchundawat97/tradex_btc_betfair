@@ -7,16 +7,16 @@ class BetFair:
         self.all_events = []
 
     def combine_all_sportsevents_list(self):
-        sports_ids = [1, 2, 3]
-        for sport_id in sports_ids:
-            url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
-            temp = requests.get(url)
-            # print(temp.text)
-            self.all_events.extend(json.loads(temp.text))
-        # url = f"http://209.250.242.175:33332/listEventsBySport/1"
-        # temp = requests.get(url)
-        # # print(temp.text)
-        # self.all_events = json.loads(temp.text)
+        # sports_ids = [1, 2, 3]
+        # for sport_id in sports_ids:
+        #     url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
+        #     temp = requests.get(url)
+        #     # print(temp.text)
+        #     self.all_events.extend(json.loads(temp.text))
+        url = f"http://209.250.242.175:33332/listEventsBySport/1"
+        temp = requests.get(url)
+        # print(temp.text)
+        self.all_events = json.loads(temp.text)
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
@@ -28,11 +28,12 @@ class BetFair:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
             for detail_dict in self.all_events:
+                print("in event finding loop")
                 if betfair_eid:
                     return betfair_eid
                 else:
                     # print(type(detail_dict))
-                    print(detail_dict)
+                    # print(detail_dict)
                     print()
                     name = detail_dict["name"].replace(" ", "").lower()
                     phrase = teamA+"v"+teamB
@@ -41,7 +42,7 @@ class BetFair:
                         print("Eventid: ", detail_dict["Id"])
                         betfair_eid = detail_dict["Id"]
                     else:
-                        print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
+                        print("Phrase not matched: ", phrase,name, detail_dict["Id"], s.ratio())
                         betfair_eid = None
         else:
             return None
