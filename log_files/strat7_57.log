@@ -6792,3 +6792,4 @@ CRITICAL:strat7:2023-01-26 18:58:44,888:17705: No my_buy_price unavailable
 INFO:strat7:2023-01-26 19:00:36,226:17705: Initialising event
 INFO:strat7_w_betfair:2023-01-28 14:36:41,673:17901: Initialising event
 INFO:strat7_w_betfair:2023-01-28 14:39:08,824:17901: Initialising event
+INFO:strat7_w_betfair:2023-01-28 15:00:24,905:17901: Initialising event

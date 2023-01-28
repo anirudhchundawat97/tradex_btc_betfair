@@ -12,8 +12,9 @@ class BetFair:
             temp = requests.post(url)
             self.all_events.append(temp)
 
-    def fetch_matching_eventid(self, teamA, teamB):
+    def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
+        print("A:", teamA, "B:", teamB)
         if teamA and teamB:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
@@ -25,26 +26,42 @@ class BetFair:
                     return detail_dict["Id"]
                 else:
                     print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
+                    return None
+        else:
+            return None
 
-    def fetch_marketid_from_eventid(self, eventid):
-        url = f"http://209.250.242.175:33332/listMarkets/{eventid}"
-        temp = requests.post(url)
-        temp2 = temp[0]
-        return temp2["marketId"]
+    def fetch_marketid_from_eventid(self, eventid=None):
+        if eventid:
+            url = f"http://209.250.242.175:33332/listMarkets/{eventid}"
+            temp = requests.post(url)
+            print(temp)
+            temp2 = temp[0]
+            return temp2["marketId"]
+        else:
+            print("betfair eventid:", eventid)
+            return None
 
-    def get_odds_matching_matchphrase(self, teamA, teamB):
-        event_id = self.fetch_matching_eventid(teamA, teamB)
-        market_id = self.fetch_marketid_from_eventid(event_id)
-        url = f"http://209.250.242.175:33332/odds/?ids={market_id}"
-        temp = requests.post(url)
-        temp2 = temp[0]["Runners"]
-        for team in temp2:
-            teamname = team["runnerName"]
-            s = SequenceMatcher(None, teamname, teamA)
-            if s.ratio() > 0.9:
-                odds = team["ExchangePrices"]["AvailableToBack"][2]["price"]
-            else:
-                odds = None
-        return (1/odds)*100
+    def get_odds_matching_matchphrase(self, teamA=None, teamB=None):
+        event_id = None
+        market_id = None
+        if teamA and teamB:
+            event_id = self.fetch_matching_eventid(teamA, teamB)
+        if event_id:
+            market_id = self.fetch_marketid_from_eventid(event_id)
+        if market_id:
+            url = f"http://209.250.242.175:33332/odds/?ids={market_id}"
+            temp = requests.post(url)
+            temp2 = temp[0]["Runners"]
+            for team in temp2:
+                teamname = team["runnerName"]
+                s = SequenceMatcher(None, teamname, teamA)
+                if s.ratio() > 0.9:
+                    odds = team["ExchangePrices"]["AvailableToBack"][2]["price"]
+                    return (1 / odds) * 100
+                else:
+                    odds = None
+                    return 0
+        else:
+            return 0
 
 

@@ -1792,3 +1792,21 @@ Traceback (most recent call last):
   File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 32, in fetch_marketid_from_eventid
     temp2 = temp[0]
 TypeError: 'Response' object is not subscriptable
+ERROR:__main__:2023-01-28 15:00:26,216:list index out of range
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 134, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 623, in initialise
+    self.__set_event_match_phrase()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 85, in __set_event_match_phrase
+    temp1 = self.priceatri.title.split(":")[2]
+IndexError: list index out of range
+ERROR:__main__:2023-01-28 15:00:26,625:unsupported operand type(s) for -: 'int' and 'NoneType'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 92, in __set_estimated_fair_price
+    self.estimated_no_fair_price = 100 - self.estimated_yes_fair_price
+TypeError: unsupported operand type(s) for -: 'int' and 'NoneType'
