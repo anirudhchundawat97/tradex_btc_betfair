@@ -1,6 +1,6 @@
 # from strat5 import Strategy as Strategy5
 # from strat6 import Strategy as Strategy6
-from strat7 import Strategy as Strategy7
+from strat7_w_betfair import Strategy as Strategy7
 from time import sleep
 import logging
 import datetime as dt
@@ -16,11 +16,13 @@ logger.addHandler(file_handler)
 
 if __name__ == "__main__":
     print(f"Logging to {log_file_name}")
-    strat_num = 8  # int(input("Enter Strategy number:"))
-    event_id_intake = 'a'  # input("Method of fetching event ids auto or manual?(a/m):")
+    strat_num = 7  # int(input("Enter Strategy number:"))
+    event_id_intake = 'm'  # input("Method of fetching event ids auto or manual?(a/m):")
     while True:
         time_now = dt.datetime.now().time()
-        if (time_now > dt.time(18, 0, 0)) and (time_now < dt.time(19, 0, 0)):
+        strategy_start_hr = 15
+        strategy_runfor_hr = 1
+        if (time_now > dt.time(strategy_start_hr, 0, 0)) and (time_now < dt.time(strategy_start_hr + strategy_runfor_hr, 0, 0)):
             # if strat_num == 5:
             #     try:
             #         eid = int(input("Enter event id:"))
@@ -119,7 +121,7 @@ if __name__ == "__main__":
                         eid_input_list.sort()
                         print("Event ids:")
                         print(eid_input_list)
-                        if len(eid_input_list) >= 8:
+                        if len(eid_input_list) > 0:
                             eid_input_str_list = ["strobj" + str(x) for x in eid_input_list]
                             for strobj, eid in zip(eid_input_str_list, eid_input_list):
                                 print("Creating strat obj for ", eid)
@@ -211,20 +213,20 @@ if __name__ == "__main__":
                                 logger.exception(e)
                                 print(e, "eid", i, strat_obj_dict[i])
 
-                        if dt.datetime.now().time() > time_now > dt.time(19, 0, 0):
+                        if dt.datetime.now().time() > time_now > dt.time(strategy_start_hr + strategy_runfor_hr, 0, 0):
                             print("time up")
                             break
                 except Exception as e:
                     print(e)
-        elif time_now > dt.time(19, 0, 0):
+        elif time_now > dt.time(strategy_start_hr + strategy_runfor_hr, 0, 0):
             print("Time up")
             break
         else:
-            time_remain = dt.datetime.now().replace(hour=18, minute=0, second=00) - dt.datetime.now()
+            time_remain = dt.datetime.now().replace(hour=strategy_start_hr, minute=0, second=00) - dt.datetime.now()
             if (time_remain < dt.timedelta(minutes=3)) and (time_now < dt.time(18, 0, 0)):
                 print("Time to market open: ", time_remain, "waiting 15secs")
                 sleep(15)
-            elif (time_remain > dt.timedelta(minutes=1)) and (time_now < dt.time(18, 0, 0)):
+            elif (time_remain > dt.timedelta(minutes=1)) and (time_now < dt.time(strategy_start_hr, 0, 0)):
                 sleep_time = time_remain / 2
                 print("last run: ", time_now, "next run: ", (dt.datetime.now() + sleep_time).time())
                 print("Time to market open: ", time_remain, f"waiting {sleep_time}")
