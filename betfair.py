@@ -9,9 +9,9 @@ class BetFair:
         sports_ids = [1, 2, 3]
         for sport_id in sports_ids:
             url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
-            temp = requests.post(url).json()
-            print(temp)
-            self.all_events.extend(temp)
+            temp = requests.post(url)
+            # print(temp.text)
+            self.all_events.extend(temp.text)
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
@@ -38,9 +38,9 @@ class BetFair:
         if eventid:
             url = f"http://209.250.242.175:33332/listMarkets/{eventid}"
             temp = requests.post(url)
-            print(temp)
-            temp2 = temp[0]
-            print("marketid" ,temp2["marketId"])
+            print(temp.text)
+            temp2 = (temp.text)[0]
+            print("marketid" , temp2["marketId"])
             return temp2["marketId"]
         else:
             print("betfair eventid:", eventid)
@@ -56,7 +56,7 @@ class BetFair:
         if market_id:
             url = f"http://209.250.242.175:33332/odds/?ids={market_id}"
             temp = requests.post(url)
-            temp2 = temp[0]["Runners"]
+            temp2 = temp.text[0]["Runners"]
             for team in temp2:
                 teamname = team["runnerName"]
                 s = SequenceMatcher(None, teamname, teamA)
@@ -72,9 +72,9 @@ class BetFair:
 if __name__ == "__main__":
     import requests
     t1 = requests.post("http://209.250.242.175:33332/listEventsBySport/1")
-    print(t1)
-    t2 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").json()
-    print(t2)
+    print(t1.text)
+    # t2 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").json()
+    # print(t2)
 
 
 
