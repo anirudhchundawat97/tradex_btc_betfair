@@ -14,6 +14,8 @@ class BetFair:
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
+        print("all event dict")
+        print(self.all_events)
         print("A:", teamA, "B:", teamB)
         if teamA and teamB:
             teamA = teamA.replace(" ", "").lower()
