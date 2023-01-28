@@ -1,10 +1,15 @@
 import requests
 from difflib import SequenceMatcher
 import json
+from time import sleep
 
 class BetFair:
     def __init__(self):
         self.all_events = []
+        self.event_id = None
+        self.market_id = None
+        self.odds_decimal = None
+        self.odds_percent = None
 
     def combine_all_sportsevents_list(self):
         # sports_ids = [1, 2, 3]
@@ -20,7 +25,6 @@ class BetFair:
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
-        betfair_eid = None
         # print("all event dict")
         # print(self.all_events)
         print("A:", teamA, "B:", teamB)
@@ -29,8 +33,8 @@ class BetFair:
             teamB = teamB.replace(" ", "").lower()
             for detail_dict in self.all_events:
                 print("in event finding loop")
-                if betfair_eid:
-                    return betfair_eid
+                if self.event_id:
+                    return self.event_id
                 else:
                     # print(type(detail_dict))
                     # print(detail_dict)
@@ -42,45 +46,47 @@ class BetFair:
                     s2 = SequenceMatcher(None, phrase2, name)
                     if (s1.ratio() > 0.9) or (s2.ratio() > 0.9):
                         print("Eventid: ", detail_dict["Id"])
-                        betfair_eid = detail_dict["Id"]
+                        self.event_id = detail_dict["Id"]
                     else:
                         print("Phrase not matched: ", phrase1,phrase2, name, detail_dict["Id"], s1.ratio(), s2.ratio())
-                        betfair_eid = None
+                        self.event_id = None
         else:
             return None
 
-    def fetch_marketid_from_eventid(self, eventid=None):
-        if eventid:
-            url = f"http://209.250.242.175:33332/listMarkets/{eventid}"
+    def fetch_marketid_from_eventid(self):
+        if self.event_id:
+            url = f"http://209.250.242.175:33332/listMarkets/{self.event_id}"
             temp = requests.get(url)
             # print(temp.text)
             temp2 = json.loads(temp.text)[0]
             print("marketid" , temp2["marketId"])
             return temp2["marketId"]
         else:
-            print("betfair eventid:", eventid)
+            print("betfair eventid:", self.event_id)
             return None
 
     def get_odds_matching_matchphrase(self, teamA=None, teamB=None):
-        event_id = None
-        market_id = None
-        if teamA and teamB:
-            event_id = self.fetch_matching_eventid(teamA, teamB)
-        if event_id:
-            market_id = self.fetch_marketid_from_eventid(event_id)
-        if market_id:
-            url = f"http://209.250.242.175:33332/odds/?ids={market_id}"
+        if (teamA and teamB) and (not self.event_id):
+            self.event_id = self.fetch_matching_eventid(teamA, teamB)
+        if self.event_id:
+            self.market_id = self.fetch_marketid_from_eventid()
+        if self.market_id:
+            url = f"http://209.250.242.175:33332/odds/?ids={self.market_id}"
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
             for team in temp2:
                 teamname = team["runnerName"]
                 s = SequenceMatcher(None, teamname, teamA)
                 if s.ratio() > 0.9:
-                    odds = team["ExchangePrices"]["AvailableToBack"][2]["price"]
-                    return (1 / odds) * 100
-                else:
-                    odds = None
-                    return 0
+                    self.odds_decimal = team["ExchangePrices"]["AvailableToBack"][2]["price"]
+                    print()
+                    print(self.odds_decimal)
+                    self.odds_percent = (1 / self.odds_decimal) * 100
+                    print()
+                    sleep(5)
+                    return self.odds_percent
+
+            return 0
         else:
             return 0
 
