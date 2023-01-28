@@ -9,7 +9,7 @@ class BetFair:
         sports_ids = [1, 2, 3]
         for sport_id in sports_ids:
             url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
-            temp = requests.post(url)
+            temp = requests.post(url).json()
             self.all_events.append(temp)
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
@@ -33,7 +33,7 @@ class BetFair:
     def fetch_marketid_from_eventid(self, eventid=None):
         if eventid:
             url = f"http://209.250.242.175:33332/listMarkets/{eventid}"
-            temp = requests.post(url)
+            temp = requests.post(url).json()
             print(temp)
             temp2 = temp[0]
             return temp2["marketId"]
@@ -50,7 +50,7 @@ class BetFair:
             market_id = self.fetch_marketid_from_eventid(event_id)
         if market_id:
             url = f"http://209.250.242.175:33332/odds/?ids={market_id}"
-            temp = requests.post(url)
+            temp = requests.post(url).json()
             temp2 = temp[0]["Runners"]
             for team in temp2:
                 teamname = team["runnerName"]
