@@ -14,16 +14,17 @@ class BetFair:
 
     def fetch_matching_eventid(self, teamA, teamB):
         self.combine_all_sportsevents_list()
-        teamA = teamA.replace(" ", "").lower()
-        teamB = teamB.replace(" ", "").lower()
-        for detail_dict in self.all_events:
-            name = detail_dict["name"].replace(" ", "").lower()
-            phrase = teamA+"v"+teamB
-            s = SequenceMatcher(None, phrase, name)
-            if s.ratio() > 0.9:
-                return detail_dict["Id"]
-            else:
-                print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
+        if teamA and teamB:
+            teamA = teamA.replace(" ", "").lower()
+            teamB = teamB.replace(" ", "").lower()
+            for detail_dict in self.all_events:
+                name = detail_dict["name"].replace(" ", "").lower()
+                phrase = teamA+"v"+teamB
+                s = SequenceMatcher(None, phrase, name)
+                if s.ratio() > 0.9:
+                    return detail_dict["Id"]
+                else:
+                    print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
 
     def fetch_marketid_from_eventid(self, eventid):
         url = f"http://209.250.242.175:33332/listMarkets/{eventid}"

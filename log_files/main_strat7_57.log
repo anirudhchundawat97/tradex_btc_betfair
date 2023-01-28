@@ -1657,3 +1657,138 @@ Traceback (most recent call last):
   File "D:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 138, in tradex_caller
     raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
 Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-01-28 14:37:02,605:list index out of range
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 134, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 623, in initialise
+    self.__set_event_match_phrase()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 85, in __set_event_match_phrase
+    temp1 = self.priceatri.title.split(":")[2]
+IndexError: list index out of range
+ERROR:__main__:2023-01-28 14:37:03,910:'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 35, in get_odds_matching_matchphrase
+    event_id = self.fetch_matching_eventid(teamA, teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 17, in fetch_matching_eventid
+    teamA = teamA.replace(" ", "").lower()
+AttributeError: 'NoneType' object has no attribute 'replace'
+ERROR:__main__:2023-01-28 14:37:20,732:'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 35, in get_odds_matching_matchphrase
+    event_id = self.fetch_matching_eventid(teamA, teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 17, in fetch_matching_eventid
+    teamA = teamA.replace(" ", "").lower()
+AttributeError: 'NoneType' object has no attribute 'replace'
+ERROR:__main__:2023-01-28 14:37:37,044:'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 35, in get_odds_matching_matchphrase
+    event_id = self.fetch_matching_eventid(teamA, teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 17, in fetch_matching_eventid
+    teamA = teamA.replace(" ", "").lower()
+AttributeError: 'NoneType' object has no attribute 'replace'
+ERROR:__main__:2023-01-28 14:37:53,383:'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 35, in get_odds_matching_matchphrase
+    event_id = self.fetch_matching_eventid(teamA, teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 17, in fetch_matching_eventid
+    teamA = teamA.replace(" ", "").lower()
+AttributeError: 'NoneType' object has no attribute 'replace'
+ERROR:__main__:2023-01-28 14:38:09,822:'NoneType' object has no attribute 'replace'
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 35, in get_odds_matching_matchphrase
+    event_id = self.fetch_matching_eventid(teamA, teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 17, in fetch_matching_eventid
+    teamA = teamA.replace(" ", "").lower()
+AttributeError: 'NoneType' object has no attribute 'replace'
+ERROR:__main__:2023-01-28 14:39:10,043:list index out of range
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 134, in <module>
+    strat_obj_dict[i].initialise()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 623, in initialise
+    self.__set_event_match_phrase()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 85, in __set_event_match_phrase
+    temp1 = self.priceatri.title.split(":")[2]
+IndexError: list index out of range
+ERROR:__main__:2023-01-28 14:39:11,735:'Response' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 37, in get_odds_matching_matchphrase
+    market_id = self.fetch_marketid_from_eventid(event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 32, in fetch_marketid_from_eventid
+    temp2 = temp[0]
+TypeError: 'Response' object is not subscriptable
+ERROR:__main__:2023-01-28 14:39:28,457:'Response' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 37, in get_odds_matching_matchphrase
+    market_id = self.fetch_marketid_from_eventid(event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 32, in fetch_marketid_from_eventid
+    temp2 = temp[0]
+TypeError: 'Response' object is not subscriptable
+ERROR:__main__:2023-01-28 14:39:44,989:'Response' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 37, in get_odds_matching_matchphrase
+    market_id = self.fetch_marketid_from_eventid(event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 32, in fetch_marketid_from_eventid
+    temp2 = temp[0]
+TypeError: 'Response' object is not subscriptable
+ERROR:__main__:2023-01-28 14:40:01,577:'Response' object is not subscriptable
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\main_strategy_run2.py", line 147, in <module>
+    strat_obj_dict[j].update()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 642, in update
+    self.__set_estimated_fair_price()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\strat7_w_betfair.py", line 91, in __set_estimated_fair_price
+    self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 37, in get_odds_matching_matchphrase
+    market_id = self.fetch_marketid_from_eventid(event_id)
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\betfair.py", line 32, in fetch_marketid_from_eventid
+    temp2 = temp[0]
+TypeError: 'Response' object is not subscriptable

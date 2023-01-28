@@ -154,7 +154,7 @@ if __name__ == "__main__":
                                 print("#" * 20)
                                 print("#" * 20)
                                 print("#" * 20)
-                                sleep(60)
+                                sleep(15)
                             print("EVENT ENDED.")
                             break
                         else:
