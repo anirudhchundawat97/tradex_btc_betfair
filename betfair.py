@@ -70,7 +70,11 @@ class BetFair:
             return 0
 
 if __name__ == "__main__":
-    pass
+    import requests
+    t1 = requests.post("http://209.250.242.175:33332/listEventsBySport/1")
+    print(t1)
+    t2 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").json()
+    print(t2)
 
 
 
