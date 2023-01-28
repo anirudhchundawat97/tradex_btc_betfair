@@ -22,7 +22,7 @@ if __name__ == "__main__":
         time_now = dt.datetime.now().time()
         strategy_start_hr = 15
         strategy_runfor_hr = 1
-        if (time_now > dt.time(strategy_start_hr, 0, 0)) and (time_now < dt.time(strategy_start_hr + strategy_runfor_hr, 0, 0)):
+        if True:(time_now > dt.time(strategy_start_hr, 0, 0)) and (time_now < dt.time(strategy_start_hr + strategy_runfor_hr, 0, 0)):
             # if strat_num == 5:
             #     try:
             #         eid = int(input("Enter event id:"))
