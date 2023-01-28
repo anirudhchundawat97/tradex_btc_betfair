@@ -37,7 +37,7 @@ class ApiCaller:
 
     def _set_user_bearer_token(self):
         if (self.userid == 0) or (self.userid == 603727):
-            # tokenfor mobile-987654321 otp XXX
+            # tokenfor mobile-987654321 otpgit  XXX
             self.token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2MDM3MjcsImlhdCI6MTY2Nzk4NjE1OCwiZXhwIjoyNTMxOTg2MTU4fQ.qJP0dKNBQRFojO32SfvyYR2o_Whk3gDy6JkZZ1BUxCM "
         elif self.userid == 11:
             self.token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" \
