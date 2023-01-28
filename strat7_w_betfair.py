@@ -82,7 +82,7 @@ class Strategy:
         self.teamB = None
 
     def __set_event_match_phrase(self):
-        temp1 = self.priceatri.title.split(":")[2]
+        temp1 = self.priceatri.title.split(":")[1]
         temp2 = temp1.split("to win against")
         self.teamA = temp2[0]
         self.teamB = temp2[1][:-1]
@@ -153,7 +153,7 @@ class Strategy:
                       "MyHoldQty": [self.holding_yes_qty, self.holding_no_qty],
                       "MaxBuyQty": [self.max_buyorder_qty, self.max_buyorder_qty],
                       "MaxHoldQty": [self.max_hold_qty, self.max_hold_qty]}
-        print(dt.datetime.now(), "-" * 50)
+        print(dt.datetime.now()+ dt.timedelta(hours=5,minutes=30), "-" * 50)
         if process == "initialising":
             print(
                 f"Initialising {self.priceatri.eid}: {self.priceatri.title} | started at {self.priceatri.started_at} ends at {self.priceatri.ends_at}")
@@ -597,7 +597,7 @@ class Strategy:
                             self.__scalp_side("N", trigger, pausebuy=True, pausesell=False)
 
     def absorb_high_probable_orderbook(self):
-        if dt.datetime.now() + dt.timedelta(minutes=20) >= dt.datetime.fromisoformat(self.priceatri.ends_at):
+        if dt.datetime.now() + dt.timedelta(hours=5,minutes=30)+ dt.timedelta(minutes=20) >= dt.datetime.strptime(self.priceatri.ends_at, "%Y-%m-%dT%H:%M:%S"):
             absorb_side = "N" if (self.estimated_yes_fair_price == 99) else "Y" if (self.estimated_no_fair_price == 99) else None
             print(f"Absorbing '{absorb_side}' order book")
             if absorb_side == "N":
