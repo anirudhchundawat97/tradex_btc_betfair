@@ -1,21 +1,22 @@
 import requests
 from difflib import SequenceMatcher
+import json
 
 class BetFair:
     def __init__(self):
         self.all_events = []
 
     def combine_all_sportsevents_list(self):
-        # sports_ids = [1, 2, 3]
-        # for sport_id in sports_ids:
-        #     url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
-        #     temp = requests.get(url)
-        #     # print(temp.text)
-        #     self.all_events.extend(temp.text)
-        url = f"http://209.250.242.175:33332/listEventsBySport/1"
-        temp = requests.get(url)
-        # print(temp.text)
-        self.all_events = temp.text
+        sports_ids = [1, 2, 3]
+        for sport_id in sports_ids:
+            url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
+            temp = requests.get(url)
+            # print(temp.text)
+            self.all_events.extend(json.loads(temp.text))
+        # url = f"http://209.250.242.175:33332/listEventsBySport/1"
+        # temp = requests.get(url)
+        # # print(temp.text)
+        # self.all_events = json.loads(temp.text)
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
@@ -33,7 +34,7 @@ class BetFair:
                 phrase = teamA+"v"+teamB
                 s = SequenceMatcher(None, phrase, name)
                 if s.ratio() > 0.9:
-                    print("Eventid: ",detail_dict["Id"])
+                    print("Eventid: ", detail_dict["Id"])
                     return detail_dict["Id"]
                 else:
                     print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
@@ -46,7 +47,7 @@ class BetFair:
             url = f"http://209.250.242.175:33332/listMarkets/{eventid}"
             temp = requests.get(url)
             # print(temp.text)
-            temp2 = (temp.text)[0]
+            temp2 = json.loads(temp.text)[0]
             print("marketid" , temp2["marketId"])
             return temp2["marketId"]
         else:
@@ -63,7 +64,7 @@ class BetFair:
         if market_id:
             url = f"http://209.250.242.175:33332/odds/?ids={market_id}"
             temp = requests.get(url)
-            temp2 = temp.text[0]["Runners"]
+            temp2 = json.loads(temp.text)[0]["Runners"]
             for team in temp2:
                 teamname = team["runnerName"]
                 s = SequenceMatcher(None, teamname, teamA)
@@ -80,15 +81,10 @@ if __name__ == "__main__":
     import requests
     t1 = requests.get("http://209.250.242.175:33332/listEventsBySport/1")
     print(dir(t1))
-    print("---------_content",t1._content)
-    print("---------content",t1.content)
-    print("---------encoding",t1.encoding)
-    print("---------json",t1.json)
-    print("---------raw",t1.raw)
-    print("---------text",t1.text)
-    print("---------url",t1.url)
-    # t2 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").json()
-    # print(t2)
+    print("---------text",type(t1.text),t1.text)
+    print()
+    print("---------text", type(json.loads(t1.text)), json.loads(t1.text))
+    print(json.loads(t1.text)[0])
 
 
 
