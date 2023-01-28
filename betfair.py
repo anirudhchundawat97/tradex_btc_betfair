@@ -71,7 +71,7 @@ class BetFair:
 
 if __name__ == "__main__":
     import requests
-    t1 = requests.post("http://209.250.242.175:33332/listEventsBySport/1")
+    t1 = requests.get("http://209.250.242.175:33332/listEventsBySport/1")
     print(dir(t1))
     print("---------_content",t1._content)
     print("---------content",t1.content)
