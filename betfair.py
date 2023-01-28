@@ -71,7 +71,7 @@ class BetFair:
 
 if __name__ == "__main__":
     import requests
-    t1 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").text()
+    t1 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").text
     print(t1)
     # t2 = requests.post("http://209.250.242.175:33332/listEventsBySport/1").json()
     # print(t2)
