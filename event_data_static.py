@@ -103,6 +103,7 @@ if __name__ == "__main__":
             # if "Bitcoin USDT Price at" in data_dict["title"]:
             if "" in data_dict["title"]:
                 print(id, data_dict["title"], data_dict["started_at"], " to ", data_dict["ends_at"])
+                print(type(data_dict["ends_at"]))
                 eid_list.append(id)
                 # print(type(data_dict["ends_at"]))
                 # print(pd.to_datetime(data_dict["ends_at"]))

@@ -140,7 +140,7 @@ if __name__ == "__main__":
                                     logger.exception(e)
                                     print(e, "eid", i, strat_obj_dict[i])
 
-                            while dt.datetime.now() <= dt.datetime.strptime(strat_obj_dict[i].priceatri.ends_at, "%Y-%m-%d"):
+                            while (dt.datetime.now()+dt.timedelta(hours=5, minutes=30)) <= dt.datetime.strptime(strat_obj_dict[i].priceatri.ends_at, "%Y-%m-%dT%H:%M:%S"):
                                 # while True:
                                 for j in eid_input_str_list:
                                     try:
