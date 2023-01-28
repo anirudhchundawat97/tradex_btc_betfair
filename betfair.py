@@ -9,8 +9,9 @@ class BetFair:
         sports_ids = [1, 2, 3]
         for sport_id in sports_ids:
             url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
-            temp = requests.post(url)
-            self.all_events.append(temp)
+            temp = requests.post(url).json()
+            print(temp)
+            self.all_events.extend(temp)
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
