@@ -20,6 +20,7 @@ class BetFair:
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
+        betfair_eid = None
         # print("all event dict")
         # print(self.all_events)
         print("A:", teamA, "B:", teamB)
@@ -27,18 +28,21 @@ class BetFair:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
             for detail_dict in self.all_events:
-                print(type(detail_dict))
-                print(detail_dict)
-                print()
-                name = detail_dict["name"].replace(" ", "").lower()
-                phrase = teamA+"v"+teamB
-                s = SequenceMatcher(None, phrase, name)
-                if s.ratio() > 0.9:
-                    print("Eventid: ", detail_dict["Id"])
-                    return detail_dict["Id"]
+                if betfair_eid:
+                    return betfair_eid
                 else:
-                    print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
-                    return None
+                    # print(type(detail_dict))
+                    print(detail_dict)
+                    print()
+                    name = detail_dict["name"].replace(" ", "").lower()
+                    phrase = teamA+"v"+teamB
+                    s = SequenceMatcher(None, phrase, name)
+                    if s.ratio() > 0.9:
+                        print("Eventid: ", detail_dict["Id"])
+                        betfair_eid = detail_dict["Id"]
+                    else:
+                        print("Phrase not matched: ", phrase, detail_dict["Id"], s.ratio())
+                        betfair_eid = None
         else:
             return None
 
