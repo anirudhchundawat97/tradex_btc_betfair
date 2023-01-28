@@ -36,13 +36,15 @@ class BetFair:
                     # print(detail_dict)
                     print()
                     name = detail_dict["name"].replace(" ", "").lower()
-                    phrase = teamA+"v"+teamB
-                    s = SequenceMatcher(None, phrase, name)
-                    if s.ratio() > 0.9:
+                    phrase1 = teamA+"v"+teamB
+                    phrase2 = teamB + "v" + teamA
+                    s1 = SequenceMatcher(None, phrase1, name)
+                    s2 = SequenceMatcher(None, phrase2, name)
+                    if (s1.ratio() > 0.9) or (s2.ratio() > 0.9):
                         print("Eventid: ", detail_dict["Id"])
                         betfair_eid = detail_dict["Id"]
                     else:
-                        print("Phrase not matched: ", phrase,name, detail_dict["Id"], s.ratio())
+                        print("Phrase not matched: ", phrase1,phrase2, name, detail_dict["Id"], s1.ratio(), s2.ratio())
                         betfair_eid = None
         else:
             return None
