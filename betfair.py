@@ -20,7 +20,7 @@ class BetFair:
         #     # print(temp.text)
         #     self.all_events.extend(json.loads(temp.text))
         if not self.sport_id:
-            self.sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 3-cricket: "))
+            self.sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
         url = f"http://209.250.242.175:33332/listEventsBySport/{self.sport_id}"
         temp = requests.get(url)
         # print(temp.text)
@@ -45,6 +45,8 @@ class BetFair:
                     name = detail_dict["name"].replace(" ", "").lower()
                     phrase1 = teamA+"v"+teamB
                     phrase2 = teamB + "v" + teamA
+                    if phrase1 == "indiavengland":
+                        phrase1 = "indiawomanu19venglandwomanu19"
                     s1 = SequenceMatcher(None, phrase1, name)
                     s2 = SequenceMatcher(None, phrase2, name)
                     if (s1.ratio() > 0.85) or (s2.ratio() > 0.85):
@@ -102,7 +104,7 @@ class BetFair:
 
 if __name__ == "__main__":
     import requests
-    sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 3-cricket: "))
+    sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
     t1 = requests.get(f"http://209.250.242.175:33332/listEventsBySport/{sport_id}")
     print("---------text", type(json.loads(t1.text)), json.loads(t1.text))
     print(json.loads(t1.text)[0])
