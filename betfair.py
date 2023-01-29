@@ -10,6 +10,7 @@ class BetFair:
         self.market_id = None
         self.odds_decimal = None
         self.odds_percent = None
+        self.sport_id = None
 
     def combine_all_sportsevents_list(self):
         # sports_ids = [1, 2, 3]
@@ -18,8 +19,9 @@ class BetFair:
         #     temp = requests.get(url)
         #     # print(temp.text)
         #     self.all_events.extend(json.loads(temp.text))
-        sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 3-cricket: "))
-        url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
+        if not self.sport_id:
+            self.sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 3-cricket: "))
+        url = f"http://209.250.242.175:33332/listEventsBySport/{self.sport_id}"
         temp = requests.get(url)
         # print(temp.text)
         self.all_events = json.loads(temp.text)
@@ -100,10 +102,8 @@ class BetFair:
 
 if __name__ == "__main__":
     import requests
-    t1 = requests.get("http://209.250.242.175:33332/listEventsBySport/1")
-    print(dir(t1))
-    print("---------text",type(t1.text),t1.text)
-    print()
+    sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 3-cricket: "))
+    t1 = requests.get(f"http://209.250.242.175:33332/listEventsBySport/{sport_id}")
     print("---------text", type(json.loads(t1.text)), json.loads(t1.text))
     print(json.loads(t1.text)[0])
 
