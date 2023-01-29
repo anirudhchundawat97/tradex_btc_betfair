@@ -12,16 +12,17 @@ class BetFair:
         self.odds_percent = None
 
     def combine_all_sportsevents_list(self):
-        sports_ids = [1, 2, 3]
-        for sport_id in sports_ids:
-            url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
-            temp = requests.get(url)
-            # print(temp.text)
-            self.all_events.extend(json.loads(temp.text))
-        # url = f"http://209.250.242.175:33332/listEventsBySport/1"
-        # temp = requests.get(url)
-        # # print(temp.text)
-        # self.all_events = json.loads(temp.text)
+        # sports_ids = [1, 2, 3]
+        # for sport_id in sports_ids:
+        #     url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
+        #     temp = requests.get(url)
+        #     # print(temp.text)
+        #     self.all_events.extend(json.loads(temp.text))
+        sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 3-cricket: "))
+        url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
+        temp = requests.get(url)
+        # print(temp.text)
+        self.all_events = json.loads(temp.text)
 
     def fetch_matching_eventid(self, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
