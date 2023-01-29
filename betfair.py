@@ -74,6 +74,11 @@ class BetFair:
             return None
 
     def get_odds_matching_matchphrase(self, teamA=None, teamB=None):
+        try:
+            teamA = teamA.replace(" ", "").lower()
+            teamB = teamB.replace(" ", "").lower()
+        except:
+            pass
         if (teamA == "india") and (teamB == "england"):
             teamA = "indiawomanu19"
             teamB = "englandwomanu19"
