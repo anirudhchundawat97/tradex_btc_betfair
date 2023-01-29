@@ -3,22 +3,28 @@ import pandas as pd
 
 
 class Gsheet:
-    def __init__(self):
+    def __init__(self, category):
         # self.event_id = event_id
         self.sheet = None
         self.event_sheet = None
-        self.connect_event_sheet()
+        self.connect_event_sheet(category)
         self.update_headers()
 
-    def connect_event_sheet(self):
+    def connect_event_sheet(self, category):
         sa = gspread.service_account(filename='tradexdash001_googlekey.json')
         self.sheet = sa.open("AnirudhTradex_PnL_Dashboard2")
 
         try:
-            self.event_sheet = self.sheet.worksheet("Range contracts pnl 4")
+            if category == "btc":
+                self.event_sheet = self.sheet.worksheet("Range contracts pnl 4")
+            elif category == "betfair":
+                self.event_sheet = self.sheet.worksheet("Sports contracts pnl 1")
         except gspread.exceptions.WorksheetNotFound:
             print("Creating new worksheet")
-            self.event_sheet = self.sheet.add_worksheet(title="Range contracts pnl 4", rows=250, cols=50)
+            if category == "btc":
+                self.event_sheet = self.sheet.add_worksheet(title="Range contracts pnl 4", rows=250, cols=50)
+            elif category == "betfair":
+                self.event_sheet = self.sheet.add_worksheet(title="Sports contracts pnl 1", rows=250, cols=50)
 
     def update_headers(self):
 
