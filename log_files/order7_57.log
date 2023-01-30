@@ -993,3 +993,192 @@ INFO:order:2023-01-26 18:53:38,881;log:post;eid:17703;call:response;type:cancel;
 INFO:order:2023-01-26 18:55:15,065;log:pre;eid:17703;call:sent;type:place;order:sell;asset:N;price:99;qty:18;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
 INFO:order:2023-01-26 19:00:13,235;log:pre;eid:17705;call:sent;type:place;order:buy;asset:N;price:96;qty:75;orderid:buysend;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest
 INFO:order:2023-01-26 19:01:17,397;log:pre;eid:17705;call:sent;type:place;order:buy;asset:N;price:96;qty:75;orderid:buysend;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest
+INFO:order:2023-01-28 18:38:32,890;log:pre;eid:17921;call:sent;type:place;order:buy;asset:N;price:91;qty:50;orderid:buysend;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:38:33,672;log:post;eid:17921;call:response;type:place;order:buy;asset:N;price:91;qty:50;orderid:od_1674361929445006;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:38:42,163;log:pre;eid:17921;call:sent;type:place;order:buy;asset:N;price:95;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:38:42,941;log:post;eid:17921;call:response;type:place;order:buy;asset:N;price:95;qty:2;orderid:od_1674361929445016;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:38:42,970;log:pre;eid:17921;call:sent;type:place;order:buy;asset:N;price:99;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:38:43,765;log:post;eid:17921;call:response;type:place;order:buy;asset:N;price:99;qty:1;orderid:od_1674361929445018;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:39:55,812;log:pre;eid:17921;call:sent;type:place;order:sell;asset:N;price:98;qty:10;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:39:56,607;log:post;eid:17921;call:response;type:place;order:sell;asset:N;price:98;qty:10;orderid:od_1674361929445097;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:40:00,115;log:pre;eid:17921;call:sent;type:cancel;order:buy;asset:N;price:91;qty:null;orderid:od_1674361929445006;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:40:42,867;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:51;qty:75;orderid:buysend;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:40:43,642;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:51;qty:75;orderid:od_1674361929445126;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:41:10,224;log:pre;eid:17921;call:sent;type:cancel;order:buy;asset:N;price:91;qty:null;orderid:od_1674361929445006;respmessg:null;message:Starting fresh
+INFO:order:2023-01-28 18:41:30,183;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:51;qty:null;orderid:od_1674361929445126;respmessg:null;message:Starting fresh
+INFO:order:2023-01-28 18:41:30,978;log:post;eid:17920;call:response;type:cancel;order:buy;asset:N;price:51;qty:null;orderid:od_1674361929445126;respmessg:null;message:Starting fresh
+INFO:order:2023-01-28 18:42:00,300;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:51;qty:99;orderid:buysend;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:42:01,097;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:51;qty:99;orderid:od_1674361929445169;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:44:15,890;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:51;qty:null;orderid:od_1674361929445169;respmessg:null;message:NoSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-28 18:44:16,696;log:post;eid:17920;call:response;type:cancel;order:buy;asset:N;price:51;qty:null;orderid:od_1674361929445169;respmessg:null;message:NoSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-28 18:44:17,052;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:56;qty:99;orderid:buysend;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:44:17,839;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:56;qty:99;orderid:od_1674361929445252;respmessg:null;message:NoSignalZeroHolding,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:45:03,409;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:89;qty:1;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:45:04,188;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:89;qty:1;orderid:od_1674361929445271;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:45:07,717;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:56;qty:null;orderid:od_1674361929445252;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:45:08,493;log:post;eid:17920;call:response;type:cancel;order:buy;asset:N;price:56;qty:null;orderid:od_1674361929445252;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:45:08,862;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:71;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:45:09,688;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:71;qty:99;orderid:od_1674361929445274;respmessg:null;message:YesFairPriceChange,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:45:12,447;log:pre;eid:17920;call:sent;type:cancel;order:sell;asset:N;price:89;qty:null;orderid:od_1674361929445271;respmessg:null;message:YesFairPriceChange,NewSellParams
+INFO:order:2023-01-28 18:45:13,235;log:post;eid:17920;call:response;type:cancel;order:sell;asset:N;price:89;qty:null;orderid:od_1674361929445271;respmessg:null;message:YesFairPriceChange,NewSellParams
+INFO:order:2023-01-28 18:45:13,584;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:89;qty:1;orderid:sellsend;respmessg:null;message:YesFairPriceChange,SellingBoughtQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:45:14,364;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:89;qty:1;orderid:od_1674361929445277;respmessg:null;message:YesFairPriceChange,SellingBoughtQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:45:16,098;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:89;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:16,894;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:89;qty:1;orderid:od_1674361929445279;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:16,912;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:90;qty:9;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:17,984;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:90;qty:9;orderid:od_1674361929445282;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:18,000;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:95;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:18,764;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:95;qty:2;orderid:od_1674361929445284;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:18,781;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:98;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:20,246;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:98;qty:1;orderid:od_1674361929445288;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-28 18:45:54,878;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:99;qty:6;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:45:55,647;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:99;qty:6;orderid:od_1674361929445306;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:45:59,205;log:pre;eid:17920;call:sent;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445306;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:45:59,977;log:post;eid:17920;call:response;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445306;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:46:36,577;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:99;qty:5;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:46:37,388;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:99;qty:5;orderid:od_1674361929445345;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:46:41,230;log:pre;eid:17920;call:sent;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445345;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:46:42,114;log:post;eid:17920;call:response;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445345;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:47:55,947;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:99;qty:6;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:47:56,711;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:99;qty:6;orderid:od_1674361929445393;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:48:00,132;log:pre;eid:17920;call:sent;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445393;respmessg:null;message:NoFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:48:00,932;log:post;eid:17920;call:response;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445393;respmessg:null;message:NoFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:48:38,533;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:99;qty:7;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:48:39,330;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:99;qty:7;orderid:od_1674361929445421;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:48:42,767;log:pre;eid:17920;call:sent;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445421;respmessg:null;message:NoFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:48:43,551;log:post;eid:17920;call:response;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445421;respmessg:null;message:NoFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:49:20,287;log:pre;eid:17920;call:sent;type:place;order:sell;asset:N;price:99;qty:11;orderid:sellsend;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:49:21,103;log:post;eid:17920;call:response;type:place;order:sell;asset:N;price:99;qty:11;orderid:od_1674361929445452;respmessg:null;message:HoldNoQtyChange,SellingNoNewQty,ProfitSell,atBetter
+INFO:order:2023-01-28 18:49:24,562;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:89;qty:null;orderid:od_1674361929445279;respmessg:null;message:NoFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:49:25,366;log:post;eid:17920;call:response;type:cancel;order:buy;asset:N;price:89;qty:null;orderid:od_1674361929445279;respmessg:null;message:NoFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:49:25,368;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:71;qty:null;orderid:od_1674361929445274;respmessg:null;message:NoFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:49:26,144;log:post;eid:17920;call:response;type:cancel;order:buy;asset:N;price:71;qty:null;orderid:od_1674361929445274;respmessg:null;message:NoFairPriceChange,NewBuyParams
+INFO:order:2023-01-28 18:49:26,473;log:pre;eid:17920;call:sent;type:place;order:buy;asset:N;price:91;qty:99;orderid:buysend;respmessg:null;message:NoFairPriceChange,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:49:27,260;log:post;eid:17920;call:response;type:place;order:buy;asset:N;price:91;qty:99;orderid:od_1674361929445463;respmessg:null;message:NoFairPriceChange,ScalpingNo,BasicBuy,atbest+1
+INFO:order:2023-01-28 18:49:28,486;log:pre;eid:17920;call:sent;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445452;respmessg:null;message:NoFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:49:29,313;log:post;eid:17920;call:response;type:cancel;order:sell;asset:N;price:99;qty:null;orderid:od_1674361929445452;respmessg:null;message:NoFairPriceChange,PausingSell
+INFO:order:2023-01-28 18:50:26,871;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:91.0;qty:null;orderid:od_1674361929445463;respmessg:null;message:Starting fresh
+INFO:order:2023-01-28 18:50:46,306;log:pre;eid:17920;call:sent;type:cancel;order:buy;asset:N;price:91.0;qty:null;orderid:od_1674361929445463;respmessg:null;message:Starting fresh
+INFO:order:2023-01-29 18:17:25,280;log:pre;eid:18019;call:sent;type:place;order:buy;asset:Y;price:94;qty:99;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:17:26,241;log:post;eid:18019;call:response;type:place;order:buy;asset:Y;price:94;qty:99;orderid:od_1674361929470181;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:17:37,243;log:pre;eid:18019;call:sent;type:place;order:buy;asset:Y;price:95;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:17:38,518;log:post;eid:18019;call:response;type:place;order:buy;asset:Y;price:95;qty:1;orderid:od_1674361929470201;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:17:38,538;log:pre;eid:18019;call:sent;type:place;order:buy;asset:Y;price:99;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:17:39,390;log:post;eid:18019;call:response;type:place;order:buy;asset:Y;price:99;qty:2;orderid:od_1674361929470204;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:19:08,606;log:pre;eid:18019;call:sent;type:place;order:sell;asset:Y;price:99;qty:3;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:19:09,585;log:post;eid:18019;call:response;type:place;order:sell;asset:Y;price:99;qty:3;orderid:od_1674361929470388;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:19:13,780;log:pre;eid:18019;call:sent;type:cancel;order:buy;asset:Y;price:94;qty:null;orderid:od_1674361929470181;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:19:14,843;log:post;eid:18019;call:response;type:cancel;order:buy;asset:Y;price:94;qty:null;orderid:od_1674361929470181;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:19:15,959;log:pre;eid:18019;call:sent;type:place;order:buy;asset:Y;price:96;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:19:17,027;log:post;eid:18019;call:response;type:place;order:buy;asset:Y;price:96;qty:99;orderid:od_1674361929470408;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:19:18,257;log:pre;eid:18019;call:sent;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929470388;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:19:19,440;log:post;eid:18019;call:response;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929470388;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:19:22,789;log:pre;eid:18019;call:sent;type:place;order:buy;asset:Y;price:99;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:19:24,064;log:post;eid:18019;call:response;type:place;order:buy;asset:Y;price:99;qty:2;orderid:od_1674361929470419;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:19:58,637;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:61;qty:75;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:19:59,595;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:61;qty:75;orderid:od_1674361929470499;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:21:06,824;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:61;qty:null;orderid:od_1674361929470499;respmessg:null;message:YesSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-29 18:21:07,647;log:post;eid:18018;call:response;type:cancel;order:buy;asset:Y;price:61;qty:null;orderid:od_1674361929470499;respmessg:null;message:YesSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-29 18:21:08,372;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:62;qty:99;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:21:09,379;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:62;qty:99;orderid:od_1674361929470604;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:21:19,963;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:62;qty:null;orderid:od_1674361929470604;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:21:21,017;log:post;eid:18018;call:response;type:cancel;order:buy;asset:Y;price:62;qty:null;orderid:od_1674361929470604;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:21:21,466;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:51;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:21:22,704;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:51;qty:99;orderid:od_1674361929470637;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:23:58,747;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:51;qty:null;orderid:od_1674361929470637;respmessg:null;message:YesSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-29 18:23:59,989;log:post;eid:18018;call:response;type:cancel;order:buy;asset:Y;price:51;qty:null;orderid:od_1674361929470637;respmessg:null;message:YesSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-29 18:24:00,894;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:92;qty:99;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:24:01,997;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:92;qty:99;orderid:od_1674361929470903;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:25:36,991;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:92;qty:null;orderid:od_1674361929470903;respmessg:null;message:YesSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-29 18:25:37,795;log:post;eid:18018;call:response;type:cancel;order:buy;asset:Y;price:92;qty:null;orderid:od_1674361929470903;respmessg:null;message:YesSignalZeroHolding,NewBuyParams
+INFO:order:2023-01-29 18:25:38,189;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:94;qty:99;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:25:38,970;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:94;qty:99;orderid:od_1674361929471042;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:25:45,567;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:94;qty:null;orderid:od_1674361929471042;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:25:46,413;log:post;eid:18018;call:response;type:cancel;order:buy;asset:Y;price:94;qty:null;orderid:od_1674361929471042;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:25:46,850;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:93;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:25:47,652;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:93;qty:99;orderid:od_1674361929471062;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:25:50,666;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:97;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:25:51,456;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:97;qty:2;orderid:od_1674361929471073;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:25:51,474;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:98;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:25:52,299;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:98;qty:1;orderid:od_1674361929471077;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:25:52,323;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:99;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:25:53,471;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:99;qty:2;orderid:od_1674361929471080;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:27:04,205;log:pre;eid:18018;call:sent;type:place;order:sell;asset:Y;price:99;qty:6;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:27:05,038;log:post;eid:18018;call:response;type:place;order:sell;asset:Y;price:99;qty:6;orderid:od_1674361929471252;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:27:08,553;log:pre;eid:18018;call:sent;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929471252;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:27:09,351;log:post;eid:18018;call:response;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929471252;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:27:11,340;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:97;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:27:12,179;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:97;qty:1;orderid:od_1674361929471264;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:27:12,200;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:99;qty:5;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:27:12,993;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:99;qty:5;orderid:od_1674361929471268;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:28:31,980;log:pre;eid:18018;call:sent;type:place;order:sell;asset:Y;price:99;qty:14;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:28:32,756;log:post;eid:18018;call:response;type:place;order:sell;asset:Y;price:99;qty:14;orderid:od_1674361929471454;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:28:36,183;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:93;qty:null;orderid:od_1674361929471062;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:28:36,972;log:post;eid:18018;call:response;type:cancel;order:buy;asset:Y;price:93;qty:null;orderid:od_1674361929471062;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:28:37,398;log:pre;eid:18018;call:sent;type:place;order:buy;asset:Y;price:97;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:28:38,197;log:post;eid:18018;call:response;type:place;order:buy;asset:Y;price:97;qty:99;orderid:od_1674361929471466;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:28:39,361;log:pre;eid:18018;call:sent;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929471454;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:28:40,210;log:post;eid:18018;call:response;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929471454;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:29:56,797;log:pre;eid:18018;call:sent;type:place;order:sell;asset:Y;price:99;qty:16;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:29:57,640;log:post;eid:18018;call:response;type:place;order:sell;asset:Y;price:99;qty:16;orderid:od_1674361929471654;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:30:02,653;log:pre;eid:18018;call:sent;type:cancel;order:buy;asset:Y;price:97;qty:null;orderid:od_1674361929471466;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:38:20,416;log:pre;eid:18017;call:sent;type:place;order:buy;asset:Y;price:96;qty:75;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:38:21,189;log:post;eid:18017;call:response;type:place;order:buy;asset:Y;price:96;qty:75;orderid:od_1674361929472589;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:38:29,735;log:pre;eid:18017;call:sent;type:place;order:buy;asset:Y;price:98;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:38:30,559;log:post;eid:18017;call:response;type:place;order:buy;asset:Y;price:98;qty:1;orderid:od_1674361929472609;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:39:58,788;log:pre;eid:18017;call:sent;type:place;order:sell;asset:Y;price:99;qty:6;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atBetter
+INFO:order:2023-01-29 18:40:00,286;log:post;eid:18017;call:response;type:place;order:sell;asset:Y;price:99;qty:6;orderid:od_1674361929472832;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atBetter
+INFO:order:2023-01-29 18:40:04,805;log:pre;eid:18017;call:sent;type:cancel;order:buy;asset:Y;price:96;qty:null;orderid:od_1674361929472589;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:45:35,212;log:pre;eid:18016;call:sent;type:place;order:buy;asset:Y;price:92;qty:99;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:45:36,205;log:post;eid:18016;call:response;type:place;order:buy;asset:Y;price:92;qty:99;orderid:od_1674361929473482;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:45:44,942;log:pre;eid:18016;call:sent;type:place;order:buy;asset:Y;price:95;qty:6;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:45:45,767;log:post;eid:18016;call:response;type:place;order:buy;asset:Y;price:95;qty:6;orderid:od_1674361929473510;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:45:45,781;log:pre;eid:18016;call:sent;type:place;order:buy;asset:Y;price:99;qty:10;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:45:46,559;log:post;eid:18016;call:response;type:place;order:buy;asset:Y;price:99;qty:10;orderid:od_1674361929473515;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:47:05,448;log:pre;eid:18016;call:sent;type:place;order:sell;asset:Y;price:99;qty:16;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:47:06,215;log:post;eid:18016;call:response;type:place;order:sell;asset:Y;price:99;qty:16;orderid:od_1674361929473703;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:47:09,725;log:pre;eid:18016;call:sent;type:cancel;order:buy;asset:Y;price:92;qty:null;orderid:od_1674361929473482;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:47:10,615;log:post;eid:18016;call:response;type:cancel;order:buy;asset:Y;price:92;qty:null;orderid:od_1674361929473482;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:47:11,132;log:pre;eid:18016;call:sent;type:place;order:buy;asset:Y;price:97;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:47:11,937;log:post;eid:18016;call:response;type:place;order:buy;asset:Y;price:97;qty:99;orderid:od_1674361929473721;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:47:13,067;log:pre;eid:18016;call:sent;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929473703;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:47:13,869;log:post;eid:18016;call:response;type:cancel;order:sell;asset:Y;price:99;qty:null;orderid:od_1674361929473703;respmessg:null;message:YesFairPriceChange,PausingSell
+INFO:order:2023-01-29 18:48:44,326;log:pre;eid:18016;call:sent;type:cancel;order:buy;asset:Y;price:97.0;qty:null;orderid:od_1674361929473721;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:48:44,726;log:post;eid:18016;call:response;type:cancel;order:buy;asset:Y;price:97.0;qty:null;orderid:od_1674361929473721;respmessg:notsuccess;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:48:45,342;log:pre;eid:18016;call:sent;type:place;order:buy;asset:Y;price:98;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:48:46,365;log:post;eid:18016;call:response;type:place;order:buy;asset:Y;price:98;qty:99;orderid:od_1674361929473936;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:50:09,281;log:pre;eid:18016;call:sent;type:place;order:sell;asset:Y;price:99;qty:17;orderid:sellsend;respmessg:null;message:HoldYesQtyChange,SellingYesNewQty,ProfitSell,atAvgBuy+1
+INFO:order:2023-01-29 18:55:37,306;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:92;qty:99;orderid:buysend;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:55:38,080;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:92;qty:99;orderid:od_1674361929474587;respmessg:null;message:YesSignalZeroHolding,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:55:44,666;log:pre;eid:18015;call:sent;type:cancel;order:buy;asset:Y;price:92;qty:null;orderid:od_1674361929474587;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:55:45,488;log:post;eid:18015;call:response;type:cancel;order:buy;asset:Y;price:92;qty:null;orderid:od_1674361929474587;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:55:46,003;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:93;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:55:46,778;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:93;qty:99;orderid:od_1674361929474609;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:55:50,367;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:95;qty:1;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:55:51,187;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:95;qty:1;orderid:od_1674361929474620;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:55:51,201;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:99;qty:11;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:55:51,984;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:99;qty:11;orderid:od_1674361929474622;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:56:35,042;log:pre;eid:18015;call:sent;type:cancel;order:buy;asset:Y;price:93;qty:null;orderid:od_1674361929474609;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:56:35,827;log:post;eid:18015;call:response;type:cancel;order:buy;asset:Y;price:93;qty:null;orderid:od_1674361929474609;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:56:36,226;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:97;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:56:37,174;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:97;qty:99;orderid:od_1674361929474704;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:56:40,820;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:98;qty:2;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:56:41,639;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:98;qty:2;orderid:od_1674361929474717;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:56:41,653;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:99;qty:3;orderid:buysend;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:56:42,453;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:99;qty:3;orderid:od_1674361929474721;respmessg:null;message:absorbing orderbook
+INFO:order:2023-01-29 18:57:25,738;log:pre;eid:18015;call:sent;type:cancel;order:buy;asset:Y;price:97;qty:null;orderid:od_1674361929474704;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:57:26,535;log:post;eid:18015;call:response;type:cancel;order:buy;asset:Y;price:97;qty:null;orderid:od_1674361929474704;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:57:26,945;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:99;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:57:27,782;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:99;qty:99;orderid:od_1674361929474811;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:58:08,558;log:pre;eid:18015;call:sent;type:cancel;order:buy;asset:Y;price:99;qty:null;orderid:od_1674361929474811;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:58:09,357;log:post;eid:18015;call:response;type:cancel;order:buy;asset:Y;price:99;qty:null;orderid:od_1674361929474811;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:58:09,812;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:98;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:58:11,708;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:98;qty:99;orderid:od_1674361929474902;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:58:53,566;log:pre;eid:18015;call:sent;type:cancel;order:buy;asset:Y;price:98;qty:null;orderid:od_1674361929474902;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:58:54,366;log:post;eid:18015;call:response;type:cancel;order:buy;asset:Y;price:98;qty:null;orderid:od_1674361929474902;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:58:55,294;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:99;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:58:56,117;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:99;qty:99;orderid:od_1674361929475017;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest+1
+INFO:order:2023-01-29 18:59:40,186;log:pre;eid:18015;call:sent;type:cancel;order:buy;asset:Y;price:99;qty:null;orderid:od_1674361929475017;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:59:40,978;log:post;eid:18015;call:response;type:cancel;order:buy;asset:Y;price:99;qty:null;orderid:od_1674361929475017;respmessg:null;message:YesFairPriceChange,NewBuyParams
+INFO:order:2023-01-29 18:59:41,380;log:pre;eid:18015;call:sent;type:place;order:buy;asset:Y;price:99;qty:99;orderid:buysend;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest
+INFO:order:2023-01-29 18:59:42,151;log:post;eid:18015;call:response;type:place;order:buy;asset:Y;price:99;qty:99;orderid:od_1674361929475103;respmessg:null;message:YesFairPriceChange,ScalpingYes,BasicBuy,atbest

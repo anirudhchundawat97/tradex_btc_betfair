@@ -27,17 +27,17 @@ class BetFair:
         # print(temp.text)
         self.all_events = json.loads(temp.text)
 
-    def fetch_matching_eventid(self, teamA=None, teamB=None):
+    def fetch_matching_eventid(self, league=None, teamA=None, teamB=None):
         self.combine_all_sportsevents_list()
         # print("all event dict")
         # print(self.all_events)
-        print("A:", teamA, "B:", teamB)
+        print("league: ", league, "A:", teamA, "B:", teamB)
         if teamA and teamB:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
-            if (teamA == "india") and (teamB == "england"):
-                teamA = "indiawomanu19"
-                teamB = "englandwomanu19"
+            if "women" in league:
+                teamA = teamA+"women"
+                teamB = teamB+"women"
             for detail_dict in self.all_events:
                 print("in event finding loop")
                 if self.event_id:
@@ -52,6 +52,7 @@ class BetFair:
                     s1 = SequenceMatcher(None, phrase1, name)
                     s2 = SequenceMatcher(None, phrase2, name)
                     if (s1.ratio() > 0.85) or (s2.ratio() > 0.85):
+                        print(detail_dict)
                         print("Eventid: ", detail_dict["Id"])
                         self.event_id = detail_dict["Id"]
                     else:
@@ -73,15 +74,15 @@ class BetFair:
             print("betfair eventid:", self.event_id)
             return None
 
-    def get_odds_matching_matchphrase(self, teamA=None, teamB=None):
+    def get_odds_matching_matchphrase(self, league=None, teamA=None, teamB=None):
         try:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
         except:
             pass
-        if (teamA == "india") and (teamB == "england"):
-            teamA = "indiawomanu19"
-            teamB = "englandwomanu19"
+        if "women" in league:
+            teamA = teamA + "women"
+            teamB = teamB + "women"
         if (teamA and teamB) and (not self.event_id):
             self.event_id = self.fetch_matching_eventid(teamA, teamB)
         if self.event_id:

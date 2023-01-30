@@ -80,15 +80,17 @@ class Strategy:
 
         self.teamA = None
         self.teamB = None
+        self.league = None
 
     def __set_event_match_phrase(self):
-        temp1 = self.priceatri.title.split(":")[1]
-        temp2 = temp1.split("to win against")
+        temp1 = self.priceatri.title.split(":")
+        self.league = temp1[0].replace(" ","").lower()
+        temp2 = temp1[1].split("to win against")
         self.teamA = temp2[0]
         self.teamB = temp2[1][:-1]
 
     def __set_estimated_fair_price(self):
-        self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.teamA, self.teamB)
+        self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.league, self.teamA, self.teamB)
         self.estimated_no_fair_price = 100 - self.estimated_yes_fair_price
 
     def __set_fair_price(self):
@@ -161,6 +163,9 @@ class Strategy:
             print(
                 f"Updating {self.priceatri.eid}: {self.priceatri.title} | started at {self.priceatri.started_at} ends at {self.priceatri.ends_at}")
         print(pd.DataFrame(print_dict, index=["Yes", "No"]))
+        print("League: ", self.league)
+        print("team A: ", self.teamA)
+        print("team B: ", self.teamB)
         print("winning odds decimal: ",self.betfair_obj.odds_decimal)
         print("winning odds percent: ",self.betfair_obj.odds_percent)
         print("-" * 10, "PENDING BOOK:")
