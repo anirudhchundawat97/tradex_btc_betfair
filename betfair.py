@@ -84,7 +84,7 @@ class BetFair:
             teamA = teamA + "women"
             teamB = teamB + "women"
         if (teamA and teamB) and (not self.event_id):
-            self.event_id = self.fetch_matching_eventid(teamA, teamB)
+            self.event_id = self.fetch_matching_eventid(league=league, teamA=teamA, teamB=teamB)
         if self.event_id:
             self.market_id = self.fetch_marketid_from_eventid()
         if self.market_id:

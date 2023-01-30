@@ -90,7 +90,7 @@ class Strategy:
         self.teamB = temp2[1][:-1]
 
     def __set_estimated_fair_price(self):
-        self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(self.league, self.teamA, self.teamB)
+        self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB)
         self.estimated_no_fair_price = 100 - self.estimated_yes_fair_price
 
     def __set_fair_price(self):
