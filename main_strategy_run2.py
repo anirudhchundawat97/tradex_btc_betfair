@@ -135,7 +135,7 @@ if __name__ == "__main__":
                                     print(strat_obj_dict[i].priceatri.title)
                                     print(dt.datetime.strptime(strat_obj_dict[i].priceatri.started_at, "%Y-%m-%dT%H:%M:%S"))
                                     print(dt.datetime.strptime(strat_obj_dict[i].priceatri.ends_at, "%Y-%m-%dT%H:%M:%S"))
-                                    sleep(5)
+                                    # sleep(5)
                                 except Exception as e:
                                     logger.exception(e)
                                     print(e, "eid", i, strat_obj_dict[i])
@@ -145,7 +145,7 @@ if __name__ == "__main__":
                                 for j in eid_input_str_list:
                                     try:
                                         strat_obj_dict[j].update()
-                                        sleep(5)
+                                        # sleep(5)
                                     except Exception as e:
                                         logger.exception(e)
                                         print(e, "eid", j, strat_obj_dict[j])
@@ -154,7 +154,7 @@ if __name__ == "__main__":
                                 print("#" * 20)
                                 print("#" * 20)
                                 print("#" * 20)
-                                sleep(10)
+                                # sleep(10)
                             print("EVENT ENDED.")
                             break
                         else:
