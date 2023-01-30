@@ -117,8 +117,14 @@ class BetFair:
 
 if __name__ == "__main__":
     import requests
+    import pandas as pd
 
     sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
     t1 = requests.get(f"http://209.250.242.175:33332/listEventsBySport/{sport_id}")
     print("---------text", type(json.loads(t1.text)), json.loads(t1.text))
-    print(json.loads(t1.text)[0])
+    sport_events_df = pd.DataFrame(json.loads(t1.text))
+    print(sport_events_df.columns)
+    print()
+    print(sport_events_df["competitionName"].unique())
+    print()
+    print(sport_events_df["name"].unique())
