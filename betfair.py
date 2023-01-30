@@ -35,9 +35,9 @@ class BetFair:
         if teamA and teamB:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
-            if "women" in league:
-                teamA = teamA+"women"
-                teamB = teamB+"women"
+            # if "women" in league:
+            #     teamA = teamA+"women"
+            #     teamB = teamB+"women"
             for detail_dict in self.all_events:
                 print("in event finding loop")
                 if self.event_id:
