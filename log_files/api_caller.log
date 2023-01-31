@@ -2551,3 +2551,4 @@ CRITICAL:api_caller:2023-01-29 19:24:07,182:API call failed. User0 Response:<Res
 CRITICAL:api_caller:2023-01-30 01:34:09,536:API call failed. User603727 Response:<Response [200]>, Exception: Expecting value: line 1 column 1 (char 0)
 CRITICAL:api_caller:2023-01-30 02:45:42,343:API call failed. User603727 Response:<Response [200]>, Exception: Expecting value: line 1 column 1 (char 0)
 CRITICAL:api_caller:2023-01-30 07:39:32,745:API call failed. User603727 Response:<Response [200]>, Exception: Expecting value: line 1 column 1 (char 0)
+CRITICAL:api_caller:2023-01-31 01:11:05,101:API call failed. User0 Response:<Response [200]>, Exception: Expecting value: line 1 column 1 (char 0)

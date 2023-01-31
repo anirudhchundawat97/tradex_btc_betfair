@@ -162,34 +162,38 @@ class Transactions:
         # else:
         #     avgbuyno = np.nan
 
+        """
+        Below code temporarily commented to save time
+        """
         # getting average buy prices from cleaned transactions data
-        clean_df = remove_cancelled_orders(df)
-        # cleaner_df = remove_unfilled_txn_qty(clean_df, event_id)
-
-        mask_buy = clean_df["status"] == "Bought"
-
-        remove_yes_qty, remove_yes_amount = self._get_unfilled_qty_n_amount(event_id, "Y")
-        mask_yes = clean_df["asset"] == "Y"
-        df_yesbuy = clean_df[mask_buy & mask_yes]
-        avgbuyyes = ((df_yesbuy["price"] * df_yesbuy["qty"]).sum() - remove_yes_amount) / (
-                    df_yesbuy["qty"].sum() - remove_yes_qty)
-
-        remove_no_qty, remove_no_amount = self._get_unfilled_qty_n_amount(event_id, "N")
-        mask_no = clean_df["asset"] == "N"
-        df_nobuy = clean_df[mask_buy & mask_no]
-        avgbuyno = ((df_nobuy["price"] * df_nobuy["qty"]).sum() - remove_no_amount) / (
-                    df_nobuy["qty"].sum() - remove_no_qty)
-
-        # for comparison with previous values
-        mask_buy = clean_df["status"] == "Bought"
-
-        mask_yes = clean_df["asset"] == "Y"
-        df_yesbuy = clean_df[mask_buy & mask_yes]
-        avgbuyyesfalse = (df_yesbuy["price"] * df_yesbuy["qty"]).sum() / df_yesbuy["qty"].sum()
-
-        mask_no = clean_df["asset"] == "N"
-        df_nobuy = clean_df[mask_buy & mask_no]
-        avgbuynofalse = (df_nobuy["price"] * df_nobuy["qty"]).sum() / df_nobuy["qty"].sum()
+        # clean_df = remove_cancelled_orders(df)
+        # # cleaner_df = remove_unfilled_txn_qty(clean_df, event_id)
+        #
+        # mask_buy = clean_df["status"] == "Bought"
+        #
+        # remove_yes_qty, remove_yes_amount = self._get_unfilled_qty_n_amount(event_id, "Y")
+        # mask_yes = clean_df["asset"] == "Y"
+        # df_yesbuy = clean_df[mask_buy & mask_yes]
+        # avgbuyyes = ((df_yesbuy["price"] * df_yesbuy["qty"]).sum() - remove_yes_amount) / (
+        #             df_yesbuy["qty"].sum() - remove_yes_qty)
+        #
+        # remove_no_qty, remove_no_amount = self._get_unfilled_qty_n_amount(event_id, "N")
+        # mask_no = clean_df["asset"] == "N"
+        # df_nobuy = clean_df[mask_buy & mask_no]
+        # avgbuyno = ((df_nobuy["price"] * df_nobuy["qty"]).sum() - remove_no_amount) / (
+        #             df_nobuy["qty"].sum() - remove_no_qty)
+        #
+        # # for comparison with previous values
+        # mask_buy = clean_df["status"] == "Bought"
+        #
+        # mask_yes = clean_df["asset"] == "Y"
+        # df_yesbuy = clean_df[mask_buy & mask_yes]
+        # avgbuyyesfalse = (df_yesbuy["price"] * df_yesbuy["qty"]).sum() / df_yesbuy["qty"].sum()
+        #
+        # mask_no = clean_df["asset"] == "N"
+        # df_nobuy = clean_df[mask_buy & mask_no]
+        # avgbuynofalse = (df_nobuy["price"] * df_nobuy["qty"]).sum() / df_nobuy["qty"].sum()
+        avgbuyyes, avgsellyes, avgbuyno, avgbuyyesfalse, avgbuynofalse = 0,0,0,0,0
 
         return avgbuyyes, avgsellyes, avgbuyno, avgsellno, avgbuyyesfalse, avgbuynofalse
 

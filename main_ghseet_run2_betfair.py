@@ -9,7 +9,7 @@ from update_gsheet2 import Gsheet
 warnings.filterwarnings("ignore")
 
 eid_list1_sheet1 = []
-eid_list_now = [17901, 17696]
+eid_list_now = [17901, 17696, 18012]
 
 gs = Gsheet(category="betfair")
 while True:
