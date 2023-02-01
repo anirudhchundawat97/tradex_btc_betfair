@@ -53,7 +53,7 @@ class BetFair:
                     s2 = SequenceMatcher(None, phrase2, name)
                     if (s1.ratio() > 0.85) or (s2.ratio() > 0.85):
                         print(detail_dict)
-                        print("Eventid: ", detail_dict["Id"])
+                        print("Phrase matched Eventid: ", detail_dict["Id"])
                         self.event_id = detail_dict["Id"]
                     else:
                         print("Phrase not matched: ", phrase1, phrase2, name, detail_dict["Id"], s1.ratio(), s2.ratio())

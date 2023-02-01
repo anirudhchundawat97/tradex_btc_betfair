@@ -83,11 +83,18 @@ class Strategy:
         self.league = None
 
     def __set_event_match_phrase(self):
-        temp1 = self.priceatri.title.split(":")
-        self.league = temp1[0].replace(" ","").lower()
-        temp2 = temp1[1].split("to win against")
-        self.teamA = temp2[0]
-        self.teamB = temp2[1][:-1]
+        if ":" in self.priceatri.title:
+            temp1 = self.priceatri.title.split(":")
+            self.league = temp1[0].replace(" ", "").lower()
+            temp2 = temp1[1].split("to win against")
+            self.teamA = temp2[0]
+            self.teamB = temp2[1][:-1]
+        else:
+            temp1 = None
+            self.league = None
+            temp2 = self.priceatri.title.split("to win against")
+            self.teamA = temp2[0]
+            self.teamB = temp2[1][:-1]
 
     def __set_estimated_fair_price(self):
         self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB)
