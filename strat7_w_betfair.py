@@ -90,8 +90,8 @@ class Strategy:
             self.teamA = temp2[0]
             self.teamB = temp2[1][:-1]
         else:
-            temp1 = None
-            self.league = None
+            temp1 = ""
+            self.league = ""
             temp2 = self.priceatri.title.split("to win against")
             self.teamA = temp2[0]
             self.teamB = temp2[1][:-1]
