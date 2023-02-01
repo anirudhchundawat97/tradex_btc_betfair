@@ -88,6 +88,7 @@ class BetFair:
         if self.event_id:
             self.market_id = self.fetch_marketid_from_eventid()
         if self.market_id:
+            self.market_id = 1.209289448
             url = f"http://209.250.242.175:33332/odds/?ids={self.market_id}"
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
@@ -103,8 +104,9 @@ class BetFair:
                 # sleep(2)
                 if s.ratio() >= 0.85:
                     self.odds_decimal = team["ExchangePrices"]["AvailableToBack"][2]["price"]
+
                     # print()
-                    # print(self.odds_decimal)
+                    print(self.odds_decimal)
                     self.odds_percent = (1 / self.odds_decimal) * 100
                     print(self.odds_percent)
                     # sleep(5)
