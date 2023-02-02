@@ -88,7 +88,6 @@ class BetFair:
         if self.event_id:
             self.market_id = self.fetch_marketid_from_eventid()
         if self.market_id:
-            self.market_id = 1.209289448
             url = f"http://209.250.242.175:33332/odds/?ids={self.market_id}"
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
