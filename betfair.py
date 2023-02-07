@@ -158,11 +158,11 @@ if __name__ == "__main__":
     t4 = requests.get(f"http://209.250.242.175:33332/listInplayEvents/{sport_id}")
     print(json.loads(t4.text))
     print("-" * 20, "list markets by eventid")
-    event_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
+    event_id = int(input("enter eventid: "))
     t5 = requests.get(f"http://209.250.242.175:33332/listMarkets/{event_id}")
     print(json.loads(t5.text))
     print("-" * 20, "list market odds by marketid")
-    market_id = int(input("enter market id: "))
+    market_id = float(input("enter market id: "))
     t6 = requests.get(f"http://209.250.242.175:33332/odds/?ids={market_id}")
     print(json.loads(t6.text))
 
