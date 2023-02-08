@@ -5,9 +5,11 @@ import dbconfig as config
 
 class Postgres1:
     def __init__(self):
+        print("before connect")
         self.connection = psycopg2.connect(dbname=config.sql_dbname_viz, host=config.sql_host_viz,
                                            port=config.sql_port_viz, user=config.sql_user_viz,
                                            password=config.sql_password_viz)
+        print("before curser")
         self.cursor = self.connection.cursor()
 
     def insert_into_db(self, data_dict):
@@ -39,7 +41,9 @@ class Postgres1:
                             str(data_dict["team2lay"]),
                             str(data_dict["inplay"]),
                             )
+        print("before execute")
         self.cursor.execute(postgres_insert_query, record_to_insert)
+        print("before commit")
         self.connection.commit()
 
 if __name__ == "__main__":
