@@ -1,8 +1,10 @@
+print("started...")
 from betfair_data import BetfairData
 from betfair_api import BetfairApi
 from withpostgres import Postgres1
 import datetime as dt
 from time import sleep
+
 
 bfa = BetfairApi()
 pg = Postgres1()
