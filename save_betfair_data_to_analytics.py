@@ -5,9 +5,11 @@ from withpostgres import Postgres1
 import datetime as dt
 from time import sleep
 
-
+print("before betfair")
 bfa = BetfairApi()
+print("before postgres")
 pg = Postgres1()
+print("after postgres")
 all_events = []
 for sport in ["soccer", "tennis", "cricket"]:
     all_events.extend(bfa.list_events_by_sport(sportname=sport))
