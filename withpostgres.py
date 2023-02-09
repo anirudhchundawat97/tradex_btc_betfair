@@ -6,6 +6,7 @@ import logging
 class Postgres1:
     def __init__(self):
         print("before connect")
+        print(config.sql_user_viz)
         self.connection = psycopg2.connect(dbname=config.sql_dbname_viz, host=config.sql_host_viz,
                                            port=config.sql_port_viz, user=config.sql_user_viz,
                                            password=config.sql_password_viz)
