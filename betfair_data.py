@@ -156,6 +156,15 @@ class BetfairData:
         self.update_probability_cols()
         self.update_best_odds_n_spread()
 
+if __name__ == "__main__":
+    bfd = BetfairData("Bundesliga", "Schalke", "Wolfsburg", "sports_towinagainst")
+    bfd.initialise()
+    bfd.update()
+    print(bfd.underlying_1_back_df)
+    print(bfd.underlying_1_lay_df)
+    print(bfd.underlying_2_back_df)
+    print(bfd.underlying_2_lay_df)
+
 
 
 
