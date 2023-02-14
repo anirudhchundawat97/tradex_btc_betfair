@@ -7,9 +7,9 @@ class Postgres1:
     def __init__(self):
         print("before connect")
         print(config.sql_user1)
-        self.connection = psycopg2.connect(dbname=config.sql_dbname1, host=config.sql_host1,
-                                           port=config.sql_port1, user=config.sql_user1,
-                                           password=config.sql_password1)
+        self.connection = psycopg2.connect(dbname=config.sql_dbname_viz, host=config.sql_host_viz,
+                                           port=config.sql_port_viz, user=config.sql_user_viz,
+                                           password=config.sql_password_viz)
         print(self.connection)
         logging.info(f"{self.connection}")
         print("before curser")
