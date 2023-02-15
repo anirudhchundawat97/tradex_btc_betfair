@@ -4,6 +4,7 @@ from betfair_api import BetfairApi
 from withpostgres import Postgres1
 import datetime as dt
 from time import sleep
+import pprint
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -45,8 +46,8 @@ while True:
                          "team2lay": bf.underlying_2_lay_df.to_dict(),
                          "inplay": bf.event_inplay}
             pg.insert_into_db(data_dict)
-            print(data_dict)
-        print("-"*20)
+            pprint(data_dict)
+        print(dt.datetime.now() ,"-"*20)
         sleep(30)
     except Exception as e:
         print("x"*10,e)

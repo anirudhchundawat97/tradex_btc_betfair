@@ -92,28 +92,28 @@ class BetfairData:
         self.all_events_info["matching_comp_score"] = self.all_events_info.apply(lambda row: cal_competition_similarity_score(self.competition, row['competitionName']), axis=1)
         self.all_events_info["matching_total_score"] = self.all_events_info["matching_event_score"] + self.all_events_info["matching_comp_score"]
         self.all_events_info = self.all_events_info.sort_values(by="matching_total_score", ascending=False).reset_index(drop=True)
-        print(self.all_events_info)
+        # print(self.all_events_info)
 
     def set_matching_event_info(self):
         self.matched_events_info = self.all_events_info.iloc[0].to_dict()
-        print(self.matched_events_info)
+        # print(self.matched_events_info)
         if self.matched_events_info["matching_total_score"] > 1.8:
             self.matched_event_name = self.matched_events_info["name"]
             self.matched_competition_name = self.matched_events_info["competitionName"]
             self.matched_event_id = self.matched_events_info["Id"]
-            print(self.matched_event_id)
+            # print(self.matched_event_id)
         else:
             raise Exception("Wrong event seems to have matched")
 
     def set_matching_market_info(self):
         markets = self.betfair.list_markets_by_eventid(self.matched_event_id)
         self.matched_all_market_info = pd.DataFrame(markets)
-        print(self.matched_all_market_info)
+        # print(self.matched_all_market_info)
         if self.format == "sports_towinagainst":
             filtered_data = (self.matched_all_market_info[self.matched_all_market_info["marketName"] == 'Match Odds'].iloc[0]).to_dict()
-            print(filtered_data)
+            # print(filtered_data)
             self.matched_market_id = filtered_data["marketId"]
-            print("mid", self.matched_market_id)
+            # print("mid", self.matched_market_id)
         else:
             raise Exception("Sports event format invalid")
 
