@@ -4,7 +4,7 @@ from betfair_api import BetfairApi
 from withpostgres import Postgres1
 import datetime as dt
 from time import sleep
-import pprint
+from pprint import pprint
 import logging
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
