@@ -108,8 +108,9 @@ class BetfairData:
     def set_matching_market_info(self):
         markets = self.betfair.list_markets_by_eventid(self.matched_event_id)
         self.matched_all_market_info = pd.DataFrame(markets)
+        print(self.matched_all_market_info)
         if self.format == "sports_towinagainst":
-            filtered_data = (self.matched_all_market_info[self.matched_all_market_info["marketName"] == 'Match Odds']).to_dict()
+            filtered_data = (self.matched_all_market_info[self.matched_all_market_info["marketName"] == 'Match Odds'].iloc[0]).to_dict()
             print(filtered_data)
             self.matched_market_id = filtered_data["marketId"]
             print("mid", self.matched_market_id)
