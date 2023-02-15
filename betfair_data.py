@@ -83,7 +83,7 @@ class BetfairData:
         events_info_list = []
         for sport in sports_names:
             temp1 = self.betfair.list_events_by_sport(sport)
-            print(temp1)
+            # print(temp1)
             events_info_list.extend(temp1)
         self.all_events_info = pd.DataFrame(events_info_list)
 
@@ -96,10 +96,10 @@ class BetfairData:
 
     def set_matching_event_info(self):
         self.matched_events_info = self.all_events_info.iloc[0].to_dict()
-        if self.matched_events_info["matching_total_score"] > 1:
+        if self.matched_events_info["matching_total_score"] > 1.8:
             self.matched_event_name = self.matched_events_info["name"]
             self.matched_competition_name = self.matched_events_info["competitionName"]
-            self.matched_event_id = self.matched_events_info["Id"]
+            self.matched_event_id = self.matched_events_info["Id"].value
             print(self.matched_event_id)
         else:
             raise Exception("Wrong event seems to have matched")
@@ -109,6 +109,7 @@ class BetfairData:
         self.matched_all_market_info = pd.DataFrame(markets)
         if self.format == "sports_towinagainst":
             filtered_data = (self.matched_all_market_info[self.matched_all_market_info["marketName"]=='Match Odds']).to_dict()
+            print(filtered_data)
             self.matched_market_id = filtered_data["marketId"]
             print("mid",self.matched_market_id)
         else:

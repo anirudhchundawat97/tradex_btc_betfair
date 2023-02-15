@@ -4,6 +4,13 @@ from betfair_api import BetfairApi
 from withpostgres import Postgres1
 import datetime as dt
 from time import sleep
+import logging
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.DEBUG)
+formatter = logging.Formatter("%(levelname)s:%(name)s:%(asctime)s:%(message)s")
+file_handler = logging.FileHandler("log_files/bf_data_saver1.log")
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 
 print("before betfair")
 bfa = BetfairApi()
@@ -42,4 +49,5 @@ while True:
         print("-"*20)
         sleep(30)
     except Exception as e:
-        print(e)
+        print("x"*10,e)
+        logger.exception(e)
