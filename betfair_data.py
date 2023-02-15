@@ -146,15 +146,21 @@ class BetfairData:
         self.underlying_2_spread = self.underlying_2_best_back - self.underlying_2_best_lay
 
     def initialise(self):
-        self.get_all_events_info()
-        self.cal_similarity_score_cols()
-        self.set_matching_event_info()
-        self.set_matching_market_info()
+        try:
+            self.get_all_events_info()
+            self.cal_similarity_score_cols()
+            self.set_matching_event_info()
+            self.set_matching_market_info()
+        except Exception as e:
+            print(e)
 
     def update(self):
-        self.update_exchange_prices()
-        self.update_probability_cols()
-        self.update_best_odds_n_spread()
+        try:
+            self.update_exchange_prices()
+            self.update_probability_cols()
+            self.update_best_odds_n_spread()
+        except Exception as e:
+            print(e)
 
 if __name__ == "__main__":
     bfd = BetfairData("Bundesliga", "Schalke", "Wolfsburg", "sports_towinagainst")
