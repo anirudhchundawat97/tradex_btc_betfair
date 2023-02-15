@@ -151,6 +151,7 @@ class BetfairData:
         self.underlying_2_spread = self.underlying_2_best_back - self.underlying_2_best_lay
 
     def initialise(self):
+        print("initialising...")
         try:
             self.get_all_events_info()
             self.cal_similarity_score_cols()
@@ -160,6 +161,7 @@ class BetfairData:
             print(e)
 
     def update(self):
+        print("updating...")
         try:
             self.update_exchange_prices()
             self.update_probability_cols()
