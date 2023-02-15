@@ -53,7 +53,11 @@ while True:
                 logger.exception(e)
                 continue
         print(dt.datetime.now(),"-"*20)
-        sleep(30)
+        print(dt.datetime.now(), "-" * 20)
+        print(dt.datetime.now(), "-" * 20)
+        print(dt.datetime.now(), "-" * 20)
+        print(dt.datetime.now(), "-" * 20)
+        # sleep(30)
     except Exception as e:
         print("x"*10,e)
         logger.exception(e)
