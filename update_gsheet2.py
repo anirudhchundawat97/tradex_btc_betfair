@@ -16,13 +16,13 @@ class Gsheet:
 
         try:
             if category == "btc":
-                self.event_sheet = self.sheet.worksheet("Range contracts pnl 4")
+                self.event_sheet = self.sheet.worksheet("Range contracts pnl 5")
             elif category == "betfair":
                 self.event_sheet = self.sheet.worksheet("Sports contracts pnl 1")
         except gspread.exceptions.WorksheetNotFound:
             print("Creating new worksheet")
             if category == "btc":
-                self.event_sheet = self.sheet.add_worksheet(title="Range contracts pnl 4", rows=250, cols=50)
+                self.event_sheet = self.sheet.add_worksheet(title="Range contracts pnl 5", rows=2000, cols=50)
             elif category == "betfair":
                 self.event_sheet = self.sheet.add_worksheet(title="Sports contracts pnl 1", rows=250, cols=50)
 

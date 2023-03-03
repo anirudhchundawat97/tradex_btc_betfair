@@ -61,4 +61,4 @@ class LastTradesInfo:
 
 if __name__ == "__main__":
     lti = LastTradesInfo('p', 0)
-    print(lti.clean_lastTradesInfo_df(16466))
+    print(lti.clean_lastTradesInfo_df(19555))

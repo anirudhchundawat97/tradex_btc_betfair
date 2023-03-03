@@ -16,11 +16,11 @@ logger.addHandler(file_handler)
 
 if __name__ == "__main__":
     print(f"Logging to {log_file_name}")
-    strat_num = 8  # int(input("Enter Strategy number:"))
-    event_id_intake = 'a'  # input("Method of fetching event ids auto or manual?(a/m):")
+    strat_num = 8#int(input("Enter Strategy number:"))
+    event_id_intake = 'a' #input("Method of fetching event ids auto or manual?(a/m):")
     while True:
         time_now = dt.datetime.now().time()
-        if (time_now > dt.time(18, 0, 0)) and (time_now < dt.time(19, 0, 0)):
+        if 1 == 1:  # (time_now > dt.time(18, 0, 0)) and (time_now < dt.time(19, 0, 0)):
             # if strat_num == 5:
             #     try:
             #         eid = int(input("Enter event id:"))
@@ -119,7 +119,7 @@ if __name__ == "__main__":
                         eid_input_list.sort()
                         print("Event ids:")
                         print(eid_input_list)
-                        if len(eid_input_list) >= 8:
+                        if len(eid_input_list) >= 1:
                             eid_input_str_list = ["strobj" + str(x) for x in eid_input_list]
                             for strobj, eid in zip(eid_input_str_list, eid_input_list):
                                 print("Creating strat obj for ", eid)
@@ -194,7 +194,8 @@ if __name__ == "__main__":
                                 if not strat_obj_dict[i].initialise:
                                     strat_obj_dict[i].initialise()
                                     print(strat_obj_dict[i].priceatri.title)
-                                    print(strat_obj_dict[i].priceatri.ends_at, type(strat_obj_dict[i].priceatri.ends_at))
+                                    print(strat_obj_dict[i].priceatri.ends_at,
+                                          type(strat_obj_dict[i].priceatri.ends_at))
                                     print(dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.started_at))
                                     print(dt.datetime.fromisoformat(strat_obj_dict[i].priceatri.ends_at))
                                 elif (strat_obj_dict[i].initialise) and (dt.datetime.now() <= dt.datetime.fromisoformat(
@@ -211,9 +212,9 @@ if __name__ == "__main__":
                                 logger.exception(e)
                                 print(e, "eid", i, strat_obj_dict[i])
 
-                        if dt.datetime.now().time() > time_now > dt.time(19, 0, 0):
-                            print("time up")
-                            break
+                        # if dt.datetime.now().time() > time_now > dt.time(19, 0, 0):
+                        #     print("time up")
+                        #     break
                 except Exception as e:
                     print(e)
         elif time_now > dt.time(19, 0, 0):

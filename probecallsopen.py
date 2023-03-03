@@ -57,3 +57,4 @@ if __name__ == "__main__":
     pco = ProbeCallsOpen('p', 0)
     df = pco._get_orderbook(id)
     print(df)
+    # df2 = pco.

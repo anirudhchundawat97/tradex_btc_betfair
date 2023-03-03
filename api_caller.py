@@ -80,6 +80,8 @@ class ApiCaller:
             self.token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" \
                          ".eyJ1c2VyX2lkIjoyMSwiaWF0IjoxNjY5NDQ1NTAwLCJleHAiOjI1MzM0NDU1MDB9" \
                          ".84QmGMHf9SlCtXGHXBsOiymUfBP_RKnq4nNGetQUL-4 "
+        elif self.userid == 22:
+            self.token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJpYXQiOjE2NzU1MjE2NzQsImV4cCI6MjUzOTUyMTY3NH0.JKXh27DSm1AlUkbXt3lNc1GQcpAFu2gZ0-DiI5EFk_0"
         #given by prabhat for testing orderid in api response
         elif self.userid == 100:
             self.token = "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9" \
@@ -122,7 +124,7 @@ class ApiCaller:
             except Exception as e:
                 try:
                     response = req.post(url, data=body, headers=headers)
-                    print("Response: ", response)
+                    # print("Response: ", response)
                     print("Exception: ", e)
                     logger.critical(f"API call failed. User{self.userid} Response:{response}, Exception: {e}")
                 except Exception as e:
@@ -159,6 +161,6 @@ def iso_utc_to_ist(iso_utc_datetime):
 
 if __name__ == "__main__":
     api_obj = ApiCaller()
-    resp = api_obj.tradex_caller("mybetsv2", {"eventsStatus": "'A','F'"})
+    resp = api_obj.tradex_caller("mybetsv2", {"eventsStatus": "'A','F'", "eventid":20220 })
     print(resp)
     print(resp.keys())

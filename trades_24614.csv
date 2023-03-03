@@ -1,0 +1,4 @@
+,date,createdat,event_id,refid,amount,order_detail,status,qty,asset,price,value,cumvalue,price+5,if_win_price,net_qty,if_win_price_times_qty
+2,2023-03-03,2023-03-03 14:10:08.262000+05:30,24614,od_1677385001536749,-235.0," Bought 5.00 shares x Y (Rs. 47.00 each) , Limit Order",Bought,5.0,Y,47.0,235.0,-235.0,52.0,53.0,5.0,265.0
+1,2023-03-03,2023-03-03 14:10:28.735000+05:30,24614,od_1677385001536752,-215.0," Bought 5.00 shares x N (Rs. 43.00 each) , Limit Order",Bought,5.0,N,43.0,215.0,-450.0,48.0,57.0,5.0,285.0
+0,2023-03-03,2023-03-03 14:21:24.453000+05:30,24614,,235.0,Settled (Rs. 235.00 credited),Settled,,,,,-215.0,,,,

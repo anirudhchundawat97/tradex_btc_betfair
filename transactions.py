@@ -166,34 +166,34 @@ class Transactions:
         Below code temporarily commented to save time
         """
         # getting average buy prices from cleaned transactions data
-        # clean_df = remove_cancelled_orders(df)
-        # # cleaner_df = remove_unfilled_txn_qty(clean_df, event_id)
-        #
-        # mask_buy = clean_df["status"] == "Bought"
-        #
-        # remove_yes_qty, remove_yes_amount = self._get_unfilled_qty_n_amount(event_id, "Y")
-        # mask_yes = clean_df["asset"] == "Y"
-        # df_yesbuy = clean_df[mask_buy & mask_yes]
-        # avgbuyyes = ((df_yesbuy["price"] * df_yesbuy["qty"]).sum() - remove_yes_amount) / (
-        #             df_yesbuy["qty"].sum() - remove_yes_qty)
-        #
-        # remove_no_qty, remove_no_amount = self._get_unfilled_qty_n_amount(event_id, "N")
-        # mask_no = clean_df["asset"] == "N"
-        # df_nobuy = clean_df[mask_buy & mask_no]
-        # avgbuyno = ((df_nobuy["price"] * df_nobuy["qty"]).sum() - remove_no_amount) / (
-        #             df_nobuy["qty"].sum() - remove_no_qty)
-        #
-        # # for comparison with previous values
-        # mask_buy = clean_df["status"] == "Bought"
-        #
-        # mask_yes = clean_df["asset"] == "Y"
-        # df_yesbuy = clean_df[mask_buy & mask_yes]
-        # avgbuyyesfalse = (df_yesbuy["price"] * df_yesbuy["qty"]).sum() / df_yesbuy["qty"].sum()
-        #
-        # mask_no = clean_df["asset"] == "N"
-        # df_nobuy = clean_df[mask_buy & mask_no]
-        # avgbuynofalse = (df_nobuy["price"] * df_nobuy["qty"]).sum() / df_nobuy["qty"].sum()
-        avgbuyyes, avgsellyes, avgbuyno, avgbuyyesfalse, avgbuynofalse = 0,0,0,0,0
+        clean_df = remove_cancelled_orders(df)
+        # cleaner_df = remove_unfilled_txn_qty(clean_df, event_id)
+
+        mask_buy = clean_df["status"] == "Bought"
+
+        remove_yes_qty, remove_yes_amount = self._get_unfilled_qty_n_amount(event_id, "Y")
+        mask_yes = clean_df["asset"] == "Y"
+        df_yesbuy = clean_df[mask_buy & mask_yes]
+        avgbuyyes = ((df_yesbuy["price"] * df_yesbuy["qty"]).sum() - remove_yes_amount) / (
+                    df_yesbuy["qty"].sum() - remove_yes_qty)
+
+        remove_no_qty, remove_no_amount = self._get_unfilled_qty_n_amount(event_id, "N")
+        mask_no = clean_df["asset"] == "N"
+        df_nobuy = clean_df[mask_buy & mask_no]
+        avgbuyno = ((df_nobuy["price"] * df_nobuy["qty"]).sum() - remove_no_amount) / (
+                    df_nobuy["qty"].sum() - remove_no_qty)
+
+        # for comparison with previous values
+        mask_buy = clean_df["status"] == "Bought"
+
+        mask_yes = clean_df["asset"] == "Y"
+        df_yesbuy = clean_df[mask_buy & mask_yes]
+        avgbuyyesfalse = (df_yesbuy["price"] * df_yesbuy["qty"]).sum() / df_yesbuy["qty"].sum()
+
+        mask_no = clean_df["asset"] == "N"
+        df_nobuy = clean_df[mask_buy & mask_no]
+        avgbuynofalse = (df_nobuy["price"] * df_nobuy["qty"]).sum() / df_nobuy["qty"].sum()
+        # avgbuyyes, avgsellyes, avgbuyno, avgbuyyesfalse, avgbuynofalse = 0,0,0,0,0
 
         return avgbuyyes, avgsellyes, avgbuyno, avgsellno, avgbuyyesfalse, avgbuynofalse
 
@@ -213,14 +213,14 @@ class Transactions:
                 buy_mask = bets_df["side"] == "buy"
                 temp = bets_df[oid_mask & buy_mask]
                 print("MYBETS bought and oid unique")
-                print(temp)
+                # print(temp)
                 fill_df = temp[temp["status"] == "executed"]
                 print("EXECUTED df")
-                print(fill_df)
+                # print(fill_df)
                 fqty = fill_df["qty"].sum()
                 unfill_df = temp[temp["status"] == "pending"]
                 print("PENDING df")
-                print(unfill_df)
+                # print(unfill_df)
                 unfqty = unfill_df["qty"].sum()
 
                 info_dict = {}
@@ -229,28 +229,28 @@ class Transactions:
                 info_dict["unfilledqty"] = unfqty
                 liveoid_info_list.append(info_dict)
 
-        print("mybets buy info: ", liveoid_info_list)
+        # print("mybets buy info: ", liveoid_info_list)
         clean_txn_df_copy = clean_txn_df.copy()
         for item in liveoid_info_list:
             temp2_df = clean_txn_df[clean_txn_df["refid"] == item["oid"]]
             print("OLD TRANSACTIONS for oid")
-            print(temp2_df)
+            # print(temp2_df)
             print("above shape: ", temp2_df.shape)
             if temp2_df.shape[0] == 1:
                 print("Entered if statement temp2_df.shape[0] == 1")
                 df_index = temp2_df.index.values[0]
                 print("index fethced: ", df_index)
-                print(clean_txn_df_copy.head())
-                print(clean_txn_df_copy.loc[df_index])
+                # print(clean_txn_df_copy.head())
+                # print(clean_txn_df_copy.loc[df_index])
                 # print(clean_txn_df_copy.loc[df_index])
                 (clean_txn_df_copy.loc[df_index, ["qty"]]) = item["filledqty"]
-                print("qty original:", (clean_txn_df_copy.loc[df_index]["qty"]), "qty new:", item["filledqty"])
+                # print("qty original:", (clean_txn_df_copy.loc[df_index]["qty"]), "qty new:", item["filledqty"])
                 (clean_txn_df_copy.loc[df_index, ["amount"]]) = (clean_txn_df.loc[df_index]["price"]) * (
                 clean_txn_df.loc[df_index]["qty"])
-                print("amount set ", "og amount:", (clean_txn_df_copy.loc[df_index]["amount"]), "new amount: ",
-                      (clean_txn_df.loc[df_index]["price"]) * (clean_txn_df.loc[df_index]["qty"]))
-                print("NEW TRANSACTIONS for oid")
-                print(clean_txn_df_copy[clean_txn_df_copy["refid"] == item["oid"]])
+                # print("amount set ", "og amount:", (clean_txn_df_copy.loc[df_index]["amount"]), "new amount: ",
+                #       (clean_txn_df.loc[df_index]["price"]) * (clean_txn_df.loc[df_index]["qty"]))
+                # print("NEW TRANSACTIONS for oid")
+                # print(clean_txn_df_copy[clean_txn_df_copy["refid"] == item["oid"]])
             else:
                 print("more than 1 order id row")
         return clean_txn_df_copy
@@ -316,6 +316,7 @@ if __name__ == "__main__":
     # cleaner_df = remove_unfilled_txn_qty(clean_df, 12401)
     # print(cleaner_df)
     obj = Transactions(apitype='p', userid=0)
-    df = obj.clean_transactions_df()
+    df = obj.get_event_transactions(12023)
     print(df.columns)
     print(df)
+    print("total: ",df["amount"].sum())

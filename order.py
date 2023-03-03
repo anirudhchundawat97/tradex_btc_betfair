@@ -46,27 +46,33 @@ class Order:
                     "trade_initiated_price": cmp}
         pprint(body)
         print(f"-----Buying  {asset} @Rs{price} qty{qty} in event {self.event_id}, message:{message}")
-        logger.info(f"log:pre;eid:{self.event_id};call:sent;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:buysend;respmessg:null;message:{message}")
+        logger.info(
+            f"log:pre;eid:{self.event_id};call:sent;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:buysend;respmessg:null;message:{message}")
         try:
             if not testing:
                 response = self.api_obj.tradex_caller(suffix, body)
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']};respmessg:null;message:{message}")
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']};respmessg:null;message:{message}")
             else:
                 response = dict()
                 response["call"]["orderid"] = "dummy"
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']}respmessg:null;;message:{message}")
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']}respmessg:null;;message:{message}")
         except KeyError:
             logger.info("api call response not recorded")
             try:
                 if response["status"] in ["failed", "ERROR"]:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:noresponse_{response['message']};respmessg:null;message:{message}")
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:noresponse_{response['message']};respmessg:null;message:{message}")
                     print(f"api call response: {response['status']} message:{response['message']}")
                 else:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:noresponse_nomessage;respmessg:null;message:{message}")
-                    print("response: ", response)
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:noresponse_nomessage;respmessg:null;message:{message}")
+                    # print("response: ", response)
             except:
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:noresponse_noresponse;respmessg:null;message:{message}")
-                print("response: ", response)
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:place;order:buy;asset:{asset};price:{price};qty:{qty};orderid:noresponse_noresponse;respmessg:null;message:{message}")
+                # print("response: ", response)
         return response
 
     def _sell(self, message, asset, price, qty, cmp=None):
@@ -90,28 +96,34 @@ class Order:
                     "trade_initiated_price": cmp}
         pprint(body)
         print(f"-----Selling {asset} @Rs{price} qty{qty} in event {self.event_id}, message:{message}")
-        logger.info(f"log:pre;eid:{self.event_id};call:sent;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:sellsend;respmessg:null;message:{message}")
+        logger.info(
+            f"log:pre;eid:{self.event_id};call:sent;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:sellsend;respmessg:null;message:{message}")
         try:
             if not testing:
                 response = self.api_obj.tradex_caller(suffix, body)
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']};respmessg:null;message:{message}")
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']};respmessg:null;message:{message}")
             else:
                 response = dict()
                 response["call"]["orderid"] = "dummy"
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']};respmessg:null;message:{message}")
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:{response['call']['orderId']};respmessg:null;message:{message}")
 
         except KeyError:
             logger.info("api call response not recorded")
             try:
                 if response["status"] in ["failed", "ERROR"]:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:noresponse_{response['message']};respmessg:null;message:{message}")
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:noresponse_{response['message']};respmessg:null;message:{message}")
                     print(f"api call response: {response['status']} message:{response['message']}")
                 else:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:noresponse_nomessage;respmessg:null;message:{message}")
-                    print("response: ", response)
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:noresponse_nomessage;respmessg:null;message:{message}")
+                    # print("response: ", response)
             except:
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:noresponse_noresponse;respmessg:null;message:{message}")
-                print("response: ", response)
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:place;order:sell;asset:{asset};price:{price};qty:{qty};orderid:noresponse_noresponse;respmessg:null;message:{message}")
+                # print("response: ", response)
         return response
 
     def _cancel_buy(self, message, asset, price, order_id):
@@ -123,19 +135,24 @@ class Order:
             "coins": price,
             "appVersion": 1041
         }
-        logger.info(f"log:pre;eid:{self.event_id};call:sent;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
+        logger.info(
+            f"log:pre;eid:{self.event_id};call:sent;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
         if not testing:
             response = self.api_obj.tradex_caller(suffix, body)
             try:
                 if response["success"]:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
                 else:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:notsuccess;message:{message}")
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:notsuccess;message:{message}")
             except KeyError:
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:nosuccesskey;message:{message}")
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:nosuccesskey;message:{message}")
         else:
             response = "dummy"
-            logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:dummy;orderid:{order_id};respmessg:null;message:{message}")
+            logger.info(
+                f"log:post;eid:{self.event_id};call:response;type:cancel;order:buy;asset:{asset};price:{price};qty:dummy;orderid:{order_id};respmessg:null;message:{message}")
         return response
 
     def _cancel_sell(self, message, asset, price, order_id):
@@ -148,19 +165,24 @@ class Order:
             "appVersion": 1041
         }
         # logger.info(f"{self.event_id}: cancel sell sent: {order_id} {self.event_id} {asset} {price}, message:{message}")
-        logger.info(f"log:pre;eid:{self.event_id};call:sent;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
+        logger.info(
+            f"log:pre;eid:{self.event_id};call:sent;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
         if not testing:
             response = self.api_obj.tradex_caller(suffix, body)
             try:
                 if response["success"]:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:null;message:{message}")
                 else:
-                    logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:notsuccess;message:{message}")
+                    logger.info(
+                        f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:notsuccess;message:{message}")
             except KeyError:
-                logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:nosuccesskey;message:{message}")
+                logger.info(
+                    f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:null;orderid:{order_id};respmessg:nosuccesskey;message:{message}")
         else:
             response = "dummy"
-            logger.info(f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:dummy;orderid:{order_id};respmessg:null;message:{message}")
+            logger.info(
+                f"log:post;eid:{self.event_id};call:response;type:cancel;order:sell;asset:{asset};price:{price};qty:dummy;orderid:{order_id};respmessg:null;message:{message}")
         return response
 
     def cancel_all_pending_sell(self, asset, message):
@@ -207,11 +229,26 @@ class Order:
 
 if __name__ == "__main__":
     # print(get_event_holdings(7810))
-    od = Order(7908, apitype='d', userid=100)
+    od = Order(15071, apitype='p', userid=0)
 
     # resp = od._buy("trying","N",86,10)
     # resp = od._buy("testing","Y",10,10)
-    # resp = od._buy("testing","Y",65,3)
-    resp = od._sell("testing", "Y", 70, 5)
+    resp = od._buy("testing", "Y", 12, 2)
+    # resp = od._sell("testing", "Y", 70, 5)
+    # resp = od.cancel_all_pending_buy("Y","dummy")
     print(resp)
-    print(resp["call"]["orderId"])
+    pprint(resp)
+    # print(resp["call"]["orderId"])
+
+# {'success': True, 'status': 'ERROR', 'message': 'Taking time. Please try again!'}
+
+# {'success': True,
+# 'call': {'rank': -1, 'returns': 100, 'probeid': 15071, 'callvalue': 'Y', 'coins': 65, 'noofcontracts': 3, 'appVersion': '1041', 'userid': 603727, 'preventSlippage': False, 'allowedSlippage': 4, 'orderId': 'od_1674361929724680'},
+# 'user': {'coinse': 3724939.74, 'userid': 603727, 'coinsb': 0, 'coinsw': 0, 'coinsd': 4677501.37},
+# 'calls': [{'rank': -1, 'coins': 65, 'callvalue': 'Y', 'userid': 603727, 'noofcontracts': 3, 'orderid': 'od_1674361929724680', 'status': 'O', 'createdat': '2023-02-04T12:10:21.259415+00:00', 'lastprice': 0}, {'rank': 0, 'coins': 50, 'callvalue': 'N', 'userid': 603727, 'noofcontracts': 25, 'orderid': 'od_1672403731763847', 'status': 'EX', 'createdat': '2022-12-30T18:03:33.753628+00:00', 'lastprice': 47.28}, {'rank': -1, 'coins': 65, 'callvalue': 'Y', 'userid': 603727, 'noofcontracts': 3, 'orderid': 'od_1674361929724680', 'status': 'A', 'createdat': '2023-02-04T12:10:21.259415+00:00', 'lastprice': 0}],
+# 'msg': None, 'partiallyExecuted': False, 'unmatched': 3, 'matched': 0}
+
+# {'error': 'Invalid Request',
+#  'message': 'Invalid Request',
+#  'status': 'failed',
+# 'success': False}

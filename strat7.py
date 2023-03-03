@@ -16,6 +16,7 @@ import logging
 import math
 from strat_live_status_recorder import StratRecorder
 import pymongo as pm
+from pnl_update_to_db import PnlToDb
 
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.DEBUG)
@@ -26,19 +27,28 @@ logger.addHandler(file_handler)
 
 
 class Strategy:
-    def __init__(self, event_id, min_buy_qty, avg_qty_multiplier, getOutSellPriceDiff="dynamic"):
+    def __init__(self, event_id, min_buy_qty, avg_qty_multiplier, getOutSellPriceDiff, coin_name,testing=None):
         self.userid = None
         self.apitype = None
         self.apitype = 'p'#input("API type: Test or Production (t/p)?: ")
         self.userid = 0#int(input("Enter userid (0 for default): "))
+        self.coin_name = coin_name
+        self.symbol = None
         self.event_id = event_id
         self.min_buy_qty = min_buy_qty
         self.max_buyorder_qty = None
+        self.buyorder_qty1 = None
+        self.buyorder_qty2 = None
+        self.buyorder_qty3 = None
+
         self.max_hold_qty = 500
         self.avg_qty_multiplier = avg_qty_multiplier
         self.getOutSellPriceDiff = getOutSellPriceDiff
         self.getoutYesDiff = None
         self.getoutNoDiff = None
+
+        self.absorbing_exposure = 0
+        self.absorbing_exposure_limit = 3000
 
         self.mybet = MyBets(self.apitype, self.userid)
         self.trans = Transactions(self.apitype, self.userid)
@@ -53,6 +63,8 @@ class Strategy:
         self.no_fair_price = None
         self.estimated_yes_fair_price = None
         self.estimated_no_fair_price = None
+        self.est_yfp_nodirection = None
+        self.est_nfp_nodirection = None
         self.strong_side = None
         self.side_2_scalp = None
         self.my_lastbuy_price_yes = None
@@ -66,6 +78,7 @@ class Strategy:
         self.falseavgbuyno = None
 
         self.atr_value = 0
+        self.custom_indi_value = None
         self.time_2_expiry_cat = None
         self.spot_cmp = None
         self.strike_price = None
@@ -79,8 +92,10 @@ class Strategy:
         self.yes_fpminusbp_std = None
         self.no_fpminusbp_std = None
 
+        self.pnltodb = PnlToDb(event_id)
         self.initialised = False
 
+    # upgraded to codes_3/utils/set_finance_timeexpiry_category
     def __set_expiry_category(self):
         now = dt.datetime.now()
         end = dt.datetime.fromisoformat(self.priceatri.ends_at)
@@ -108,26 +123,80 @@ class Strategy:
         else:
             self.time_2_expiry_cat = "12hr"
 
+    #upgraded to codes_3/events/underlyingextractor
     def __set_strike_price(self):
-        self.strike_price = float(self.priceatri.title[38:46])
-        self.strike_price = int(self.strike_price)
+        t1 = self.priceatri.title.split(":")
+        t2 = t1[2].split("or more?")
+        t3 = t2[0]
+        self.strike_price = float(t3)
+        # self.strike_price = int(self.strike_price)
 
+
+    #upgraded to codes_3/binance_data/cryptofairprice
     def __set_atr_value(self):
-        self.atr_value = self.binance_obj.get_last_atr(symbol="BTCUSDT", interval=self.time_2_expiry_cat)
-
-    def __set_estimated_fair_price(self):
-        self.spot_cmp = int(float(self.binance_obj.get_current_price(symbol="BTCUSDT")["price"]))
-        if self.strike_price > (self.spot_cmp + self.atr_value):
-            self.estimated_yes_fair_price = 1
-        elif self.strike_price < (self.spot_cmp - self.atr_value):
-            self.estimated_yes_fair_price = 99
+        if self.coin_name == "btc":
+            self.symbol = "BTCUSDT"
+        elif self.coin_name == "eth":
+            self.symbol = "ETHUSDT"
+        elif self.coin_name == "shi":
+            self.symbol = "SHIBUSDT"
+        elif self.coin_name == "dog":
+            self.symbol = "DOGEUSDT"
+        elif self.coin_name == "gbp":
+            self.symbol = "GBPUSDT"
+        elif self.coin_name == "eur":
+            self.symbol = "EURUSDT"
         else:
-            self.estimated_yes_fair_price = (self.spot_cmp + self.atr_value - self.strike_price) * (98 / (2 * self.atr_value)) + 1
+            self.symbol = "lol"
 
+        self.atr_value = self.binance_obj.get_last_atr(symbol=self.symbol, interval=self.time_2_expiry_cat)
+        self.custom_indi_value = self.binance_obj.get_cutom_indi_value(symbol=self.symbol, interval=self.time_2_expiry_cat)
+
+    #upgraded to codes_3/binance_data/cryptofairprice
+    def __set_estimated_fair_price(self):
+        self.spot_cmp = float(self.binance_obj.get_current_price(symbol=self.symbol)["price"])
+
+        if self.strike_price > (self.spot_cmp + self.atr_value):
+            self.est_yfp_nodirection = 1
+        elif self.strike_price < (self.spot_cmp - self.atr_value):
+            self.est_yfp_nodirection = 99
+        else:
+            self.est_yfp_nodirection = (self.spot_cmp + self.atr_value - self.strike_price) * (98 / (2 * self.atr_value)) + 1
+
+        self.est_nfp_nodirection = 100 - self.est_yfp_nodirection
+
+        if self.custom_indi_value == 0:
+            self.estimated_yes_fair_price = self.est_yfp_nodirection
+        elif self.custom_indi_value == -1:
+            self.estimated_yes_fair_price = (1 + self.est_yfp_nodirection)/2
+        elif self.custom_indi_value == 1:
+            self.estimated_yes_fair_price = (99 + self.est_yfp_nodirection)/2
+        else:
+            self.estimated_yes_fair_price = int(self.est_yfp_nodirection)
+            raise Exception("invalid custom indicator value")
+
+        self.estimated_yes_fair_price = int(self.estimated_yes_fair_price)
+
+        # self.estimated_yes_fair_price = int(self.est_yfp_nodirection)
         self.estimated_no_fair_price = 100 - self.estimated_yes_fair_price
 
+    #upgraded to codes_3/binance_data/cryptofairprice
     def __set_fair_price(self):
-        self.yes_fair_price = (2*self.estimated_yes_fair_price + self.priceatri.yes_ob_vwap) / 3
+        self.yes_fair_price = self.estimated_yes_fair_price
+        self.no_fair_price = self.estimated_no_fair_price
+
+        # self.yes_fair_price = (2 * self.estimated_yes_fair_price + self.priceatri.yes_ob_vwap) / 3
+        # self.no_fair_price = (2 * self.estimated_no_fair_price + self.priceatri.no_ob_vwap) / 3
+        # if self.custom_indi_value == 0:
+        #     self.yes_fair_price = (2*self.estimated_yes_fair_price + self.priceatri.yes_ob_vwap) / 3
+        #     self.no_fair_price = (2 * self.estimated_no_fair_price + self.priceatri.no_ob_vwap) / 3
+        # elif self.custom_indi_value == 1:
+        #     self.yes_fair_price = (99 + self.estimated_yes_fair_price + self.priceatri.yes_ob_vwap) / 3
+        #     self.no_fair_price = (1 + self.estimated_no_fair_price + self.priceatri.no_ob_vwap) / 3
+        # elif self.custom_indi_value == -1:
+        #     self.yes_fair_price = (1 + self.estimated_yes_fair_price + self.priceatri.yes_ob_vwap) / 3
+        #     self.no_fair_price = (99 + self.estimated_no_fair_price + self.priceatri.no_ob_vwap) / 3
+
         # print("--yes fair price")
         # print(self.priceatri.yes_best_price)
         # print("-")
@@ -135,7 +204,7 @@ class Strategy:
         # print("-")
         # print(self.yes_fair_price)
         # print("--")
-        self.no_fair_price = (2*self.estimated_no_fair_price + self.priceatri.no_ob_vwap) / 3
+
         # print("--no fair price")
         # print(self.priceatri.no_best_price)
         # print("-")
@@ -145,19 +214,22 @@ class Strategy:
         # print("--")
 
 
+
+    # sets price difference from buy price at which sell and exit if price varied too much
     def __set_getoutsellpricediff(self):
         if self.getOutSellPriceDiff == "dynamic":
             try:
-                client = pm.MongoClient("localhost", 27017)
-                db = client.tradex_strat_data
-                collection = db[f"strat7_{self.event_id}_{self.userid}"]
-                cursor = collection.find()
-                df = pd.DataFrame(cursor)
+                # client = pm.MongoClient("localhost", 27017)
+                # db = client.tradex_strat_data
+                # collection = db[f"strat7_{self.event_id}_{self.userid}"]
+                # cursor = collection.find()
+                # df = pd.DataFrame(cursor)
+                df = self.stratRecorObj.get_data_df_from_psql_backtest1(self.event_id)
                 if df.shape[0] > 1:
                     self.yesfp_std = int(df["yesfp"].std())
-                    self.nofp_std = int(df["nofp"].std())
+                    self.nofp_std = int(df["npfp"].std())
                     self.yes_fpminusbp_std = int((df["yesfp"]-df["yesbp"]).abs().std())
-                    self.no_fpminusbp_std = int((df["nofp"] - df["nobp"]).abs().std())
+                    self.no_fpminusbp_std = int((df["npfp"] - df["nobp"]).abs().std())
                 else:
                     self.yesfp_std = 0
                     self.nofp_std = 0
@@ -178,11 +250,13 @@ class Strategy:
             self.getoutYesDiff = self.getOutSellPriceDiff
             self.getoutNoDiff = self.getOutSellPriceDiff
 
+    # prints required info including orders, event prices
     def _print_details(self, process):
         print_dict = {"Userid": [self.userid, self.userid],
                       "apiType": [self.apitype, self.apitype],
                       "BestPrice": [self.priceatri.yes_best_price, self.priceatri.no_best_price],
                       "OBvwap": [self.priceatri.yes_ob_vwap, self.priceatri.no_ob_vwap],
+                      "e_fp_nodir": [self.est_yfp_nodirection, self.est_nfp_nodirection],
                       "EsFairPrice": [self.estimated_yes_fair_price, self.estimated_no_fair_price],
                       "FairPrice": [self.yes_fair_price, self.no_fair_price],
                       "Spread": [100 - self.priceatri.yes_best_price - self.priceatri.no_best_price,
@@ -199,10 +273,13 @@ class Strategy:
                       "MyHoldQty": [self.holding_yes_qty, self.holding_no_qty],
                       "MaxBuyQty": [self.max_buyorder_qty, self.max_buyorder_qty],
                       "MaxHoldQty": [self.max_hold_qty, self.max_hold_qty],
+                      "symbol": [self.coin_name, self.symbol],
                       "SpotPrice": [self.spot_cmp, self.spot_cmp],
                       "Strike": [self.strike_price, self.strike_price],
-                      "ATR": [np.round(self.atr_value,1), np.round(self.atr_value,1)],
-                      "spo-stri": [self.spot_cmp - self.strike_price, self.spot_cmp - self.strike_price]}
+                      "ATR": [self.atr_value, self.atr_value],
+                      "spo-stri": [self.spot_cmp - self.strike_price, self.spot_cmp - self.strike_price],
+                      "CIV": [self.custom_indi_value, self.custom_indi_value],
+                      "int": [self.time_2_expiry_cat, self.time_2_expiry_cat]}
         print(dt.datetime.now(), "-" * 50)
         if process == "initialising":
             print(
@@ -217,9 +294,10 @@ class Strategy:
         print("-" * 10, "ORDERS:")
         print(self.mybet.get_event_holdings(self.event_id))
 
+    # stores trigger, orders and prices
     def _strat_status_record(self):
         data_dict = dict()
-        data_dict["timestamp"] = dt.datetime.now()
+        data_dict["timestamp"] = str(dt.datetime.now())
         data_dict["side_2_scalp"] = self.side_2_scalp
         data_dict["spot_price"] = self.spot_cmp
         data_dict["strike_price"] = self.strike_price
@@ -253,9 +331,11 @@ class Strategy:
         data_dict["maxholdqty"] = float(self.max_hold_qty)
         data_dict["orders"] = self.mybet.get_event_holdings(self.event_id).to_dict("records")
         # print(data_dict)
-        self.stratRecorObj._add_one_doc(data_dict)
-        print("strat situation logged to mongo")
+        # self.stratRecorObj._add_one_doc(data_dict)
+        # print("strat situation logged to mongo")
+        self.stratRecorObj.add_to_psql(str(data_dict["timestamp"]), self.userid, self.event_id, None, data_dict["yesfp"], data_dict["nofp"] , data_dict["yesbp"] , data_dict["nobp"])
 
+    # used to compare change in prices and other params
     def _update_last_values(self):
         self.last_values_dict["y_h_qty"] = self.holding_yes_qty
         self.last_values_dict["n_h_qty"] = self.holding_no_qty
@@ -267,21 +347,119 @@ class Strategy:
         self.last_values_dict["navgbuy"] = self.my_avgbuy_price_no
         self.last_values_dict["maxbuyqty"] = self.max_buyorder_qty
 
+    # sends and cancels required orders as per strong side, stopBuyingUpper/LowerPrice
     def __scalp_side(self, asset, trigger, pausebuy, pausesell):
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print()
+        if self.pnltodb.worstcase_limit_reached:
+            print("worst limit worst limit worst limit worst limit worst limit ")
+            print("worst limit worst limit worst limit worst limit worst limit ")
+            print("worst limit worst limit worst limit worst limit worst limit ")
         if asset == "Y":
-            if (not pausebuy) and (self.atr_value < abs(self.spot_cmp - self.strike_price)):
-                temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "buy")
+            if (not pausebuy) and (not self.pnltodb.worstcase_limit_reached):
+            # if (not pausebuy) and (self.atr_value < abs(self.spot_cmp - self.strike_price)) and (not self.pnltodb.worstcase_limit_reached):
+                temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "buy")
                 if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("Y", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("Y")):
                     self.order.cancel_all_pending_buy("Y", f"{trigger},NewBuyParams")
                     self.priceatri.update_priceatri()
-                    temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "buy")
+                    # price_qty_message_list = self.get_staggered_priceqty_list()
+                    # for pqm in price_qty_message_list:
+                    #     self.__send_buy_orders(f"{trigger},ScalpingYes,{pqm[2]}", "Y", pqm[0], pqm[1])
+                    temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "buy")
                     self.__send_buy_orders(f"{trigger},ScalpingYes,{set_priceqty_message}", "Y", temp_price, temp_qty)
+
             else:
                 self.order.cancel_all_pending_buy("Y", f"{trigger},PausingBuy")
                 self.priceatri.update_priceatri()
                 print("Pausing YES buy")
             if not pausesell:
-                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "sell")
+                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "sell")
+                if not self.order.is_same_order("Y", sell_price, sell_qty, "sell"):
+                    self.order.cancel_all_pending_sell("Y", f"{trigger},NewSellParams")
+                    self.priceatri.update_priceatri()
+                    sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "sell")
+                    self.__send_all_sell(f"{trigger},SellingBoughtQty,{set_priceqty_message}", "Y", sell_price, sell_qty)
+            else:
+                self.order.cancel_all_pending_sell("Y", f"{trigger},PausingSell")
+                self.priceatri.update_priceatri()
+                print("Pausing YES sell")
+
+            self.order.cancel_all_pending_buy("N", f"{trigger},CancelOppSideOrders")
+            self.priceatri.update_priceatri()
+            if self.holding_no_qty > 0:
+                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "sell")
+                if not self.order.is_same_order("N", sell_price, sell_qty, "sell"):
+                    self.order.cancel_all_pending_sell("N", f"{trigger},NewSellParams")
+                    self.priceatri.update_priceatri()
+                    sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "sell")
+                    self.__send_all_sell(f"{trigger},SellingOppSideBoughtQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+        elif asset == "N":
+            if (not pausebuy) and (not self.pnltodb.worstcase_limit_reached):
+            # if (not pausebuy) and (self.atr_value < abs(self.spot_cmp - self.strike_price)) and (not self.pnltodb.worstcase_limit_reached):
+                temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "buy")
+                if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("N", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("N")):
+                    self.order.cancel_all_pending_buy("N", f"{trigger},NewBuyParams")
+                    self.priceatri.update_priceatri()
+                    temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "buy")
+                    self.__send_buy_orders(f"{trigger},ScalpingNo,{set_priceqty_message}", "N", temp_price, temp_qty)
+            else:
+                self.order.cancel_all_pending_buy("N", f"{trigger},PausingBuy")
+                self.priceatri.update_priceatri()
+                print("Pausing NO buy")
+
+            if not pausesell:
+                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "sell")
+                if not self.order.is_same_order("N", sell_price, sell_qty, "sell"):
+                    self.order.cancel_all_pending_sell("N", f"{trigger},NewSellParams")
+                    self.priceatri.update_priceatri()
+                    sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "sell")
+                    self.__send_all_sell(f"{trigger},SellingBoughtQty,{set_priceqty_message}", "N", sell_price, sell_qty)
+            else:
+                self.order.cancel_all_pending_sell("N", f"{trigger},PausingSell")
+                self.priceatri.update_priceatri()
+                print("Pausing NO sell")
+
+            self.order.cancel_all_pending_buy("Y", f"{trigger},CancelOppSideOrders")
+            self.priceatri.update_priceatri()
+            if self.holding_yes_qty > 0:
+                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "sell")
+                if not self.order.is_same_order("Y", sell_price, sell_qty, "sell"):
+                    self.order.cancel_all_pending_sell("Y", f"{trigger},NewSellParams")
+                    self.priceatri.update_priceatri()
+                    sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "sell")
+                    self.__send_all_sell(f"{trigger},SellingOppSideBoughtQty,{set_priceqty_message}", "Y", sell_price, sell_qty)
+
+    def __scalp_side2(self, asset, trigger, pausebuy, pausesell):
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst, "|", self.pnltodb.pnl_worst_2)
+        print()
+        if self.pnltodb.worstcase_limit_reached:
+            print("worst limit worst limit worst limit worst limit worst limit ")
+            print("worst limit worst limit worst limit worst limit worst limit ")
+            print("worst limit worst limit worst limit worst limit worst limit ")
+        if asset == "Y":
+            if (not pausebuy) and (not self.pnltodb.worstcase_limit_reached):
+            # if (not pausebuy) and (self.atr_value < abs(self.spot_cmp - self.strike_price)) and (not self.pnltodb.worstcase_limit_reached):
+                price_qty_message_list = self.get_staggered_priceqty_list(asset="Y", side="buy")
+                if (price_qty_message_list[0][1] > 0) and (price_qty_message_list[0][0] <= self.stop_buy_upper_price) \
+                        and (not self.order.is_same_order("Y", price_qty_message_list[0][0], price_qty_message_list[0][1], "buy")) and (not self._is_myorder_best("Y")):
+                    self.order.cancel_all_pending_buy("Y", f"{trigger},NewBuyParams")
+                    self.priceatri.update_priceatri()
+                    price_qty_message_list =  self.get_staggered_priceqty_list(asset="Y", side="buy")
+                    for pqm in price_qty_message_list:
+                        self.__send_buy_orders(f"{trigger},ScalpingYes,{pqm[2]}", "Y", pqm[0], pqm[1])
+
+            else:
+                self.order.cancel_all_pending_buy("Y", f"{trigger},PausingBuy")
+                self.priceatri.update_priceatri()
+                print("Pausing YES buy")
+            if not pausesell:
+                price_qty_message_list = self.get_staggered_priceqty_list(asset="Y", side="buy")
                 if not self.order.is_same_order("Y", sell_price, sell_qty, "sell"):
                     self.order.cancel_all_pending_sell("Y", f"{trigger},NewSellParams")
                     self.priceatri.update_priceatri()
@@ -302,7 +480,8 @@ class Strategy:
                     sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("N", "sell")
                     self.__send_all_sell(f"{trigger},SellingOppSideBoughtQty,{set_priceqty_message}", "N", sell_price, sell_qty)
         elif asset == "N":
-            if (not pausebuy) and (self.atr_value < abs(self.spot_cmp - self.strike_price)):
+            if (not pausebuy) and (not self.pnltodb.worstcase_limit_reached):
+            # if (not pausebuy) and (self.atr_value < abs(self.spot_cmp - self.strike_price)) and (not self.pnltodb.worstcase_limit_reached):
                 temp_price, temp_qty, set_priceqty_message = self.__get_send_order_price_qty("N", "buy")
                 if (temp_qty > 0) and (temp_price <= self.stop_buy_upper_price) and (not self.order.is_same_order("N", temp_price, temp_qty, "buy")) and (not self._is_myorder_best("N")):
                     self.order.cancel_all_pending_buy("N", f"{trigger},NewBuyParams")
@@ -336,13 +515,16 @@ class Strategy:
                     sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "sell")
                     self.__send_all_sell(f"{trigger},SellingOppSideBoughtQty,{set_priceqty_message}", "Y", sell_price, sell_qty)
 
+
+
+    # if holding qty is changed sell all qty new order and cancel previous
     def __hold_qty_change_process(self, trigger):
         if (self.side_2_scalp == "Y") and (self.holding_yes_qty > 0):
-            sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "sell")
+            sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "sell")
             if not self.order.is_same_order("Y", sell_price, sell_qty, "sell"):
                 self.order.cancel_all_pending_sell("Y", f"{trigger},HoldQtyChange")
                 self.priceatri.update_priceatri()
-                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "sell")
+                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("Y", "sell")
                 self.__send_all_sell(f"{trigger},SellingYesNewQty,{set_priceqty_message}", "Y", sell_price, sell_qty)
             # if self.holding_no_qty > 0:
             #     sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("N", "sell")
@@ -350,11 +532,11 @@ class Strategy:
             #         self.order.cancel_all_pending_sell("N", "holding qty changed")
             #         self.__send_all_sell("N", sell_price, sell_qty)
         elif (self.side_2_scalp == "N") and (self.holding_no_qty > 0):
-            sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("N", "sell")
+            sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "sell")
             if not self.order.is_same_order("N", sell_price, sell_qty, "sell"):
                 self.order.cancel_all_pending_sell("N",f"{trigger},HoldQtyChange")
                 self.priceatri.update_priceatri()
-                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("N", "sell")
+                sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty2("N", "sell")
                 self.__send_all_sell(f"{trigger},SellingNoNewQty,{set_priceqty_message}", "N", sell_price, sell_qty)
             # if self.holding_yes_qty > 0:
             #     sell_price, sell_qty, set_priceqty_message = self.__get_send_order_price_qty("Y", "sell")
@@ -362,6 +544,7 @@ class Strategy:
             #         self.order.cancel_all_pending_sell("Y")
             #         self.__send_all_sell("Y", sell_price, sell_qty)
 
+    #upgraded to codes_3/events_analyser
     def _get_situation(self):
         # if (self.yes_fair_price >= 50):
         #     self.strong_side = "Y"
@@ -388,7 +571,7 @@ class Strategy:
 
         self.side_2_scalp = self.strong_side
 
-
+    # reads current holding qty, avgexecute buy/sell prices and limits buy orders qty to 99
     def _set_qty(self):
         # write_exec_buy_order(self.event_id)
 
@@ -406,6 +589,11 @@ class Strategy:
         elif self.max_buyorder_qty >= 100:
             self.max_buyorder_qty = 99
 
+        self.buyorder_qty3 = math.floor(self.max_buyorder_qty * 0.5)
+        self.buyorder_qty2 = math.floor(self.max_buyorder_qty * 0.35)
+        self.buyorder_qty1 = self.max_buyorder_qty - self.buyorder_qty3 - self.buyorder_qty2
+
+    # to check if order between 3rd best price and your price at 1st best price in cancelled
     def _is_myorder_best(self, asset):
         if asset == "Y":
             if not self.priceatri.yes_pending_orders.empty:
@@ -439,6 +627,7 @@ class Strategy:
         else:
             return False
 
+    # if at +1 price wouldn't be a take order
     def __get_make_price_or_best(self, asset):
         if asset == "Y":
             if (self.priceatri.yes_best_price + 1) < (100 - self.priceatri.no_best_price):
@@ -451,6 +640,8 @@ class Strategy:
             else:
                 return self.priceatri.no_best_price, "atbest"
 
+
+    # increase/decrease qty as per range price is in
     def _get_revised_buy_maxqty(self, asset):
         if asset == "Y":
             if (self.yes_fair_price < 100) and (self.yes_fair_price >= 90):
@@ -506,10 +697,83 @@ class Strategy:
         elif self.max_buyorder_qty >= 100:
             self.max_buyorder_qty = 99
 
+    def get_staggered_priceqty_list(self, asset, side):
+        temp_list = []
+        if asset == "Y":
+            if side == "buy":
+                first_qty = self.buyorder_qty1
+                first_price = self.yes_fair_price - 5
+                first_message = "first_buy"
+
+                second_qty = self.buyorder_qty2
+                second_price = self.yes_fair_price - 6
+                second_message = "second_buy"
+
+                third_qty = self.buyorder_qty3
+                third_price = self.yes_fair_price - 7
+                third_message = "third_buy"
+
+                temp_list = [(first_message, first_price, first_qty), (second_message, second_price, second_qty), (third_message, third_price, third_qty)]
+                return temp_list
+            elif side == "sell":
+                sell_qty = self.holding_yes_qty
+                sellorder_qty3 = math.floor(sell_qty * 0.5)
+                sellorder_qty2 = math.floor(sell_qty * 0.35)
+                sellorder_qty1 = sell_qty - sellorder_qty3 - sellorder_qty2
+
+                sellorder_price1 = 100 - self.no_fair_price - 5
+                sellorder_price2 = 100 - self.no_fair_price - 6
+                sellorder_price3 = 100 - self.no_fair_price - 7
+
+                sellorder_message1 = "1stsell"
+                sellorder_message2 = "2ndsell"
+                sellorder_message3 = "3rdsell"
+
+                temp_list = [(sellorder_message1, sellorder_price1, sellorder_qty1), (sellorder_message2, sellorder_price2, sellorder_qty2),
+                             (sellorder_message3, sellorder_price3, sellorder_qty3)]
+                return temp_list
+        elif asset == "N":
+            if side == "buy":
+                first_qty = self.buyorder_qty1
+                first_price = self.no_fair_price - 5
+                first_message = "first_buy"
+
+                second_qty = self.buyorder_qty2
+                second_price = self.no_fair_price - 6
+                second_message = "second_buy"
+
+                third_qty = self.buyorder_qty3
+                third_price = self.no_fair_price - 7
+                third_message = "third_buy"
+
+                temp_list = [(first_message, first_price, first_qty), (second_message, second_price, second_qty),
+                             (third_message, third_price, third_qty)]
+                return temp_list
+            elif side == "sell":
+                sell_qty = self.holding_yes_qty
+                sellorder_qty3 = math.floor(sell_qty * 0.5)
+                sellorder_qty2 = math.floor(sell_qty * 0.35)
+                sellorder_qty1 = sell_qty - sellorder_qty3 - sellorder_qty2
+
+                sellorder_price1 = 100 - self.yes_fair_price - 5
+                sellorder_price2 = 100 - self.yes_fair_price - 6
+                sellorder_price3 = 100 - self.yes_fair_price - 7
+
+                sellorder_message1 = "1stsell"
+                sellorder_message2 = "2ndsell"
+                sellorder_message3 = "3rdsell"
+
+                temp_list = [(sellorder_message1, sellorder_price1, sellorder_qty1),
+                             (sellorder_message2, sellorder_price2, sellorder_qty2),
+                             (sellorder_message3, sellorder_price3, sellorder_qty3)]
+                return temp_list
+
+
+    # gives price and qty as per order being sent
     def __get_send_order_price_qty(self, asset, side):
         if asset == "Y":
             if side == "buy":
-                self._get_revised_buy_maxqty("Y")
+                # self._get_revised_buy_maxqty("Y")
                 qty_temp = self.max_buyorder_qty# - self.holding_yes_qty
                 price_temp, makeorbestmessage = self.__get_make_price_or_best("Y")
                 message = f"BasicBuy,{makeorbestmessage}"
@@ -542,7 +806,7 @@ class Strategy:
                 return sell_price, sell_qty, message
         elif asset == "N":
             if side == "buy":
-                self._get_revised_buy_maxqty("N")
+                # self._get_revised_buy_maxqty("N")
                 qty_temp = self.max_buyorder_qty# - self.holding_no_qty
                 price_temp, makeorbestmessage = self.__get_make_price_or_best("N")
                 message = f"BasicBuy,{makeorbestmessage}"
@@ -574,6 +838,71 @@ class Strategy:
                         message = "ProfitSell,atAvgBuy+1"
                 return sell_price, sell_qty, message
 
+    def __get_send_order_price_qty2(self, asset, side):
+        print("using get_send_order_price_qty...")
+        if asset == "Y":
+            if side == "buy":
+                # self._get_revised_buy_maxqty("Y")
+                qty_temp = self.max_buyorder_qty  # - self.holding_yes_qty
+                price_temp = self.yes_fair_price - 5
+                makeorbestmessage = "atfairprice"
+                message = f"BasicBuy,{makeorbestmessage}"
+                return price_temp, qty_temp, message
+            elif side == "sell":
+                sell_qty = self.holding_yes_qty
+                # sell_price = int(self.yes_fair_price)
+                # sell_price = self.priceatri.yes_best_price + 2
+                # print("X" * 20, f"my_buy_price_yes =  {self.my_buy_price_yes} type = {type(self.my_buy_price_yes)}")
+                if (self.my_avgbuy_price_yes > self.priceatri.yes_best_price + self.getoutYesDiff) and (
+                        self.estimated_yes_fair_price < 85):
+                    sell_price = 100 - self.no_fair_price + 5
+                    message = "sellatfairprice"
+                elif (self.my_avgbuy_price_yes == 0) or (np.isnan(self.my_avgbuy_price_yes)) or (
+                        np.isnan(self.my_lastbuy_price_yes)):
+                    sell_price = 100 - self.no_fair_price + 5
+                    message = "NullAvgBuySell,atYesBest+1"
+                    print("Yes my_avgbuy_price unavailable")
+                    logger.critical(f"{self.event_id}: Yes my_avgbuy_price unavailable")
+                else:
+                    # sell1 = int(self.my_avgbuy_price_yes) + 1
+                    # sell2 = int(self.my_lastbuy_price_yes) + 1
+                    # sell_price = max(sell1, sell2)
+                    sell_price = 100 - self.no_fair_price + 5
+                    message = "sellatfairprice"
+                return sell_price, sell_qty, message
+        elif asset == "N":
+            if side == "buy":
+                # self._get_revised_buy_maxqty("N")
+                qty_temp = self.max_buyorder_qty  # - self.holding_no_qty
+                price_temp = self.no_fair_price - 5
+                makeorbestmessage = "buyatfair"
+                message = f"BasicBuy,{makeorbestmessage}"
+                return price_temp, qty_temp, message
+            elif side == "sell":
+                sell_qty = self.holding_no_qty
+                # sell_price = int(100 - self.yes_fair_price)
+                # sell_price = self.priceatri.no_best_price + 2
+                # print("X"*20,f"my_buy_price_no =  {self.my_buy_price_no} type = {type(self.my_buy_price_no)}")
+
+                if (self.my_avgbuy_price_no > self.priceatri.no_best_price + self.getoutNoDiff) and (
+                        self.estimated_no_fair_price < 85):
+                    sell_price = 100 - self.yes_fair_price + 5
+                    message = "sellatfair"
+                elif (self.my_avgbuy_price_no == 0) or (np.isnan(self.my_avgbuy_price_no)) or (
+                        np.isnan(self.my_lastbuy_price_no)):
+                    sell_price = 100 - self.yes_fair_price + 5
+                    message = "sellatfair"
+                    print("No my_buy_price unavailable")
+                    logger.critical(f"{self.event_id}: No my_buy_price unavailable")
+                else:
+                    # sell1 = int(self.my_avgbuy_price_no) + 1
+                    # sell2 = int(self.my_lastbuy_price_no) + 1
+                    # sell_price = max(sell1, sell2)
+                    sell_price = 100 - self.yes_fair_price + 5
+                    message = "sellatfair"
+                return sell_price, sell_qty, message
+
+
     def __send_buy_orders(self, message, asset, price, qty):
         if asset == "Y":
             self.order._buy(message, "Y", price, qty)
@@ -604,6 +933,7 @@ class Strategy:
     #                 print("--No take order--")
     #                 self.__send_buy_orders("Absorbing spread", "N", 100 - orders_2_take_no["price"].iloc[i], orders_2_take_no["qty"].iloc[i])
 
+    # monitors change in scenario
     def _keep_a_check(self):
         self.priceatri.update_priceatri()
         yes_but_zero = (self.side_2_scalp == "Y") and (self.holding_yes_qty == 0)
@@ -700,21 +1030,33 @@ class Strategy:
                         else:
                             self.__scalp_side("N", trigger, pausebuy=True, pausesell=False)
 
+    # absorf low hanging fruits
     def absorb_high_probable_orderbook(self):
+        print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
         if (dt.datetime.now() + dt.timedelta(minutes=5) >= dt.datetime.fromisoformat(self.priceatri.ends_at)) \
                 and (abs(self.spot_cmp - self.strike_price) >= self.atr_value * 1):
             absorb_side = "N" if (self.estimated_yes_fair_price == 99) else "Y" if (self.estimated_no_fair_price == 99) else None
             print(f"Absorbing '{absorb_side}' order book")
             if absorb_side == "N":
                 for i in self.priceatri.no_pending_orders.index:
+                    print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
                     buy_price = 100 - self.priceatri.no_pending_orders["price"].loc[i]
                     buy_qty = self.priceatri.no_pending_orders["qty"].loc[i]
-                    self.__send_buy_orders("absorbing orderbook", "Y", buy_price, buy_qty)
+                    self.absorbing_exposure = self.absorbing_exposure + (buy_price * buy_qty)
+                    if self.absorbing_exposure < self.absorbing_exposure_limit:
+                        self.__send_buy_orders("absorbing orderbook", "Y", buy_price, buy_qty)
+                    else:
+                        pass
             elif absorb_side == "Y":
                 for i in self.priceatri.yes_pending_orders.index:
+                    print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
                     buy_price = 100 - self.priceatri.yes_pending_orders["price"].loc[i]
                     buy_qty = self.priceatri.yes_pending_orders["qty"].loc[i]
-                    self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+                    self.absorbing_exposure = self.absorbing_exposure + (buy_price * buy_qty)
+                    if self.absorbing_exposure < self.absorbing_exposure_limit:
+                        self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+                    else:
+                        pass
             else:
                 pass
 
@@ -724,14 +1066,24 @@ class Strategy:
             print(f"Absorbing '{absorb_side}' order book")
             if absorb_side == "N":
                 for i in self.priceatri.no_pending_orders.index:
+                    print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
                     buy_price = 100 - self.priceatri.no_pending_orders["price"].loc[i]
                     buy_qty = self.priceatri.no_pending_orders["qty"].loc[i]
-                    self.__send_buy_orders("absorbing orderbook", "Y", buy_price, buy_qty)
+                    self.absorbing_exposure = self.absorbing_exposure + (buy_price * buy_qty)
+                    if self.absorbing_exposure < self.absorbing_exposure_limit:
+                        self.__send_buy_orders("absorbing orderbook", "Y", buy_price, buy_qty)
+                    else:
+                        pass
             elif absorb_side == "Y":
                 for i in self.priceatri.yes_pending_orders.index:
+                    print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
                     buy_price = 100 - self.priceatri.yes_pending_orders["price"].loc[i]
                     buy_qty = self.priceatri.yes_pending_orders["qty"].loc[i]
-                    self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+                    self.absorbing_exposure = self.absorbing_exposure + (buy_price * buy_qty)
+                    if self.absorbing_exposure < self.absorbing_exposure_limit:
+                        self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+                    else:
+                        pass
             else:
                 pass
         elif abs(self.spot_cmp - self.strike_price) >= self.atr_value * 8:
@@ -739,20 +1091,30 @@ class Strategy:
             print(f"Absorbing '{absorb_side}' order book")
             if absorb_side == "N":
                 for i in self.priceatri.no_pending_orders.index:
+                    print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
                     buy_price = 100 - self.priceatri.no_pending_orders["price"].loc[i]
                     buy_qty = self.priceatri.no_pending_orders["qty"].loc[i]
-                    self.__send_buy_orders("absorbing orderbook", "Y", buy_price, buy_qty)
+                    self.absorbing_exposure = self.absorbing_exposure + (buy_price * buy_qty)
+                    if self.absorbing_exposure < self.absorbing_exposure_limit:
+                        self.__send_buy_orders("absorbing orderbook", "Y", buy_price, buy_qty)
+                    else:
+                        pass
             elif absorb_side == "Y":
                 for i in self.priceatri.yes_pending_orders.index:
+                    print("absorb exposure: ", self.absorbing_exposure, "limit: ", self.absorbing_exposure_limit)
                     buy_price = 100 - self.priceatri.yes_pending_orders["price"].loc[i]
                     buy_qty = self.priceatri.yes_pending_orders["qty"].loc[i]
-                    self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+                    self.absorbing_exposure = self.absorbing_exposure + (buy_price * buy_qty)
+                    if self.absorbing_exposure < self.absorbing_exposure_limit:
+                        self.__send_buy_orders("absorbing orderbook", "N", buy_price, buy_qty)
+                    else:
+                        pass
             else:
                 pass
 
-
-
     def initialise(self):
+        print("version 1.5")
+        self.pnltodb.update()
         logger.info(f"{self.event_id}: Initialising event")
 
         self.priceatri.initialise_priceatri()
@@ -775,9 +1137,11 @@ class Strategy:
         self._keep_a_check()
         self._update_last_values()
         self._strat_status_record()
+        self.pnltodb.update()
         self.initialised = True
 
     def update(self):
+        self.pnltodb.update()
         self.priceatri.update_priceatri()
 
         self.__set_expiry_category()
@@ -794,3 +1158,4 @@ class Strategy:
         self.absorb_high_probable_orderbook()
         self._update_last_values()
         self._strat_status_record()
+        self.pnltodb.update()

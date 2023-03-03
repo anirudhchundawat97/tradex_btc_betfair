@@ -125,7 +125,7 @@ class PriceAttri(EventParam):
 
 
 if __name__ == "__main__":
-    pa = PriceAttri(12461)
+    pa = PriceAttri(12023)
     print("-"*20, "class object created", "-"*20)
     print("title", pa.title)
     print("started_at", pa.started_at)

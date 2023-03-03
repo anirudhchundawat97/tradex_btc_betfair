@@ -8,8 +8,8 @@ from update_gsheet2 import Gsheet
 
 warnings.filterwarnings("ignore")
 
-eid_list1_sheet1 = [17901, 17696, 18012, ]
-eid_list_now = [18174, 18204]
+eid_list1_sheet1 = []
+eid_list_now = [17696, 17901, 18012, 18174, 18204, 18322, 18517, 18619, 18765, 18891, 19246]
 
 gs = Gsheet(category="betfair")
 while True:
