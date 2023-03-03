@@ -100,8 +100,8 @@ class Strategy:
         self.default_spread_each_side = 3
         self.make_max_buy_order_qty = 10
 
-        self.yes_left_exposure = 0
-        self.no_left_exposure = 0
+        self.yes_left_exposure = self.per_side_exposure_limit
+        self.no_left_exposure = self.per_side_exposure_limit
 
     def __set_event_match_phrase(self):
         if ":" in self.priceatri.title:
@@ -389,13 +389,19 @@ class Strategy:
         #     print("worst limit worst limit worst limit worst limit worst limit ")
         if asset == "Y":
             print("yes side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.yes_left_exposure)
-            if self.yes_left_exposure >= self.per_side_exposure_limit:
+            if self.yes_left_exposure > self.per_side_exposure_limit:
+                self.set_left_to_expose()
+                self.set_buy_price_with_spread()
+                self.set_qty_to_trade_asper_exposure()
                 temp_price = self.yes_buyprice_w_spread
                 temp_qty = self.yes_buyqty
                 print(f"yes order price: {temp_price} qty: {temp_qty}")
                 if (temp_qty > 0) and (not self.order.is_same_order(asset, temp_price, temp_qty, "buy")):
                     self.order.cancel_all_pending_buy(asset, "new_buy_make_order")
                     self.priceatri.update_priceatri()
+                    self.set_left_to_expose()
+                    self.set_buy_price_with_spread()
+                    self.set_qty_to_trade_asper_exposure()
                     temp_price = self.yes_buyprice_w_spread
                     temp_qty = self.yes_buyqty
                     temp_message = "make_with_spread"
@@ -410,13 +416,19 @@ class Strategy:
                 self.priceatri.update_priceatri()
         elif asset == "N":
             print("no side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.no_left_exposure)
-            if self.no_left_exposure >= self.per_side_exposure_limit:
+            if self.no_left_exposure > self.per_side_exposure_limit:
+                self.set_left_to_expose()
+                self.set_buy_price_with_spread()
+                self.set_qty_to_trade_asper_exposure()
                 temp_price = self.no_buyprice_w_spread
                 temp_qty = self.no_buyqty
                 print(f"no order price: {temp_price} qty: {temp_qty}")
                 if (temp_qty > 0) and (not self.order.is_same_order(asset, temp_price, temp_qty, "buy")):
                     self.order.cancel_all_pending_buy(asset, "new_buy_make_order")
                     self.priceatri.update_priceatri()
+                    self.set_left_to_expose()
+                    self.set_buy_price_with_spread()
+                    self.set_qty_to_trade_asper_exposure()
                     temp_price = self.no_buyprice_w_spread
                     temp_qty = self.no_buyqty
                     temp_message = "make_with_spread"
@@ -879,6 +891,7 @@ class Strategy:
             if self.yes_buyqty >= self.make_max_buy_order_qty:
                 self.yes_buyqty = self.make_max_buy_order_qty
         else:
+            print(f"setting yes qty zero, left expo:{self.yes_left_exposure} price buy:{self.yes_buyprice_w_spread}")
             self.yes_buyqty = 0
 
         if (self.no_left_exposure > self.per_side_exposure_limit) and (self.no_buyprice_w_spread > 0):
@@ -886,6 +899,7 @@ class Strategy:
             if self.no_buyqty >= self.make_max_buy_order_qty:
                 self.no_buyqty = self.make_max_buy_order_qty
         else:
+            print(f"setting no qty zero, left expo:{self.no_left_exposure} price buy:{self.no_buyprice_w_spread}")
             self.no_buyqty = 0
 
 
