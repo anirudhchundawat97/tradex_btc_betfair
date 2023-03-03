@@ -96,7 +96,7 @@ class Strategy:
 
         self.pnltodb = PnlToDb(event_id)
         self.initialised = False
-        self.per_side_exposure_limit = -500
+        self.per_side_exposure_limit = 500
         self.default_spread_each_side = 5
         self.make_max_buy_order_qty = 5
 
@@ -956,12 +956,12 @@ class Strategy:
     #trade both sides with exposure control
     def set_left_to_expose(self):
         if self.pnltodb.pnl_if_no < 0:
-            self.no_left_exposure = self.per_side_exposure_limit - self.pnltodb.pnl_if_no
+            self.no_left_exposure = self.per_side_exposure_limit + self.pnltodb.pnl_if_no
         else:
             self.no_left_exposure = self.per_side_exposure_limit
 
         if self.pnltodb.pnl_if_yes < 0:
-            self.yes_left_exposure = self.per_side_exposure_limit - self.pnltodb.pnl_if_yes
+            self.yes_left_exposure = self.per_side_exposure_limit + self.pnltodb.pnl_if_yes
         else:
             self.yes_left_exposure = self.per_side_exposure_limit
 
@@ -974,7 +974,7 @@ class Strategy:
         self.no_buyprice_w_spread = temp_no_buyprice_w_spread
 
     def set_qty_to_trade_asper_exposure(self):
-        if (self.yes_left_exposure <= self.per_side_exposure_limit) or (self.yes_buyprice_w_spread <= 0):
+        if (self.yes_left_exposure <= 0) or (self.yes_buyprice_w_spread <= 0):
             print(f"setting yes qty zero, left expo:{self.yes_left_exposure} price buy:{self.yes_buyprice_w_spread}")
             self.yes_buyqty = 0
         else:
@@ -982,11 +982,11 @@ class Strategy:
             if self.yes_buyqty > self.make_max_buy_order_qty:
                 self.yes_buyqty = self.make_max_buy_order_qty
 
-        if (self.no_left_exposure <= self.per_side_exposure_limit) and (self.no_buyprice_w_spread <= 0):
+        if (self.no_left_exposure <= 0) and (self.no_buyprice_w_spread <= 0):
             print(f"setting no qty zero, left expo:{self.no_left_exposure} price buy:{self.no_buyprice_w_spread}")
             self.no_buyqty = 0
         else:
-            self.no_buyqty = math.floor(abs(self.no_left_exposure) / self.no_buyprice_w_spread)
+            self.no_buyqty = math.floor(self.no_left_exposure / self.no_buyprice_w_spread)
             if self.no_buyqty > self.make_max_buy_order_qty:
                 self.no_buyqty = self.make_max_buy_order_qty
 
