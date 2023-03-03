@@ -389,7 +389,7 @@ class Strategy:
         #     print("worst limit worst limit worst limit worst limit worst limit ")
         if asset == "Y":
             print("yes side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.yes_left_exposure)
-            if self.yes_left_exposure > self.per_side_exposure_limit:
+            if self.yes_left_exposure > 0:
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
                 self.set_qty_to_trade_asper_exposure()
@@ -416,7 +416,7 @@ class Strategy:
                 self.priceatri.update_priceatri()
         elif asset == "N":
             print("no side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.no_left_exposure)
-            if self.no_left_exposure > self.per_side_exposure_limit:
+            if self.no_left_exposure > 0:
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
                 self.set_qty_to_trade_asper_exposure()
