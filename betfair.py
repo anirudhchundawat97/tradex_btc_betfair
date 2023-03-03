@@ -46,7 +46,7 @@ class BetFair:
                     # print(type(detail_dict))
                     # print(detail_dict)
                     # print()
-                    print(detail_dict.keys())
+                    # print(detail_dict.keys())
                     print(detail_dict["name"])
                     name = detail_dict["name"].replace(" ", "").lower()
                     phrase1 = teamA + "v" + teamB
