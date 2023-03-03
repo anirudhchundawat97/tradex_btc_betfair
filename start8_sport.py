@@ -119,6 +119,7 @@ class Strategy:
 
     def __set_estimated_fair_price(self):
         self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB)
+        self.estimated_yes_fair_price = math.floor(self.estimated_yes_fair_price)
         self.estimated_no_fair_price = 99 - self.estimated_yes_fair_price - 1
 
     #upgraded to codes_3/binance_data/cryptofairprice
