@@ -15,7 +15,7 @@ import datetime as dt
 import logging
 import math
 from strat_live_status_recorder import StratRecorder
-import pymongo as pm
+# import pymongo as pm
 from pnl_update_to_db import PnlToDb
 
 logger = logging.getLogger(__name__)
