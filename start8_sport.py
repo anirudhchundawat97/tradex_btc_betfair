@@ -903,7 +903,7 @@ class Strategy:
         else:
             self.yes_buyqty = math.floor(abs(self.yes_left_exposure) / self.yes_buyprice_w_spread)
             print(
-                f" yes | qty: {self.yes_buyqty} | leftexpo:{self.yes_left_exposure} | pnlifno:{self.pnltodb.pnl_if_no} | buyprice:{self.yes_buyprice_w_spread}")
+                f"yes | qty: {self.yes_buyqty} | leftexpo:{self.yes_left_exposure} | pnlifno:{self.pnltodb.pnl_if_no} | buyprice:{self.yes_buyprice_w_spread}")
             if self.yes_buyqty > self.make_max_buy_order_qty:
                 self.yes_buyqty = self.make_max_buy_order_qty
 
@@ -911,12 +911,12 @@ class Strategy:
 
         if (self.no_left_exposure <= 0) or (self.no_buyprice_w_spread <= self.make_stop_lower_price):
             print(
-                f"no | qty: zero | leftexpo:{self.no_left_exposure} | pnlifyes:{self.pnltodb.pnl_if_yes} | buyprice:{self.no_buyprice_w_spread}")
+                f"no  | qty: zero | leftexpo:{self.no_left_exposure} | pnlifyes:{self.pnltodb.pnl_if_yes} | buyprice:{self.no_buyprice_w_spread}")
             self.no_buyqty = 0
         else:
             self.no_buyqty = math.floor(self.no_left_exposure / self.no_buyprice_w_spread)
             print(
-                f"no | qty: {self.no_buyqty} | leftexpo:{self.no_left_exposure} | pnlifyes:{self.pnltodb.pnl_if_yes} | buyprice:{self.no_buyprice_w_spread}")
+                f"no  | qty: {self.no_buyqty} | leftexpo:{self.no_left_exposure} | pnlifyes:{self.pnltodb.pnl_if_yes} | buyprice:{self.no_buyprice_w_spread}")
             if self.no_buyqty > self.make_max_buy_order_qty:
                 self.no_buyqty = self.make_max_buy_order_qty
 
