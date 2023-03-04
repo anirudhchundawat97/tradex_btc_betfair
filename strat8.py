@@ -471,7 +471,7 @@ class Strategy:
         #     print("worst limit worst limit worst limit worst limit worst limit ")
         #     print("worst limit worst limit worst limit worst limit worst limit ")
         if asset == "Y":
-            print("yes side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.yes_left_exposure)
+            print("yes side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.yes_left_exposure)
             if self.yes_left_exposure > 0:
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
@@ -493,7 +493,7 @@ class Strategy:
                 else:
                     print("qty zero or same order", "qty: ", temp_qty, "price: ", temp_price)
             else:
-                print("yes side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.yes_left_exposure)
+                print("yes side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.yes_left_exposure)
                 print("yes too much exposed, paused buying")
                 self.order.cancel_all_pending_buy(asset, "too much exposed")
                 self.priceatri.update_priceatri()
@@ -501,7 +501,7 @@ class Strategy:
                 self.set_buy_price_with_spread()
                 self.set_qty_to_trade_asper_exposure()
         elif asset == "N":
-            print("no side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.no_left_exposure)
+            print("no side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.no_left_exposure)
             if self.no_left_exposure > 0:
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
@@ -523,7 +523,7 @@ class Strategy:
                 else:
                     print("qty zero or same order", "qty: ", temp_qty, "price: ", temp_price)
             else:
-                print("no side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.no_left_exposure)
+                print("no side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.no_left_exposure)
                 print("no too much exposed, paused buying")
                 self.order.cancel_all_pending_buy(asset, "too much exposed")
                 self.priceatri.update_priceatri()
