@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # coin_name = "btc"
     print("new 1.02")
     # coin_name = "custom"
-    custom_phrase_match = "PSL: Multan Sultans to win against Lahore Qalandars"
+    custom_phrase_match = "Premier League 2022-23: Crystal Palace to win against Aston Villa"
     while True:
         time_now = dt.datetime.now().time()
         if strat_num == 8:
