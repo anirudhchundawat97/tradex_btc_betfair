@@ -61,10 +61,11 @@ class PnlToDb:
         print("-" * 10, "no_hold_if_yes: ", self.no_hold_if_yes)
         print("-" * 10, "yes_hold_if_no: ", self.yes_hold_if_no)
         print("-" * 10, "no_hold_if_no: ", self.no_hold_if_no)
-
+        print()
         print("-"*15, "pnlifyes: ", self.pnl_if_yes)
         print("-"*15, "pnlifno: ", self.pnl_if_no)
-        sleep(5)
+        # sleep(5)
+        print()
         print("-"*10, "pnlbest: ", self.pnl_best)
         print("-"*10, "pnlworst: ", self.pnl_worst_2)
         print("-"*10, "total wallet debit: ", self.pnl_worst)
