@@ -36,11 +36,11 @@ class PnlToDb:
             yes_df = self.mybets.event_holdings_df[mask_yes & mask_executed]
             no_df = self.mybets.event_holdings_df[mask_no & mask_executed]
             # self.yes_hold_if_yes = (yes_df["if_win_price"] * yes_df["qty"]).sum()
-            self.yes_hold_if_yes = 100 * yes_df["qty"].sum()
-            self.yes_hold_if_no = 0
+            self.yes_hold_if_yes = 100 * yes_df["qty"].sum() # amount you win from holding yesqty if settled on yes
+            self.yes_hold_if_no = 0 # amount you win from holding yesqty if settled on no
             # self.no_hold_if_no = (no_df["if_win_price"] * no_df["qty"]).sum()
-            self.no_hold_if_no = 100 * no_df["qty"].sum()
-            self.no_hold_if_yes = 0
+            self.no_hold_if_no = 100 * no_df["qty"].sum() # amount you win from holding noqty if settled on no
+            self.no_hold_if_yes = 0 # amount you win from holding noqty if settled on yes
         else:
             self.yes_hold_if_yes = 0
             self.yes_hold_if_no = 0
@@ -50,7 +50,6 @@ class PnlToDb:
     def set_pnl_values(self):
         self.pnl_both_realised = self.realised_pnl_yes + self.realised_pnl_no
         self.pnl_if_yes = self.pnl_both_realised + self.yes_hold_if_yes + self.no_hold_if_yes
-
         self.pnl_if_no = self.pnl_both_realised + self.yes_hold_if_no + self.no_hold_if_no
         self.pnl_best = max(self.pnl_if_yes, self.pnl_if_no)
         self.pnl_worst_2 = min(self.pnl_if_yes, self.pnl_if_no)
@@ -63,12 +62,12 @@ class PnlToDb:
         print("-" * 10, "yes_hold_if_no: ", self.yes_hold_if_no)
         print("-" * 10, "no_hold_if_no: ", self.no_hold_if_no)
 
-        print("-"*10, "pnlifyes: ", self.pnl_if_yes)
-        print("-"*10, "pnlifno: ", self.pnl_if_no)
+        print("-"*15, "pnlifyes: ", self.pnl_if_yes)
+        print("-"*15, "pnlifno: ", self.pnl_if_no)
         sleep(5)
         print("-"*10, "pnlbest: ", self.pnl_best)
-        print("-"*10, "pnlworst: ", self.pnl_worst)
-        print("-"*10, "pnlworst2: ", self.pnl_worst_2)
+        print("-"*10, "pnlworst: ", self.pnl_worst_2)
+        print("-"*10, "total wallet debit: ", self.pnl_worst)
         if self.pnl_worst_2 <= self.worstcase_pnl_limit:
             self.worstcase_limit_reached = True
         else:

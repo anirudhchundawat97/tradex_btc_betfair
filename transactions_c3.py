@@ -120,10 +120,10 @@ class Transactions:
 if __name__ == "__main__":
     from time import sleep
     while True:
-        for eid in [24612, 24613, 24614, 24632]:
+        for eid in [24798, 24800, 24802, 24803, 24804]:
             tx = Transactions(eid, "p", 603727)
             tx.update()
-            sleep(5)
+            # sleep(5)
             # print(tx.event_txn_df)
             print(eid, "-"*10)
             print(eid," amount sum" ,tx.event_txn_df["amount"].sum())
@@ -131,6 +131,7 @@ if __name__ == "__main__":
             print(eid," no bought qty", tx.no_net_buy_qty)
             print(eid," settled", tx.settled_credit)
             print()
+        break
     # eid = 24545
     # tx = Transactions(eid, "p", 603727)
     # tx.update()
