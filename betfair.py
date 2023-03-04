@@ -123,7 +123,7 @@ class BetFair:
 
                     print("team A backs:" , all_back, "best to precent:", self.odds_percent_a_back)
                     print("team A lays:" , all_lay, "best to precent:", self.odds_percent_a_lay)
-                    print("percent sum:", self.odds_percent_a_back, self.odds_percent_a_lay)
+                    print("percent sum:", self.odds_percent_a_back + self.odds_percent_a_lay)
 
                     return self.odds_percent_a_back, self.odds_percent_a_lay
 
