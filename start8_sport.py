@@ -119,9 +119,10 @@ class Strategy:
             self.teamB = temp2[1][:-1]
 
     def __set_estimated_fair_price(self):
-        self.estimated_yes_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB)
+        self.estimated_yes_fair_price, self.estimated_no_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB)
         self.estimated_yes_fair_price = math.floor(self.estimated_yes_fair_price)
-        self.estimated_no_fair_price = 99 - self.estimated_yes_fair_price - 1
+        # self.estimated_no_fair_price = 99 - self.estimated_yes_fair_price - 1
+        self.estimated_no_fair_price = math.floor(self.estimated_no_fair_price)
 
     #upgraded to codes_3/binance_data/cryptofairprice
     def __set_fair_price(self):
@@ -226,8 +227,13 @@ class Strategy:
         print("League: ", self.league)
         print("team A: ", self.teamA)
         print("team B: ", self.teamB)
-        print("winning odds decimal: ", self.betfair_obj.odds_decimal)
-        print("winning odds percent: ", self.betfair_obj.odds_percent)
+        print()
+        print("winning odds A decimal: ", self.betfair_obj.odds_decimal_a_back)
+        print("winning odds A percent: ", self.betfair_obj.odds_percent_a_back)
+        print()
+        print("loosing odds A decimal: ", self.betfair_obj.odds_decimal_a_lay)
+        print("loosing odds A percent: ", self.betfair_obj.odds_percent_a_lay)
+        print()
         print("-" * 10, "PENDING BOOK:")
         print(self.priceatri.yes_pending_orders.head(3))
         print(self.priceatri.no_pending_orders.head(3))

@@ -11,6 +11,14 @@ class BetFair:
         self.market_id = None
         self.odds_decimal = None
         self.odds_percent = None
+
+        self.odds_decimal_a_back = None
+        self.odds_percent_a_back = None
+        self.odds_decimal_a_lay = None
+        self.odds_percent_a_lay = None
+
+        self.odds_decimal_b = None
+        self.odds_percent_b = None
         self.sport_id = None
 
     def combine_all_sportsevents_list(self):
@@ -104,18 +112,24 @@ class BetFair:
                 print(s.ratio())
                 # sleep(2)
                 if s.ratio() >= 0.85:
-                    self.odds_decimal = team["ExchangePrices"]["AvailableToBack"][2]["price"]
+                    all_back = team["ExchangePrices"]["AvailableToBack"]
+                    self.odds_decimal_a_back = all_back[2]["price"]
+                    all_lay = team["ExchangePrices"]["AvailableToLay"]
+                    self.odds_decimal_a_lay = all_lay[0]["price"]
 
                     # print()
-                    print(self.odds_decimal)
-                    self.odds_percent = (1 / self.odds_decimal) * 100
-                    print(self.odds_percent)
-                    # sleep(5)
-                    return self.odds_percent
+                    self.odds_percent_a_back = (1 / self.odds_decimal_a_back) * 100
+                    self.odds_percent_a_lay = (1 / self.odds_decimal_a_lay) * 100
 
-            return 0
+                    print("team A backs:" , all_back, "best to precent:", self.odds_percent_a_back)
+                    print("team A lays:" , all_lay, "best to precent:", self.odds_percent_a_lay)
+                    print("percent sum:", self.odds_percent_a_back, self.odds_percent_a_lay)
+
+                    return self.odds_percent_a_back, self.odds_percent_a_lay
+
+            return 0, 0
         else:
-            return 0
+            return 0, 0
 
 
 if __name__ == "__main__":
