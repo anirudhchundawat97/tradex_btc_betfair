@@ -314,7 +314,9 @@ class Strategy:
         print(self.priceatri.yes_pending_orders.head(3))
         print(self.priceatri.no_pending_orders.head(3))
         print("-" * 10, "ORDERS:")
-        print(self.mybet.get_event_holdings(self.event_id))
+        print(self.mybet.get_event_holdings(self.event_id).head(3))
+        print("...")
+        print(self.mybet.get_event_holdings(self.event_id).tail(3))
 
     # stores trigger, orders and prices
     def _strat_status_record(self):
