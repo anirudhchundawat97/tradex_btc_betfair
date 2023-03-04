@@ -461,7 +461,7 @@ class Strategy:
         self.set_buy_price_with_spread()
         self.set_qty_to_trade_asper_exposure()
         pausebuy = "empty"
-        print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst_2)
+        # print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst_2)
         # print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst_2)
         # print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst_2)
         # print("pausebuy: ", pausebuy, "worstcaselimit: ", self.pnltodb.worstcase_limit_reached, "pnlworst: ", self.pnltodb.pnl_worst_2)
@@ -471,7 +471,7 @@ class Strategy:
         #     print("worst limit worst limit worst limit worst limit worst limit ")
         #     print("worst limit worst limit worst limit worst limit worst limit ")
         if asset == "Y":
-            print("yes side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.yes_left_exposure)
+            print("yes | exposed: ", self.pnltodb.pnl_if_no, " | left: ", self.yes_left_exposure)
             if self.yes_left_exposure > 0:
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
@@ -491,17 +491,18 @@ class Strategy:
                     print(f"yes order price: {temp_price} qty: {temp_qty}, just before send order")
                     self.__send_buy_orders(temp_message, asset, temp_price, temp_qty)
                 else:
-                    print("qty zero or same order", "qty: ", temp_qty, "price: ", temp_price)
+                    print("x"*10 ,"qty zero or same order", "qty: ", temp_qty, "price: ", temp_price)
             else:
-                print("yes side exposure, exposed: ", self.pnltodb.pnl_if_no, "left: ", self.yes_left_exposure)
-                print("yes too much exposed, paused buying")
+                print("yes | exposed: ", self.pnltodb.pnl_if_no, " | left: ", self.yes_left_exposure)
+                print("x"*10 ,"yes too much exposed, paused buying")
                 self.order.cancel_all_pending_buy(asset, "too much exposed")
                 self.priceatri.update_priceatri()
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
                 self.set_qty_to_trade_asper_exposure()
         elif asset == "N":
-            print("no side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.no_left_exposure)
+            print()
+            print("no | exposed: ", self.pnltodb.pnl_if_yes, " | left: ", self.no_left_exposure)
             if self.no_left_exposure > 0:
                 self.set_left_to_expose()
                 self.set_buy_price_with_spread()
@@ -521,10 +522,10 @@ class Strategy:
                     print(f"no order price: {temp_price} qty: {temp_qty}, just before send order")
                     self.__send_buy_orders(temp_message, asset, temp_price, temp_qty)
                 else:
-                    print("qty zero or same order", "qty: ", temp_qty, "price: ", temp_price)
+                    print("x"*10 ,"qty zero or same order", "qty: ", temp_qty, "price: ", temp_price)
             else:
-                print("no side exposure, exposed: ", self.pnltodb.pnl_if_yes, "left: ", self.no_left_exposure)
-                print("no too much exposed, paused buying")
+                print("no | exposed: ", self.pnltodb.pnl_if_yes, " | left: ", self.no_left_exposure)
+                print("x"*10 ,"no too much exposed, paused buying")
                 self.order.cancel_all_pending_buy(asset, "too much exposed")
                 self.priceatri.update_priceatri()
                 self.set_left_to_expose()
@@ -987,25 +988,28 @@ class Strategy:
 
     def set_qty_to_trade_asper_exposure(self):
         if (self.yes_left_exposure <= 0) or (self.yes_buyprice_w_spread <= self.make_stop_lower_price):
-            print(f"setting yes qty zero, left expo:{self.yes_left_exposure}, pnlifno:{self.pnltodb.pnl_if_no},price buy:{self.yes_buyprice_w_spread}")
+            print(
+                f"yes | qty: zero | leftexpo:{self.yes_left_exposure} | pnlifno:{self.pnltodb.pnl_if_no} | buyprice:{self.yes_buyprice_w_spread}")
             self.yes_buyqty = 0
         else:
             self.yes_buyqty = math.floor(abs(self.yes_left_exposure) / self.yes_buyprice_w_spread)
-            print(f"setting yes qty {self.yes_buyqty}, left expo:{self.yes_left_exposure}, pnlifno:{self.pnltodb.pnl_if_no},price buy:{self.yes_buyprice_w_spread}")
+            print(
+                f" yes | qty: {self.yes_buyqty} | leftexpo:{self.yes_left_exposure} | pnlifno:{self.pnltodb.pnl_if_no} | buyprice:{self.yes_buyprice_w_spread}")
             if self.yes_buyqty > self.make_max_buy_order_qty:
                 self.yes_buyqty = self.make_max_buy_order_qty
 
         # self.no_buyprice_w_spread <= self.make_stop_lower_price - self.
 
         if (self.no_left_exposure <= 0) or (self.no_buyprice_w_spread <= self.make_stop_lower_price):
-            print(f"setting no qty zero, left expo:{self.no_left_exposure}, pnlifyes:{self.pnltodb.pnl_if_yes} price buy:{self.no_buyprice_w_spread}")
+            print(
+                f"no | qty: zero | leftexpo:{self.no_left_exposure} | pnlifyes:{self.pnltodb.pnl_if_yes} | buyprice:{self.no_buyprice_w_spread}")
             self.no_buyqty = 0
         else:
             self.no_buyqty = math.floor(self.no_left_exposure / self.no_buyprice_w_spread)
-            print(f"setting no qty {self.no_buyqty}, left expo:{self.no_left_exposure}, pnlifyes:{self.pnltodb.pnl_if_yes} price buy:{self.no_buyprice_w_spread}")
+            print(
+                f"no | qty: {self.no_buyqty} | leftexpo:{self.no_left_exposure} | pnlifyes:{self.pnltodb.pnl_if_yes} | buyprice:{self.no_buyprice_w_spread}")
             if self.no_buyqty > self.make_max_buy_order_qty:
                 self.no_buyqty = self.make_max_buy_order_qty
-
 
     def make_both_sides(self):
         self.set_left_to_expose()
