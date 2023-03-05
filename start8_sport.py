@@ -28,7 +28,7 @@ logger.addHandler(file_handler)
 
 
 class Strategy:
-    def __init__(self, event_id, min_buy_qty, avg_qty_multiplier, getOutSellPriceDiff):
+    def __init__(self, event_id, min_buy_qty, avg_qty_multiplier, getOutSellPriceDiff, sport_id):
         print("mknus price change")
         self.sport_id = sport_id
         self.userid = None
