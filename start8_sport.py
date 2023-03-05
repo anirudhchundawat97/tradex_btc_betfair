@@ -114,6 +114,8 @@ class Strategy:
             temp2 = temp1[1].split("to win against")
             self.teamA = temp2[0]
             self.teamB = temp2[1][:-1]
+            if self.teamB == "royalchallengersbangalore":
+                self.teamB = "rcbangalore"
         else:
             temp1 = ""
             self.league = ""
