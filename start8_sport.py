@@ -108,6 +108,8 @@ class Strategy:
         if ":" in self.priceatri.title:
             temp1 = self.priceatri.title.split(":")
             self.league = temp1[0].replace(" ", "").lower()
+            if self.league == "WPL":
+                self.league = "womenspremierleague"
             temp2 = temp1[1].split("to win against")
             self.teamA = temp2[0]
             self.teamB = temp2[1][:-1]
