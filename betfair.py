@@ -29,7 +29,7 @@ class BetFair:
         #     # print(temp.text)
         #     self.all_events.extend(json.loads(temp.text))
         if not self.sport_id:
-            self.sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
+            # self.sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
             self.sport_id = sport_id
         url = f"http://209.250.242.175:33332/listEventsBySport/{self.sport_id}"
         temp = requests.get(url)
