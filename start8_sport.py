@@ -116,7 +116,7 @@ class Strategy:
             self.teamB = temp2[1][:-1]
             print(self.teamB)
             # if self.teamB == "Royal Challengers Bangalore":
-            self.teamB = "rcbangalore"
+            # self.teamB = "rcbangalore"
             print(self.teamB)
         else:
             temp1 = ""
