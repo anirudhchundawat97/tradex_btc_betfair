@@ -21,7 +21,7 @@ class BetFair:
         self.odds_percent_b = None
         self.sport_id = None
 
-    def combine_all_sportsevents_list(self):
+    def combine_all_sportsevents_list(self, sport_id):
         # sports_ids = [1, 2, 3]
         # for sport_id in sports_ids:
         #     url = f"http://209.250.242.175:33332/listEventsBySport/{sport_id}"
@@ -30,13 +30,14 @@ class BetFair:
         #     self.all_events.extend(json.loads(temp.text))
         if not self.sport_id:
             self.sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
+            self.sport_id = sport_id
         url = f"http://209.250.242.175:33332/listEventsBySport/{self.sport_id}"
         temp = requests.get(url)
         # print(temp.text)
         self.all_events = json.loads(temp.text)
 
-    def fetch_matching_eventid(self, league=None, teamA=None, teamB=None):
-        self.combine_all_sportsevents_list()
+    def fetch_matching_eventid(self, league=None, teamA=None, teamB=None, sport_id=None):
+        self.combine_all_sportsevents_list(sport_id=sport_id)
         # print("all event dict")
         # print(self.all_events)
         print("league: ", league, "A:", teamA, "B:", teamB)
@@ -84,7 +85,7 @@ class BetFair:
             print("betfair eventid:", self.event_id)
             return None
 
-    def get_odds_matching_matchphrase(self, league=None, teamA=None, teamB=None):
+    def get_odds_matching_matchphrase(self, league=None, teamA=None, teamB=None, sport_id=None):
         try:
             teamA = teamA.replace(" ", "").lower()
             teamB = teamB.replace(" ", "").lower()
@@ -94,7 +95,7 @@ class BetFair:
             teamA = teamA + "women"
             teamB = teamB + "women"
         if (teamA and teamB) and (not self.event_id):
-            self.event_id = self.fetch_matching_eventid(league=league, teamA=teamA, teamB=teamB)
+            self.event_id = self.fetch_matching_eventid(league=league, teamA=teamA, teamB=teamB, sport_id=sport_id)
         if self.event_id:
             self.market_id = self.fetch_marketid_from_eventid()
         if self.market_id:

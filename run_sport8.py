@@ -21,6 +21,7 @@ if __name__ == "__main__":
     print("new 1.02")
     # coin_name = "custom"
     custom_phrase_match = "WPL: Delhi Capitals to win against Royal Challengers Bangalore"
+    sport_id = 4
     while True:
         time_now = dt.datetime.now().time()
         if strat_num == 8:
@@ -65,7 +66,7 @@ if __name__ == "__main__":
                                 print("Creating strat obj for ", id)
                                 strat_obj_dict[obj_name] = Strategy(event_id=id, min_buy_qty=25,
                                                                     avg_qty_multiplier=5,
-                                                                    getOutSellPriceDiff="dynamic")
+                                                                    getOutSellPriceDiff="dynamic", sport_id = sport_id)
                                 print(f"Strategy object {obj_name} created for eid {id}")
                                 strat_obj_dict[obj_name].initialise()
                     for i in eid_input_str_list:

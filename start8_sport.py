@@ -30,6 +30,7 @@ logger.addHandler(file_handler)
 class Strategy:
     def __init__(self, event_id, min_buy_qty, avg_qty_multiplier, getOutSellPriceDiff):
         print("mknus price change")
+        self.sport_id = sport_id
         self.userid = None
         self.apitype = None
         self.apitype = 'p'#input("API type: Test or Production (t/p)?: ")
@@ -121,7 +122,7 @@ class Strategy:
             self.teamB = temp2[1][:-1]
 
     def __set_estimated_fair_price(self):
-        self.estimated_yes_fair_price, self.estimated_no_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB)
+        self.estimated_yes_fair_price, self.estimated_no_fair_price = self.betfair_obj.get_odds_matching_matchphrase(league=self.league, teamA=self.teamA, teamB=self.teamB, sport_id=self.sport_id)
         self.estimated_yes_fair_price = math.floor(self.estimated_yes_fair_price)
         # self.estimated_no_fair_price = 99 - self.estimated_yes_fair_price - 1
         self.estimated_no_fair_price = math.floor(self.estimated_no_fair_price)
