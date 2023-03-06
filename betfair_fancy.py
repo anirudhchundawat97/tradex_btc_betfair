@@ -29,4 +29,4 @@ if __name__ == "__main__":
     r_data = r_json["data"]
     print(r_data.keys())
     r_t3 = r_data["t3"]
-    print(r_t3.keys())
+    print(r_t3)
