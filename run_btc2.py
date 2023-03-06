@@ -48,12 +48,10 @@ if __name__ == "__main__":
                                 phrase_match = "Shib USDT Price at"
                             elif coin_name == "dog":
                                 phrase_match = "Doge USDT Price at"
-                            # elif coin_name == "gbp":
-                            #     phrase_match = "GBP USD Price at"
-                            # elif coin_name == "eur":
-                            #     phrase_match = "Euro USD Price at"
-                            elif coin_name == "custom":
-                                phrase_match = custom_phrase_match
+                            elif coin_name == "gbp":
+                                phrase_match = "GBP USDT Price at"
+                            elif coin_name == "eur":
+                                phrase_match = "EUR USDT Price at"
                             else:
                                 phrase_match = "not found not found"
 

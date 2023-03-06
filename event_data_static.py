@@ -74,9 +74,11 @@ class EventDataStatic:
         """
         try:
             raw_data = self.get_event_det_from_id(id)
+            # print(raw_data)
             data_dict = {"title": raw_data["title"],
                          "started_at": iso_utc_to_ist(raw_data["start_date"]),
-                         "ends_at": iso_utc_to_ist(raw_data["endsat"])}
+                         "ends_at": iso_utc_to_ist(raw_data["endsat"]),
+                         "description": raw_data["description"]}
             return data_dict
         except:
             logger.critical("Error in fetching static event data for id")
@@ -94,7 +96,7 @@ if __name__ == "__main__":
     # print(dt.datetime.fromisoformat(temp3))
 
     while True:
-        obj = EventDataStatic('p', 0)
+        obj = EventDataStatic('t', 11)
         temp2 = obj.get_live_cda_event_ids()
         eid_list = []
         for id in temp2:
@@ -102,7 +104,8 @@ if __name__ == "__main__":
             data_dict = obj.get_static_event_data_dict(id)
             # if "Bitcoin USDT Price at" in data_dict["title"]:
             if "" in data_dict["title"]:
-                print(id, data_dict["title"], data_dict["started_at"], " to ", data_dict["ends_at"])
+                print(id, data_dict["title"], data_dict["started_at"], " to ", data_dict["ends_at"], data_dict["description"])
+                # print(data_dict)
                 # print(type(data_dict["ends_at"]))
                 eid_list.append(id)
                 # print(type(data_dict["ends_at"]))

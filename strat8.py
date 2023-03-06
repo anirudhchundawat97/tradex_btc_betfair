@@ -140,7 +140,7 @@ class Strategy:
             self.strike_price = float(0)
         else:
             t1 = self.priceatri.title.split(":")
-            t2 = t1[2].split("or more?")
+            t2 = t1[3].split("or more?")
             t3 = t2[0]
             self.strike_price = float(t3)
             # self.strike_price = int(self.strike_price)

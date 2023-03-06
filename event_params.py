@@ -9,6 +9,7 @@ class EventParam:
         self.title = None
         self.started_at = None
         self.ends_at = None
+        self.description = None
         self.eid = eid
         self.yes_pending_orders = None
         self.no_pending_orders = None
@@ -22,6 +23,7 @@ class EventParam:
         self.title = static_data["title"]
         self.started_at = static_data["started_at"]
         self.ends_at = static_data["ends_at"]
+        self.description = static_data["description"]
 
         full_orderbook, self.yes_pending_orders, self.no_pending_orders = self.pco.get_yesno_orderbook(self.eid)
         self.last_executed_trades = self.lti.clean_lastTradesInfo_df(self.eid)

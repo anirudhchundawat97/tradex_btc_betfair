@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "prefab-research-252904",
+  "private_key_id": "f0a8d2d608c702e5e4dfbdbf35906e3dd9f8c4f8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDRefFfscyPAd3P\nupMD9KD4K9R+97AwvbK1lqNN42MY3OhPjT+pmQaXg0hMjrHYRebWImeKI1dBgTAU\nMj1jn4dqBFAVQ/T1gmY7EX5PpS6A/ZR+tbIKL4/nopl2wyewskCl29yuhH1cvz/4\nq2/s6H5+hJzDxAo9c8qqdTU6zMr7kFUZYR2EldebavEa4C6+ylsp9sp7DtNpTa8w\naCwCGHYhW4Unjikhyz7YH22gRBkqlSEYVHCOBk77eBZRpqtz5lAAVWu964I84LPN\ntHO9qKKPd+hQxuiOucWrfHcm1HGieAFfmjEYiVVbxEZeXpSxwIUWKdINHXPg18VM\nGRrCJyy3AgMBAAECggEAAqBVGWO2R9i4ejaW9JwS5JRQGWNrmcDXG8BkExbrEtBk\n4pJyc42P7+2ycLCdTt6EKA0jCoVU6Q+rQFA88CHQ5dBgsf45ylY0h+sOkAW8e9uH\nYBX7wcrvh/JERaE+vyViUByzO0Y9TXYMYZwXTtC/Z+tWYnyeZZTXu/lfjc7W1f6R\nyO5Ne5rqf+Yd2FPll0ak9j0d5APTe3SvYeuGaTWjJXwjmWjOtQLFAXLTrkj1w0TK\nSTWArBuz7b5yH23tZlew6tJGKZ0JUJCTj5pBSw1vP64g4pHQqwmLU4v1FhpSHDEP\noUUfXw/F45yOoz7OhRZf5k3UNavpc1kYlu+fCo21OQKBgQDtSevoiBxMqNca8DO/\nSrf85Mmb6F7LZvQyEiJM6Lq8vATv1C/8o8qS2of2D5y7UFIbjnggTtdwhcVrXr6+\nLXfCk46xKSi9WXIqYlgsfezA5VEDNvzAjbyjxa2juAmESrU5HEpRt4m99/6PKtjE\nSjMh85+BbDC1aMUBZqV8jgFbxQKBgQDh/pSLu6ZFbE9fbVMK3nLg2d7wh/mc2RFB\nu6P2wbLGByhXkcLgN1ZYobur+fhBA4b6HWYqJllVcOhm3ArgAGftvt16VJ72PUyk\nKG6WzyMfUXJtqK6qLcmchVfR2zF37pt6Klw9NJuYaY2OjVJgK96AUGypD2M0DfjS\nN9iSNL7CSwKBgQC7ZU6+pIec7xZ5+ssTPoIRYenqi9gZUOR3iqS2EnIvTVmkwfFn\n1z7LPXR0mh3QPH2rr5clBL7V6X9g7UE8VhIng3sEZJn899/WozY5ZPWN3UxeepWf\nyA/7Uslv647wgEOgp7v1zzoj4e+Sx2bLlkHNhWYpwvSwv94d3h/BPzDJdQKBgQDQ\nJVMZk95jaIt+X8mxZAq4j9InBYXgcYjUWwd8ORD4FRWR+f1b13verC+XCOcesin6\naWN0hNeYuyJBwn79q0INldKVXiT+tJzHQToCCovVx4U1/LvKn9tmHuYwscrRJGHs\n1eEYukBo0yb+2ai6TQ1kby51U2fSROAcdjUxDAV6GwKBgEtKvXGQs8HuBzKQua+D\ngVc4d5PWYUHpzUj/snRRD8V8MjXt2nOtdHfaLhSIbCJYDMBmyD7xR5skzayM0wo4\nK64qOOg+QaXSVZpQzTxLmSJbXq1Bn0C0xlo38mDvIV4mGL7r64SZ4GXCCSLYOTAU\nr+ew5DDqcmTmGO9uAb12xWhz\n-----END PRIVATE KEY-----\n",
+  "client_email": "gsheet-automation@prefab-research-252904.iam.gserviceaccount.com",
+  "client_id": "105645268429578890827",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/gsheet-automation%40prefab-research-252904.iam.gserviceaccount.com"
+}
