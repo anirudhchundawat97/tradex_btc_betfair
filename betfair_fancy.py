@@ -16,7 +16,7 @@ class Betfairfancy:
         self.mid = None
 
     def make_api_call(self, mid):
-        url = f"https://betfairoddsapi.com:3444/api/bm_fancy/{mid}"
+        url = f"https://betfairoddsapi.com:3444/api/bm_fancy/{str(mid)}"
         r = requests.get(url)
         return r
 
