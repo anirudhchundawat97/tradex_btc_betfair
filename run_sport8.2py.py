@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # coin_name = "btc"
     print("new 1.02")
     # coin_name = "custom"
-    custom_phrase_match = "WPL: Gujarat Giants to win against UP Warriorz"
+    custom_phrase_match = "PSL: Karachi Kings to win against Quetta Gladiators"
     sport_id = 4
     while True:
         time_now = dt.datetime.now().time()
