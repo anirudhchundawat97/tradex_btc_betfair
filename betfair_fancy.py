@@ -24,4 +24,5 @@ class Betfairfancy:
 if __name__ == "__main__":
     bf = Betfairfancy()
     r = bf.make_api_call(1.210819651)
-    print(r)
+    print(r.text)
+    print(json.loads(r.text))

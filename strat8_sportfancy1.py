@@ -4,7 +4,7 @@ on bitcoin using atr not maintaining spread
 """
 import numpy as np
 
-from betfair_facy import Betfairfancy
+from betfair_fancy import Betfairfancy
 from order import Order
 from price_attributes import PriceAttri
 from event_params import EventParam
