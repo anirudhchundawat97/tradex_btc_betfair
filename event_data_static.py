@@ -96,7 +96,7 @@ if __name__ == "__main__":
     # print(dt.datetime.fromisoformat(temp3))
 
     while True:
-        obj = EventDataStatic('t', 11)
+        obj = EventDataStatic('p', 0)
         temp2 = obj.get_live_cda_event_ids()
         eid_list = []
         for id in temp2:
