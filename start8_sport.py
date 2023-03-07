@@ -111,12 +111,14 @@ class Strategy:
             self.league = temp1[0].replace(" ", "").lower()
             if self.league == "wpl":
                 self.league = "womenspremierleague"
+            elif self.league == "isl":
+                self.league = "indiansuperleague"
             temp2 = temp1[1].split("to win against")
             self.teamA = temp2[0]
             self.teamB = temp2[1][:-1]
             print(self.teamB)
-            if self.league == "womenspremierleague":
-                self.teamA = "rcbangalore"
+            # if self.league == "womenspremierleague":
+            #     self.teamA = "rcbangalore"
             print(self.teamB)
         else:
             temp1 = ""
