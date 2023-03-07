@@ -58236,3 +58236,81 @@ Traceback (most recent call last):
   File "d:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
     raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
 Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-03-06 21:07:37,147:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\run_btc2.py", line 82, in <module>
+    strat_obj_dict[i].update()
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\strat8.py", line 1333, in update
+    self.keep_a_check_2()
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\strat8.py", line 1032, in keep_a_check_2
+    self.__scalp_side2("N", trigger)
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\strat8.py", line 516, in __scalp_side2
+    self.order.cancel_all_pending_buy(asset, "new_buy_make_order")
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 211, in cancel_all_pending_buy
+    self._cancel_buy(message=message,
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 141, in _cancel_buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
+ERROR:__main__:2023-03-06 21:12:54,544:MaxAttempt(3) exhausted. User0
+Traceback (most recent call last):
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 971, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\aniru\AppData\Local\Programs\Python\Python310\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 118, in tradex_caller
+    response = req.post(url, data=body, headers=headers).json()
+  File "D:\Synced folder 2\tradex_opinionTrading\codes_2\venv\lib\site-packages\requests\models.py", line 975, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\run_btc2.py", line 82, in <module>
+    strat_obj_dict[i].update()
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\strat8.py", line 1333, in update
+    self.keep_a_check_2()
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\strat8.py", line 1031, in keep_a_check_2
+    self.__scalp_side2("Y", trigger)
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\strat8.py", line 485, in __scalp_side2
+    self.order.cancel_all_pending_buy(asset, "new_buy_make_order")
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 211, in cancel_all_pending_buy
+    self._cancel_buy(message=message,
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\order.py", line 141, in _cancel_buy
+    response = self.api_obj.tradex_caller(suffix, body)
+  File "d:\Synced folder 2\tradex_opinionTrading\codes_2\api_caller.py", line 140, in tradex_caller
+    raise Exception(f"MaxAttempt({retry_attempts}) exhausted. User{self.userid}")
+Exception: MaxAttempt(3) exhausted. User0
