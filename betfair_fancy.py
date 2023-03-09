@@ -25,6 +25,7 @@ if __name__ == "__main__":
     from pprint import pprint
     bf = Betfairfancy()
     r = bf.make_api_call(32150558)
+    print(r.text)
     r_json = json.loads(r.text)
     pprint(r_json)
     print(r_json.keys())
