@@ -99,4 +99,4 @@ if __name__ == "__main__":
                     #     break
             except Exception as e:
                 print(e)
-                raise(e)
+                # raise(e)

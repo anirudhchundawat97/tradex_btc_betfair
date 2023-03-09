@@ -2781,3 +2781,4 @@ CRITICAL:__main__:2023-03-09 12:49:30,531:Error in fetching static event data fo
 CRITICAL:event_data_static:2023-03-09 13:37:02,966:Error in fetching static event data for id
 CRITICAL:event_data_static:2023-03-09 13:37:03,107:Error in fetching static event data for id
 CRITICAL:event_data_static:2023-03-09 14:34:31,175:Error in fetching static event data for id
+CRITICAL:__main__:2023-03-09 15:37:40,729:Error in fetching static event data for id
