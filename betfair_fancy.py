@@ -24,7 +24,8 @@ class Betfairfancy:
 if __name__ == "__main__":
     from pprint import pprint
     bf = Betfairfancy()
-    mid = int(input("enter mid: "))
+    # mid = int(input("enter mid: "))
+    mid = 32154558
     r = bf.make_api_call(mid)
     print(r.text)
     r_json = json.loads(r.text)
