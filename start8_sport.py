@@ -962,6 +962,7 @@ class Strategy:
                 self.no_buyqty = self.make_max_buy_order_qty
 
     def make_both_sides(self):
+        self.set_max_exposure_as_per_remain_time()
         self.set_left_to_expose()
         self.set_buy_price_with_spread()
         self.set_qty_to_trade_asper_exposure()
@@ -971,6 +972,7 @@ class Strategy:
     def keep_a_check_2(self):
         print("entering keepacheck2")
         self.priceatri.update_priceatri()
+        self.set_max_exposure_as_per_remain_time()
         self.set_left_to_expose()
         self.set_buy_price_with_spread()
         self.set_qty_to_trade_asper_exposure()
