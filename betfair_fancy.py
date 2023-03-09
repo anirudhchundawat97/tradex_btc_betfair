@@ -22,12 +22,14 @@ class Betfairfancy:
 
 
 if __name__ == "__main__":
+    from pprint import pprint
     bf = Betfairfancy()
     r = bf.make_api_call(32150558)
     r_json = json.loads(r.text)
+    pprint(r_json)
     print(r_json.keys())
     r_data = r_json["data"]
-    print(r_data.keys())
+    pprint(r_data)
     r_t3 = r_data["t3"]
     t3_df = pd.DataFrame(r_t3)
     print(t3_df)
