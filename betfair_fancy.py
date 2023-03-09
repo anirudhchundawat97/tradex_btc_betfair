@@ -23,7 +23,7 @@ class Betfairfancy:
 
 if __name__ == "__main__":
     from pprint import pprint
-    from time import sleep(5)
+    from time import sleep
     bf = Betfairfancy()
     # mid = int(input("enter mid: "))
     mid = 32154558
