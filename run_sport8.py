@@ -21,7 +21,7 @@ if __name__ == "__main__":
     print("new 1.02")
     # coin_name = "custom"
     custom_phrase_match = "T20I: England to win against Bangladesh"
-    sport_id = 1
+    sport_id = 4
     while True:
         time_now = dt.datetime.now().time()
         if strat_num == 8:
