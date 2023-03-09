@@ -97,7 +97,7 @@ if __name__ == "__main__":
 
     while True:
         obj = EventDataStatic('p', 0)
-        temp2 = obj.get_live_im_event_ids()
+        temp2 = obj.get_live_cda_event_ids()
         eid_list = []
         for id in temp2:
         # for id in [13157, 13158]:

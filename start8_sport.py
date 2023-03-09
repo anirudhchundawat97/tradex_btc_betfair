@@ -112,6 +112,8 @@ class Strategy:
                 self.league = "womenspremierleague"
             elif self.league == "isl":
                 self.league = "indiansuperleague"
+            elif self.league == "t20i":
+                self.league = "internationalt20matches"
             temp2 = temp1[1].split("to win against")
             self.teamA = temp2[0]
             self.teamB = temp2[1][:-1]
