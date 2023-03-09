@@ -903,19 +903,20 @@ class Strategy:
 
     def set_max_exposure_as_per_remain_time(self):
         time_now = dt.datetime.now() + dt.timedelta(hours=5, minutes=30)
-        if (self.priceatri.ends_at - time_now) >= dt.timedelta(hours=3, minutes=0):
+        event_end_datetime = dt.datetime.strptime(self.priceatri.ends_at, '%Y-%m-%dT%H:%M:%S')
+        if (event_end_datetime - time_now) >= dt.timedelta(hours=3, minutes=0):
             self.per_side_exposure_limit = 1000
-        elif (self.priceatri.ends_at - time_now) >= dt.timedelta(hours=2, minutes=30):
+        elif (event_end_datetime - time_now) >= dt.timedelta(hours=2, minutes=30):
             self.per_side_exposure_limit = 2000
-        elif (self.priceatri.ends_at - time_now) >= dt.timedelta(hours=2, minutes=0):
+        elif (event_end_datetime - time_now) >= dt.timedelta(hours=2, minutes=0):
             self.per_side_exposure_limit = 3000
-        elif (self.priceatri.ends_at - time_now) >= dt.timedelta(hours=1, minutes=0):
+        elif (event_end_datetime - time_now) >= dt.timedelta(hours=1, minutes=0):
             self.per_side_exposure_limit = 4000
         else:
             self.per_side_exposure_limit = 5000
 
         print("max expsoure set as: ", self.per_side_exposure_limit, "timedelta remain: ",
-              self.priceatri.ends_at - time_now)
+              event_end_datetime - time_now)
 
     def set_left_to_expose(self):
         if self.pnltodb.pnl_if_no < 0:
