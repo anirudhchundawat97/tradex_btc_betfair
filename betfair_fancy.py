@@ -23,16 +23,19 @@ class Betfairfancy:
 
 if __name__ == "__main__":
     from pprint import pprint
+    from time import sleep(5)
     bf = Betfairfancy()
     # mid = int(input("enter mid: "))
     mid = 32154558
-    r = bf.make_api_call(mid)
-    print(r.text)
-    r_json = json.loads(r.text)
-    pprint(r_json)
-    print(r_json.keys())
-    r_data = r_json["data"]
-    pprint(r_data)
-    r_t3 = r_data["t3"]
-    t3_df = pd.DataFrame(r_t3)
-    print(t3_df)
+    while True:
+        r = bf.make_api_call(mid)
+        # print(r.text)
+        r_json = json.loads(r.text)
+        pprint(r_json)
+        # print(r_json.keys())
+        r_data = r_json["data"]
+        pprint(r_data)
+        r_t3 = r_data["t3"]
+        t3_df = pd.DataFrame(r_t3)
+        print(t3_df)
+        sleep(5)
