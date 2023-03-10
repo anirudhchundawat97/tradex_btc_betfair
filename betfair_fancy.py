@@ -46,7 +46,7 @@ if __name__ == "__main__":
     from time import sleep
     bf = Betfairfancy()
     # mid = int(input("enter mid: "))
-    mid = 32158858
+    mid = 32154228
     while True:
         r = bf.make_api_call(mid)
         # print(r.text)

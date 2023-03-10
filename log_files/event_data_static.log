@@ -2792,3 +2792,13 @@ CRITICAL:event_data_static:2023-03-09 17:42:59,693:Error in fetching static even
 CRITICAL:event_data_static:2023-03-09 17:47:09,112:Error in fetching static event data for id
 CRITICAL:__main__:2023-03-09 18:12:03,798:Error in fetching static event data for id
 CRITICAL:event_data_static:2023-03-09 18:39:06,348:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 19:08:18,858:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 19:20:00,519:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 19:43:15,181:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 20:27:10,895:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 20:57:03,964:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 21:32:06,067:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 21:37:15,162:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 22:06:48,567:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 22:06:49,887:Error in fetching static event data for id
+CRITICAL:event_data_static:2023-03-09 22:06:52,278:Error in fetching static event data for id
