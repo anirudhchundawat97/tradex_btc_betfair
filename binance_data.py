@@ -102,7 +102,7 @@ if __name__=="__main__":
         x = cl.get_last_atr(c, "5min")
         print(c, " : ", x)
         print(cl.fetch_hist_data(c, "1hr"))
-    exit()
+    # exit()
     x = cl.get_last_atr("BTCUSDT", "1min")
     print(x)
     x = cl.get_last_atr("BTCUSDT", "3min")

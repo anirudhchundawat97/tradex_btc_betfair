@@ -99,7 +99,7 @@ class Strategy:
         self.per_side_exposure_limit = 500
         self.default_spread_each_side = 5
         self.make_max_buy_order_qty = 5
-        self.make_stop_lower_price = 20
+        self.make_stop_lower_price = 25
 
         self.yes_left_exposure = self.per_side_exposure_limit
         self.no_left_exposure = self.per_side_exposure_limit
