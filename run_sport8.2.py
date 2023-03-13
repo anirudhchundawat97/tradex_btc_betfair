@@ -20,7 +20,7 @@ if __name__ == "__main__":
     # coin_name = "btc"
     print("new 1.02")
     # coin_name = "custom"
-    custom_phrase_match = "WPL: UP Warriorz Women to win against Royal Challengers Bangalore Women"
+    custom_phrase_match = "WPL: Royal Challengers Bangalore Women to win against Delhi Capitals Women"
     print(custom_phrase_match)
     sport_id = 4
     while True:
