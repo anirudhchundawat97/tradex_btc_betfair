@@ -15,7 +15,7 @@ import datetime as dt
 import logging
 import math
 from strat_live_status_recorder import StratRecorder
-import pymongo as pm
+# import pymongo as pm
 from pnl_update_to_db import PnlToDb
 
 logger = logging.getLogger(__name__)
@@ -110,27 +110,27 @@ class Strategy:
         end = dt.datetime.fromisoformat(self.priceatri.ends_at)
         delta = end - now
         if delta <= dt.timedelta(minutes=1):
-            self.time_2_expiry_cat = "1min"
+            self.time_2_expiry_cat = "1m"
         elif delta <= dt.timedelta(minutes=3):
-            self.time_2_expiry_cat = "3min"
+            self.time_2_expiry_cat = "3m"
         elif delta <= dt.timedelta(minutes=5):
-            self.time_2_expiry_cat = "5min"
+            self.time_2_expiry_cat = "5m"
         elif delta <= dt.timedelta(minutes=15):
-            self.time_2_expiry_cat = "15min"
+            self.time_2_expiry_cat = "15m"
         elif delta <= dt.timedelta(minutes=30):
-            self.time_2_expiry_cat = "30min"
+            self.time_2_expiry_cat = "30m"
         elif delta <= dt.timedelta(hours=1):
-            self.time_2_expiry_cat = "1hr"
+            self.time_2_expiry_cat = "1h"
         elif delta <= dt.timedelta(hours=2):
-            self.time_2_expiry_cat = "2hr"
+            self.time_2_expiry_cat = "2h"
         elif delta <= dt.timedelta(hours=4):
-            self.time_2_expiry_cat = "4hr"
+            self.time_2_expiry_cat = "4h"
         elif delta <= dt.timedelta(hours=6):
-            self.time_2_expiry_cat = "6hr"
+            self.time_2_expiry_cat = "6h"
         elif delta <= dt.timedelta(hours=8):
-            self.time_2_expiry_cat = "8hr"
+            self.time_2_expiry_cat = "8h"
         else:
-            self.time_2_expiry_cat = "12hr"
+            self.time_2_expiry_cat = "12h"
 
     #upgraded to codes_3/events/underlyingextractor
     def __set_strike_price(self):

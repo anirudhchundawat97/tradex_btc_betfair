@@ -1,41 +1,57 @@
-from binance import Client
+import binance
 import pandas as pd
 import datetime as dt
 
 class BinanceApi:
     def __init__(self):
-        self.client = Client()
+        # self.client = Client()
         self.hist_data = None
 
+    # def get_current_price(self, symbol):
+    #     price = self.client.get_avg_price(symbol=symbol)
+    #     return price
+
     def get_current_price(self, symbol):
-        price = self.client.get_avg_price(symbol=symbol)
-        return price
+        alltickerprice_dict = binance.prices()
+        ltp = float(alltickerprice_dict[symbol])
+        return ltp
+
+    # def fetch_hist_data(self, symbol, interval="1min"):
+    #
+    #     interval_dict = {"1min": Client.KLINE_INTERVAL_1MINUTE,
+    #                      "3min": Client.KLINE_INTERVAL_3MINUTE,
+    #                      "5min": Client.KLINE_INTERVAL_5MINUTE,
+    #                      "15min": Client.KLINE_INTERVAL_15MINUTE,
+    #                      "30min": Client.KLINE_INTERVAL_30MINUTE,
+    #                      "1hr": Client.KLINE_INTERVAL_1HOUR,
+    #                      "2hr": Client.KLINE_INTERVAL_2HOUR,
+    #                      "4hr": Client.KLINE_INTERVAL_4HOUR,
+    #                      "6hr": Client.KLINE_INTERVAL_6HOUR,
+    #                      "8hr": Client.KLINE_INTERVAL_8HOUR,
+    #                      "12hr": Client.KLINE_INTERVAL_12HOUR,
+    #                      }
+    #     # data = self.client.get_historical_klines(symbol, interval_dict[interval], "1 day ago UTC")
+    #     data = self.client.get_historical_klines(symbol, interval_dict[interval], limit=500)
+    #     print(interval, len(data))
+    #     cols = ["time", "open", "high", "low", "close", "volume", "close_time", "quote_asset_volume",
+    #             "number_of_trades", "taker_buy_base_asset_volume", "taker_buy_quote_asset_volume", "ignore"]
+    #     df = pd.DataFrame(data, columns=cols)
+    #     df = df.astype("float")
+    #     df["time"] = pd.to_datetime(df["time"], unit='ms')
+    #     df["time"] = df["time"] + dt.timedelta(hours=5, minutes=30)
+    #     hist_data = df[["time", "open", "high", "low", "close"]]
+    #     return hist_data
 
     def fetch_hist_data(self, symbol, interval="1min"):
-
-        interval_dict = {"1min": Client.KLINE_INTERVAL_1MINUTE,
-                         "3min": Client.KLINE_INTERVAL_3MINUTE,
-                         "5min": Client.KLINE_INTERVAL_5MINUTE,
-                         "15min": Client.KLINE_INTERVAL_15MINUTE,
-                         "30min": Client.KLINE_INTERVAL_30MINUTE,
-                         "1hr": Client.KLINE_INTERVAL_1HOUR,
-                         "2hr": Client.KLINE_INTERVAL_2HOUR,
-                         "4hr": Client.KLINE_INTERVAL_4HOUR,
-                         "6hr": Client.KLINE_INTERVAL_6HOUR,
-                         "8hr": Client.KLINE_INTERVAL_8HOUR,
-                         "12hr": Client.KLINE_INTERVAL_12HOUR,
-                         }
-        # data = self.client.get_historical_klines(symbol, interval_dict[interval], "1 day ago UTC")
-        data = self.client.get_historical_klines(symbol, interval_dict[interval], limit=500)
-        print(interval, len(data))
-        cols = ["time", "open", "high", "low", "close", "volume", "close_time", "quote_asset_volume",
-                "number_of_trades", "taker_buy_base_asset_volume", "taker_buy_quote_asset_volume", "ignore"]
+        data = binance.klines(symbol, interval)
+        cols = ["openTime", "open", "high", "low", "close", "volume"]
         df = pd.DataFrame(data, columns=cols)
         df = df.astype("float")
         df["time"] = pd.to_datetime(df["time"], unit='ms')
         df["time"] = df["time"] + dt.timedelta(hours=5, minutes=30)
         hist_data = df[["time", "open", "high", "low", "close"]]
         return hist_data
+
 
     def wwma(self, values, n):
         """
