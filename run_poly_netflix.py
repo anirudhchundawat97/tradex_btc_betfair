@@ -1,4 +1,4 @@
-from strat8 import Strategy
+from strat8_poly import Strategy
 from time import sleep
 import logging
 import datetime as dt
@@ -85,4 +85,4 @@ if __name__ == "__main__":
                     #     break
             except Exception as e:
                 print(e)
-                # raise(e)
+                #

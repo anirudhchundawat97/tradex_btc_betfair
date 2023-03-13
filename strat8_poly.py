@@ -168,7 +168,7 @@ class Strategy:
 
     #upgraded to codes_3/binance_data/cryptofairprice
     def __set_estimated_fair_price(self):
-        self.spot_cmp = float(self.polygon_obj.get_current_price(symbol=self.symbol)["price"])
+        self.spot_cmp =self.polygon_obj.get_current_price(symbol=self.symbol)
 
         print("spot-strike", self.spot_cmp - self.strike_price)
         # print("spot+atr-strike", self.spot_cmp + self.atr_value - self.strike_price)
