@@ -62,7 +62,7 @@ class BetFair:
                     phrase2 = teamB + "v" + teamA
                     s1 = SequenceMatcher(None, phrase1, name)
                     s2 = SequenceMatcher(None, phrase2, name)
-                    if (s1.ratio() > 0.85) or (s2.ratio() > 0.85):
+                    if (s1.ratio() > 0.9) or (s2.ratio() > 0.9):
                         print(detail_dict)
                         print("Phrase matched Eventid: ", detail_dict["Id"])
                         self.event_id = detail_dict["Id"]
