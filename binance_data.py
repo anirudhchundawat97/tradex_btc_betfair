@@ -44,7 +44,7 @@ class BinanceApi:
 
     def fetch_hist_data(self, symbol, interval="1min"):
         data = binance.klines(symbol, interval)
-        cols = ["openTime", "open", "high", "low", "close", "volume"]
+        cols = ["time", "open", "high", "low", "close", "volume"]
         df = pd.DataFrame(data, columns=cols)
         df = df.astype("float")
         df["time"] = pd.to_datetime(df["time"], unit='ms')
