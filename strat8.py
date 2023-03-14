@@ -107,9 +107,9 @@ class Strategy:
     # upgraded to codes_3/utils/set_finance_timeexpiry_category
     def __set_expiry_category(self):
         now = dt.datetime.now()
-        end = dt.datetime.fromisoformat(self.priceatri.ends_at)
+        end = dt.datetime.fromisoformat(self.priceatri.ends_at) + dt.timedelta(hours=5, minutes=30)
         delta = end - now
-        print("expiry category:", ">"*10, delta)
+        print("expiry category:", ">"*25, delta)
         if delta <= dt.timedelta(minutes=1):
             self.time_2_expiry_cat = "1m"
         elif delta <= dt.timedelta(minutes=3):
