@@ -15,7 +15,7 @@ import datetime as dt
 import logging
 import math
 from strat_live_status_recorder import StratRecorder
-import pymongo as pm
+# import pymongo as pm
 from pnl_update_to_db import PnlToDb
 
 logger = logging.getLogger(__name__)
@@ -1316,23 +1316,34 @@ class Strategy:
         self.pnltodb.update()
         self.initialised = True
 
+
     def update(self):
-        self.pnltodb.update()
-        self.priceatri.update_priceatri()
+        now = dt.datetime.now()
+        end = dt.datetime.fromisoformat(self.priceatri.ends_at) - dt.timedelta(hours=5, minutes=30)
+        if now < end:
+            self.pnltodb.update()
+            self.priceatri.update_priceatri()
 
-        self.__set_expiry_category()
-        self.__set_strike_price()
-        self.__set_atr_value()
-        self.__set_estimated_fair_price()
-        self.__set_fair_price()
+            self.__set_expiry_category()
+            self.__set_strike_price()
+            self.__set_atr_value()
+            self.__set_estimated_fair_price()
+            self.__set_fair_price()
 
-        self._get_situation()
-        self._set_qty()
-        self._print_details("updating")
-        self.__set_getoutsellpricediff()
-        self.keep_a_check_2()
-        # self.absorb_high_probable_orderbook()
-        self._update_last_values()
-        self._strat_status_record()
-        self.pnltodb.update()
+            self._get_situation()
+            self._set_qty()
+            self._print_details("updating")
+            self.__set_getoutsellpricediff()
+            self.keep_a_check_2()
+            # self.absorb_high_probable_orderbook()
+            self._update_last_values()
+            self._strat_status_record()
+            self.pnltodb.update()
+        else:
+            print("*"*30)
+            print("*"*30)
+            print("Event ended, skipping function calls")
+            print("*"*30)
+            print("*"*30)
+            pass
 
