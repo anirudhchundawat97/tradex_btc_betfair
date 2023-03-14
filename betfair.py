@@ -6,7 +6,7 @@ from time import sleep
 
 class BetFair:
     def __init__(self):
-        self.match_inplay = None
+        self.match_inplay = False
         self.all_events = []
         self.event_id = None
         self.market_id = None
@@ -92,7 +92,7 @@ class BetFair:
             teamB = teamB.replace(" ", "").lower()
         except:
             pass
-        if "women" in league:
+        if ("women" in league) and ("women" not in teamA):
             teamA = teamA + "women"
             teamB = teamB + "women"
         if (teamA and teamB) and (not self.event_id):
@@ -104,6 +104,9 @@ class BetFair:
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
             print("Runners:", temp2)
+            match_inplay = json.loads(temp.text)[0]["inplay"]
+            self.match_inplay = True if match_inplay else False if not match_inplay else None
+            print("match inplay: ", self.match_inplay)
             # sleep(5)
             for team in temp2:
                 teamname = team["runnerName"].replace(" ", "").lower()
@@ -132,9 +135,6 @@ class BetFair:
                     print("team A backs:" , all_back, "best to precent:", self.odds_percent_a_back)
                     print("team A lays:" , all_lay, "best to percent:", self.odds_percent_a_lay)
                     print("percent sum:", self.odds_percent_a_back + self.odds_percent_a_lay)
-
-                    match_inplay = json.loads(temp.text)[0]["inplay"]
-                    self.match_inplay = True if match_inplay else False if not match_inplay else None
 
                     return self.odds_percent_a_back, self.odds_percent_a_lay
             return 0, 0
