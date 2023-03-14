@@ -97,7 +97,7 @@ class BetfairData:
     def set_matching_event_info(self):
         self.matched_events_info = self.all_events_info.iloc[0].to_dict()
         # print(self.matched_events_info)
-        if self.matched_events_info["matching_total_score"] > 1.8:
+        if self.matched_events_info["matching_total_score"] > 1.9:
             self.matched_event_name = self.matched_events_info["name"]
             self.matched_competition_name = self.matched_events_info["competitionName"]
             self.matched_event_id = self.matched_events_info["Id"]
