@@ -102,6 +102,8 @@ class BetFair:
             url = f"http://209.250.242.175:33332/odds/?ids={self.market_id}"
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
+            match_inplay = json.loads(temp.text)[0]["inplay"]
+            self.match_inplay = True if match_inplay == "True" else False if match_inplay == "False" else None
             print("Runners:", temp2)
             # sleep(5)
             for team in temp2:
