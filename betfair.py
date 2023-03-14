@@ -6,6 +6,7 @@ from time import sleep
 
 class BetFair:
     def __init__(self):
+        self.match_inplay = None
         self.all_events = []
         self.event_id = None
         self.market_id = None
