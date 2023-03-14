@@ -54,6 +54,10 @@ class PnlToDb:
         self.pnl_best = max(self.pnl_if_yes, self.pnl_if_no)
         self.pnl_worst_2 = min(self.pnl_if_yes, self.pnl_if_no)
         self.pnl_worst = self.transactions.event_txn_df["amount"].sum()
+        print("-" * 10, "pnl_yes_realised = yes_net_sol + unmatched_buy_yes: ",
+              f"{self.realised_pnl_yes} = {self.transactions.yes_net_sold_value} + {self.mybets.unmatched_buy_yes_value}")
+        print("-" * 10, "pnl_no_realised = no_net_sol + unmatched_buy_no: ",
+              f"{self.realised_pnl_no} = {self.transactions.no_net_sold_value} + {self.mybets.unmatched_buy_no_value}")
         print("-" * 10, "pnl_both_realised: ", self.pnl_both_realised)
         print("-" * 10, "realised_pnl_yes: ", self.realised_pnl_yes)
         print("-" * 10, "realised_pnl_no: ", self.realised_pnl_no)
