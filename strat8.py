@@ -1340,6 +1340,10 @@ class Strategy:
             self._strat_status_record()
             self.pnltodb.update()
         else:
+            print("*"*30)
+            print("*"*30)
             print("Event ended, skipping function calls")
+            print("*"*30)
+            print("*"*30)
             pass
 
