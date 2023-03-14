@@ -103,8 +103,6 @@ class BetFair:
             url = f"http://209.250.242.175:33332/odds/?ids={self.market_id}"
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
-            match_inplay = json.loads(temp.text)[0]["inplay"]
-            self.match_inplay = True if match_inplay else False if not match_inplay else None
             print("Runners:", temp2)
             # sleep(5)
             for team in temp2:
@@ -135,32 +133,10 @@ class BetFair:
                     print("team A lays:" , all_lay, "best to percent:", self.odds_percent_a_lay)
                     print("percent sum:", self.odds_percent_a_back + self.odds_percent_a_lay)
 
-                    return self.odds_percent_a_back, self.odds_percent_a_lay
-
-            for team in temp2:
-                teamname = team["runnerName"].replace(" ", "").lower()
-                print("teamA: ", teamA)
-                print("foundteam: ", teamname)
-                # sleep(5)
-                s = SequenceMatcher(None, teamname, teamA)
-                print(s.ratio())
-                # sleep(2)
-                if s.ratio() >= 0.85:
-                    all_back = team["ExchangePrices"]["AvailableToBack"]
-                    self.odds_decimal_a_back = all_back[2]["price"]
-                    all_lay = team["ExchangePrices"]["AvailableToLay"]
-                    self.odds_decimal_a_lay = all_lay[0]["price"]
-
-                    # print()
-                    self.odds_percent_a_back = 100 - ((1 / self.odds_decimal_a_back) * 100)
-                    self.odds_percent_a_lay = (1 / self.odds_decimal_a_lay) * 100
-
-                    print("team A backs:" , all_back, "best to precent:", self.odds_percent_a_back)
-                    print("team A lays:" , all_lay, "best to precent:", self.odds_percent_a_lay)
-                    print("percent sum:", self.odds_percent_a_back + self.odds_percent_a_lay)
+                    match_inplay = json.loads(temp.text)[0]["inplay"]
+                    self.match_inplay = True if match_inplay else False if not match_inplay else None
 
                     return self.odds_percent_a_back, self.odds_percent_a_lay
-
             return 0, 0
         else:
             return 0, 0
