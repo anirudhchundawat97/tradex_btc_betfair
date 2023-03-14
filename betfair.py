@@ -103,6 +103,7 @@ class BetFair:
             temp = requests.get(url)
             temp2 = json.loads(temp.text)[0]["Runners"]
             match_inplay = json.loads(temp.text)[0]["inplay"]
+            print(type(match_inplay) ,match_inplay)
             self.match_inplay = True if match_inplay == "True" else False if match_inplay == "False" else None
             print("Runners:", temp2)
             # sleep(5)
