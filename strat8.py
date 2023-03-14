@@ -109,6 +109,7 @@ class Strategy:
         now = dt.datetime.now()
         end = dt.datetime.fromisoformat(self.priceatri.ends_at)
         delta = end - now
+        print(delta)
         if delta <= dt.timedelta(minutes=1):
             self.time_2_expiry_cat = "1m"
         elif delta <= dt.timedelta(minutes=3):
