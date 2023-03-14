@@ -166,11 +166,12 @@ class BetFair:
 if __name__ == "__main__":
     import requests
     import pandas as pd
+    from pprint import pprint
 
     sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
     t1 = requests.get(f"http://209.250.242.175:33332/listEventsBySport/{sport_id}")
     print("-"*20, "list events by sport")
-    print(json.loads(t1.text))
+    pprint(json.loads(t1.text))
     sport_events_df = pd.DataFrame(json.loads(t1.text))
     print("Columns:")
     print(sport_events_df.columns)
@@ -194,7 +195,7 @@ if __name__ == "__main__":
     print("-" * 20, "list events by sport")
     sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
     t2 = requests.get(f"http://209.250.242.175:33332/listEventsBySport/{sport_id}")
-    print(json.loads(t2.text))
+    pprint(json.loads(t2.text))
     # print("-" * 20, "list events by sport and competition")
     # sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
     # comp_id = int(input("enter competition id: "))
@@ -203,13 +204,13 @@ if __name__ == "__main__":
     print("-" * 20, "list inplay events by sport")
     sport_id = int(input("enter sport category, 1-soccer, 2-tennis, 4-cricket: "))
     t4 = requests.get(f"http://209.250.242.175:33332/listInplayEvents/{sport_id}")
-    print(json.loads(t4.text))
+    pprint(json.loads(t4.text))
     print("-" * 20, "list markets by eventid")
     event_id = int(input("enter eventid: "))
     t5 = requests.get(f"http://209.250.242.175:33332/listMarkets/{event_id}")
-    print(json.loads(t5.text))
+    pprint(json.loads(t5.text))
     print("-" * 20, "list market odds by marketid")
     market_id = float(input("enter market id: "))
     t6 = requests.get(f"http://209.250.242.175:33332/odds/?ids={market_id}")
-    print(json.loads(t6.text))
+    pprint(json.loads(t6.text))
 
